@@ -1,6 +1,6 @@
 ﻿/**
  * ====================================================================
- * CYTIMAZ - COMPONENTE: COMPARADOR VISUAL DE MODELOS
+ * CYTIMAZ - COMPONENTE: COMPARADOR MATRIZ DE LÍNEAS (ESENCIAL VS SUPREMA)
  * ====================================================================
  */
 
@@ -15,8 +15,8 @@
   border-radius: var(--radius-xl);
   border: 1px solid var(--color-border-light);
   box-shadow: var(--shadow-lg);
-  padding: 32px;
-  max-width: 960px;
+  padding: 36px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .comparator-select-box label {
@@ -56,10 +56,10 @@
   box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
-/* Tabla comparativa */
+/* Tabla comparativa de matriz */
 .comparator-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1fr;
   gap: 16px;
   align-items: stretch;
 }
@@ -67,7 +67,7 @@
 .comp-col {
   background-color: var(--color-white);
   border-radius: var(--radius-lg);
-  padding: 20px;
+  padding: 24px 20px;
   border: 1px solid var(--color-border-light);
   display: flex;
   flex-direction: column;
@@ -76,16 +76,18 @@
 .comp-col-features {
   background-color: transparent;
   border: none;
-  padding: 20px 10px;
-  justify-content: space-around;
+  padding: 24px 10px;
 }
 
 .comp-feature-row {
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-dark);
-  padding: 12px 0;
+  padding: 14px 0;
   border-bottom: 1px dashed var(--color-border-light);
+  min-height: 54px;
+  display: flex;
+  align-items: center;
 }
 
 .comp-feature-row:last-child {
@@ -95,6 +97,13 @@
 .comp-product-card {
   text-align: center;
   box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.comp-product-card.is-suprema {
+  border: 2px solid var(--color-primary);
+  background: linear-gradient(180deg, #F0F9FF 0%, #FFFFFF 35%);
+  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.15);
 }
 
 .comp-product-img {
@@ -104,42 +113,83 @@
 }
 
 .comp-product-title {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1.15rem;
+  font-weight: 900;
   color: var(--color-dark);
+  margin-bottom: 6px;
+}
+
+.comp-line-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
   margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-suprema-gold {
+  background: linear-gradient(135deg, #0284C7, #075985);
+  color: var(--color-white);
+  box-shadow: var(--shadow-blue);
+}
+
+.badge-esencial-blue {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border-light);
 }
 
 .comp-val-row {
-  padding: 12px 0;
+  padding: 14px 10px;
   border-bottom: 1px solid var(--color-border-light);
   font-size: 0.88rem;
-  color: var(--color-text-main);
-  min-height: 48px;
+  min-height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .comp-val-row:last-child {
   border-bottom: none;
 }
 
+.comp-val-check {
+  color: #10B981;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.comp-val-suprema-star {
+  color: #0284C7;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.comp-val-cross {
+  color: #94A3B8;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .comparator-card {
-    padding: 18px;
+    padding: 20px;
   }
-
   .comparator-selectors {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-
   .comparator-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
   .comp-col-features {
     display: none;
   }

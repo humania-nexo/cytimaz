@@ -1,7 +1,8 @@
 ﻿/**
  * ====================================================================
- * CYTIMAZ - COMPONENTE JS: COMPARADOR LADO A LADO
+ * CYTIMAZ - COMPONENTE JS: COMPARADOR MATRIZ LADO A LADO
  * ====================================================================
+ * Compara claramente las características de Línea Esencial vs Línea Suprema
  */
 
 function initComparator() {
@@ -22,13 +23,13 @@ function initComparator() {
     const optA = document.createElement("option");
     optA.value = p.id;
     optA.textContent = `${p.name} (${p.categoryLabel})`;
-    if (idx === 0) optA.selected = true; // Tinaco Tricapa 1100L por defecto
+    if (idx === 0) optA.selected = true; // Tinaco Línea Suprema 1,100L por defecto
     selectA.appendChild(optA);
 
     const optB = document.createElement("option");
     optB.value = p.id;
     optB.textContent = `${p.name} (${p.categoryLabel})`;
-    if (idx === 4) optB.selected = true; // Tinaco Bicapa 1100L por defecto
+    if (idx === 4) optB.selected = true; // Tinaco Línea Esencial 1,100L por defecto
     selectB.appendChild(optB);
   });
 
@@ -42,27 +43,97 @@ function initComparator() {
 
     colA.innerHTML = buildProductColHtml(prodA);
     colB.innerHTML = buildProductColHtml(prodB);
+
+    // Resaltar Línea Suprema
+    if (prodA.line === "suprema") {
+      colA.classList.add("is-suprema");
+    } else {
+      colA.classList.remove("is-suprema");
+    }
+
+    if (prodB.line === "suprema") {
+      colB.classList.add("is-suprema");
+    } else {
+      colB.classList.remove("is-suprema");
+    }
   }
 
   function buildProductColHtml(prod) {
     const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
-    const waText = encodeURIComponent(`¡Hola Cytimaz! Me interesa cotizar el modelo: *${prod.name}* después de compararlo en la web.`);
+    const waText = encodeURIComponent(`¡Hola Cytimaz! Me interesa cotizar el modelo: *${prod.name}* tras revisarlo en el comparador.`);
     const waLink = `https://wa.me/${waNumber}?text=${waText}`;
 
-    const layerCount = prod.layers ? `${prod.layers.length} Capas (${prod.categoryLabel})` : "Monolítica";
-    const uvRating = prod.category === "tinaco-tricapa" ? "⭐⭐⭐⭐⭐ (Filtro UV8 Negro)" : (prod.category === "tinaco-bicapa" ? "⭐⭐⭐⭐ (Protección Solar)" : "⭐⭐⭐⭐⭐ (Subsuelo / Pesada)");
+    const isSuprema = prod.line === "suprema";
+    const isEsencial = prod.line === "esencial";
+    const isCisterna = prod.line === "cisterna";
+
+    const badgeClass = isSuprema ? "badge-suprema-gold" : "badge-esencial-blue";
+    const lineBadge = isSuprema ? "⭐ Línea Suprema (Tricapa)" : (isEsencial ? "Línea Esencial (Bicapa)" : "Línea Industrial");
+
+    // Filas de matriz
+    const virgenHtml = `<span class="comp-val-check">✓ 100% Virgen FDA</span>`;
+    
+    let uvHtml = "";
+    if (isSuprema) {
+      uvHtml = `<span class="comp-val-suprema-star">⭐ Escudo Solar UV-8</span>`;
+    } else if (isEsencial) {
+      uvHtml = `<span class="comp-val-check">✓ Virgen Reflectante</span>`;
+    } else {
+      uvHtml = `<span class="comp-val-check">✓ Carga Pesada UV</span>`;
+    }
+
+    let antiAlgasHtml = "";
+    if (isSuprema) {
+      antiAlgasHtml = `<span class="comp-val-suprema-star">⭐ Capa Negra Espumada (Cero Lama)</span>`;
+    } else if (isEsencial) {
+      antiAlgasHtml = `<span class="comp-val-cross">— No disponible en Bicapa</span>`;
+    } else {
+      antiAlgasHtml = `<span class="comp-val-check">✓ Cuerpo Opaco Anti-Fotosíntesis</span>`;
+    }
+
+    let antiDeformacionHtml = "";
+    if (isSuprema) {
+      antiDeformacionHtml = `<span class="comp-val-suprema-star">⭐ Núcleo Celular Anti-Deformación</span>`;
+    } else if (isEsencial) {
+      antiDeformacionHtml = `<span class="comp-val-cross">— Estructura Estándar</span>`;
+    } else {
+      antiDeformacionHtml = `<span class="comp-val-check">✓ Nervaduras y Hombros Reforzados</span>`;
+    }
+
+    let antibacterialHtml = "";
+    if (isSuprema) {
+      antibacterialHtml = `<span class="comp-val-suprema-star">⭐ Aditivo Antibacterial Activo</span>`;
+    } else if (isEsencial) {
+      antibacterialHtml = `<span class="comp-val-check">✓ Blanco Grado Alimenticio</span>`;
+    } else {
+      antibacterialHtml = `<span class="comp-val-check">✓ Sanitario Grado Alimenticio</span>`;
+    }
+
+    const garantiaHtml = isSuprema || isCisterna
+      ? `<strong style="color: var(--color-primary-dark); font-size: 0.95rem;">🛡️ 30 Años de Fábrica</strong>`
+      : `<strong style="color: var(--color-dark); font-size: 0.95rem;">🛡️ 15 Años de Fábrica</strong>`;
+
+    const enfoqueHtml = isSuprema
+      ? `<span style="color: var(--color-primary-dark); font-weight: 800; font-size: 0.85rem;">🏆 Salud, Pureza y Máxima Calidad</span>`
+      : (isEsencial ? `<span style="color: var(--color-text-main); font-weight: 700; font-size: 0.85rem;">💰 Económico, Seguro y Confiable</span>` : `<span style="color: var(--color-text-main); font-weight: 700; font-size: 0.85rem;">🏗️ Máxima Capacidad Hidráulica</span>`);
 
     return `
       <img src="${prod.image}" alt="${prod.name}" class="comp-product-img">
       <h4 class="comp-product-title">${prod.name}</h4>
+      <span class="comp-line-badge ${badgeClass}">${lineBadge}</span>
+      
       <div class="comp-val-row"><strong>${prod.capacity.toLocaleString()} Litros</strong></div>
-      <div class="comp-val-row">${prod.peopleRecommended}</div>
-      <div class="comp-val-row">${layerCount}</div>
-      <div class="comp-val-row">${uvRating}</div>
-      <div class="comp-val-row">🛡️ ${prod.warranty}</div>
-      <div style="margin-top: 16px;">
+      <div class="comp-val-row">${virgenHtml}</div>
+      <div class="comp-val-row">${uvHtml}</div>
+      <div class="comp-val-row">${antiAlgasHtml}</div>
+      <div class="comp-val-row">${antiDeformacionHtml}</div>
+      <div class="comp-val-row">${antibacterialHtml}</div>
+      <div class="comp-val-row">${garantiaHtml}</div>
+      <div class="comp-val-row">${enfoqueHtml}</div>
+
+      <div style="margin-top: 18px;">
         <a href="${waLink}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm" style="width: 100%;">
-          💬 Cotizar Este
+          💬 Cotizar este Modelo
         </a>
       </div>
     `;
