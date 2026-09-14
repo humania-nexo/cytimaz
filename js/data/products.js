@@ -1,116 +1,118 @@
 ﻿/**
  * ====================================================================
- * CYTIMAZ - CATÁLOGO MODULAR DE PRODUCTOS
+ * CYTIMAZ - CATÁLOGO MODULAR DE PRODUCTOS (CAPACIDADES REALES DE FÁBRICA)
  * ====================================================================
- * Para agregar un nuevo producto, modificar capacidades o actualizar
- * características, solo edita este archivo.
+ * Líneas oficiales de fabricación en planta Cytimaz Mazatlán:
+ * - Tambo: 200L
+ * - Tinacos (Tricapa y Bicapa): 450L, 600L, 800L, 1,100L
+ * - Cisternas: 1,100L, 1,100L Vertical/Bala, 1,300L, 3,000L, 5,500L, 10,000L
  */
 
 const CYTIMAZ_PRODUCTS = [
   // ==========================================
-  // LÍNEA TINACOS TRICAPA (MÁXIMA PROTECCIÓN UV)
+  // LÍNEA TINACOS TRICAPA (MÁXIMA PROTECCIÓN UV8)
   // ==========================================
   {
     id: "tinaco-tricapa-1100",
     name: "Tinaco Tricapa 1,100 Litros",
-    shortName: "Tricapa 1100L",
+    shortName: "Tricapa 1,100L",
     category: "tinaco-tricapa",
     categoryLabel: "Tinaco Tricapa",
     capacity: 1100,
     peopleRecommended: "4 a 5 personas",
     featured: true,
     badge: "Más Vendido",
-    tagline: "El tinaco estándar para familias medianas en Mazatlán.",
+    tagline: "El estándar preferido para hogares y familias medianas en Mazatlán.",
     image: "assets/img/modelos/t1100b.png",
     colorExterior: "Arena / Beige Claro",
     colorInterior: "Blanco Espumado Antibacterial",
     warranty: "30 años de garantía de fábrica",
     layers: [
-      { name: "Capa 1 (Exterior)", desc: "Polietileno con filtro UV y acabado liso para máxima durabilidad solar.", color: "#D4B996" },
-      { name: "Capa 2 (Intermedia)", desc: "Polietileno Negro de alta opacidad: bloquea 100% la luz solar evitando fotosíntesis y algas.", color: "#1E293B" },
-      { name: "Capa 3 (Interior)", desc: "Polietileno Espumado antibacterial grado alimenticio, aislante térmico que mantiene el agua fresca.", color: "#E0F2FE" }
+      { name: "Capa 1 (Exterior)", desc: "Polietileno con filtro UV-8 para máxima durabilidad ante el sol de Mazatlán.", color: "#D4B996" },
+      { name: "Capa 2 (Intermedia)", desc: "Polietileno Negro fotoprotector: bloquea 100% la luz evitando algas y lama verde.", color: "#1E293B" },
+      { name: "Capa 3 (Interior)", desc: "Polietileno Espumado antibacterial grado alimenticio (aislante térmico).", color: "#E0F2FE" }
     ],
     specs: {
       "Capacidad": "1,100 Litros",
       "Diámetro": "1.10 m aprox.",
       "Altura": "1.40 m aprox.",
-      "Conexión de salida": '1½" y 1" NPT',
+      "Conexión de salida": '1½" NPT',
       "Tipo de Tapa": "Rosca hermética 18\" con venteo",
       "Material": "Polietileno Virgen de Alta Densidad (HDPE)"
     },
     benefits: [
       "No genera bacterias, lama ni olores",
-      "Filtro UV grado 8 especial para el calor de Mazatlán",
-      "Capa espumada que amortigua la temperatura del agua",
-      "Incluye tapa hermética roscada de alta seguridad"
+      "Filtro UV grado 8 especial para el calor del puerto",
+      "Capa espumada que conserva el agua más fresca",
+      "Incluye tapa roscada hermética de alta seguridad"
     ]
   },
   {
-    id: "tinaco-tricapa-750",
-    name: "Tinaco Tricapa 750 Litros",
-    shortName: "Tricapa 750L",
+    id: "tinaco-tricapa-800",
+    name: "Tinaco Tricapa 800 Litros",
+    shortName: "Tricapa 800L",
     category: "tinaco-tricapa",
     categoryLabel: "Tinaco Tricapa",
-    capacity: 750,
-    peopleRecommended: "2 a 3 personas",
+    capacity: 800,
+    peopleRecommended: "3 a 4 personas",
     featured: false,
-    badge: "Ideal Departamentos",
-    tagline: "Excelente para espacios reducidos, techos pequeños o departamentos.",
-    image: "assets/img/modelos/tinaco_tricapa_generic.svg",
+    badge: "Excelente Capacidad",
+    tagline: "Capacidad intermedia óptima para familias pequeñas y techos medianos.",
+    image: "assets/img/modelos/t1100b.png",
     colorExterior: "Arena / Beige Claro",
     colorInterior: "Blanco Espumado Antibacterial",
     warranty: "30 años de garantía",
     layers: [
-      { name: "Capa 1 (Exterior)", desc: "Polietileno resistente a intemperie y salinidad del puerto.", color: "#D4B996" },
-      { name: "Capa 2 (Intermedia)", desc: "Filtro negro anti-algas (bloqueo solar completo).", color: "#1E293B" },
-      { name: "Capa 3 (Interior)", desc: "Blanco antibacterial y aislante espumado.", color: "#E0F2FE" }
+      { name: "Capa Exterior", desc: "Polietileno resistente al sol y brisa marina de Mazatlán.", color: "#D4B996" },
+      { name: "Capa Intermedia", desc: "Filtro negro anti-fotosíntesis (cero formación de algas).", color: "#1E293B" },
+      { name: "Capa Interior", desc: "Blanco antibacterial y aislante térmico celular.", color: "#E0F2FE" }
     ],
     specs: {
-      "Capacidad": "750 Litros",
-      "Diámetro": "1.02 m aprox.",
-      "Altura": "1.10 m aprox.",
+      "Capacidad": "800 Litros",
+      "Diámetro": "1.05 m aprox.",
+      "Altura": "1.18 m aprox.",
       "Conexión de salida": '1½" NPT',
-      "Tipo de Tapa": "Rosca hermética con filtro de aire",
+      "Tipo de Tapa": "Rosca hermética con venteo",
       "Material": "Polietileno 100% Virgen"
     },
     benefits: [
-      "Tamaño compacto y fácil maniobrabilidad",
+      "Excelente equilibrio entre volumen y peso en azotea",
       "Triple protección contra el sol",
-      "Agua limpia y sin proliferación biológica"
+      "Agua limpia, inodora e incolora"
     ]
   },
   {
-    id: "tinaco-tricapa-2500",
-    name: "Tinaco Tricapa 2,500 Litros",
-    shortName: "Tricapa 2500L",
+    id: "tinaco-tricapa-600",
+    name: "Tinaco Tricapa 600 Litros",
+    shortName: "Tricapa 600L",
     category: "tinaco-tricapa",
     categoryLabel: "Tinaco Tricapa",
-    capacity: 2500,
-    peopleRecommended: "8 a 10 personas",
+    capacity: 600,
+    peopleRecommended: "2 a 3 personas",
     featured: false,
-    badge: "Gran Capacidad",
-    tagline: "Para residencias grandes, negocios, restaurantes o condominios.",
-    image: "assets/img/modelos/tinaco_tricapa_generic.svg",
+    badge: "Ideal Departamentos",
+    tagline: "Diseñado para espacios compactos, departamentos y casas pequeñas.",
+    image: "assets/img/modelos/t1100b.png",
     colorExterior: "Arena / Beige Claro",
     colorInterior: "Blanco Espumado Antibacterial",
     warranty: "30 años de garantía",
     layers: [
-      { name: "Capa Exterior", desc: "Resina con máxima carga de aditivos UV.", color: "#D4B996" },
-      { name: "Capa Intermedia", desc: "Barrera negra fotoprotectora contra algas verdes.", color: "#1E293B" },
-      { name: "Capa Interior", desc: "Capa lisa blanca espumada antibacterial.", color: "#E0F2FE" }
+      { name: "Capa Exterior", desc: "Protección solar UV-8.", color: "#D4B996" },
+      { name: "Capa Intermedia", desc: "Barrera negra anti-algas.", color: "#1E293B" },
+      { name: "Capa Interior", desc: "Interior liso blanco antibacterial.", color: "#E0F2FE" }
     ],
     specs: {
-      "Capacidad": "2,500 Litros",
-      "Diámetro": "1.55 m aprox.",
-      "Altura": "1.65 m aprox.",
-      "Conexión de salida": '2" y 1½" NPT',
-      "Tipo de Tapa": "Rosca de seguridad",
-      "Material": "HDPE Rotomoldeado reforzado"
+      "Capacidad": "600 Litros",
+      "Diámetro": "0.95 m aprox.",
+      "Altura": "1.05 m aprox.",
+      "Conexión de salida": '1" / 1½" NPT',
+      "Tipo de Tapa": "Rosca de seguridad hermética",
+      "Material": "Polietileno 100% Virgen"
     },
     benefits: [
-      "Reserva hídrica masiva para contingencias y sequías",
-      "Estructura reforzada con cinturones de resistencia",
-      "Apto para agua potable y uso comercial"
+      "Fácil de maniobrar e instalar",
+      "Máxima higiene para casas de 2 a 3 habitantes",
+      "Misma tecnología tricapa de los modelos grandes"
     ]
   },
   {
@@ -123,15 +125,15 @@ const CYTIMAZ_PRODUCTS = [
     peopleRecommended: "1 a 2 personas",
     featured: false,
     badge: "Compacto",
-    tagline: "El modelo más compacto para viviendas individuales o apoyo de boiler.",
-    image: "assets/img/modelos/tinaco_tricapa_generic.svg",
+    tagline: "El modelo más compacto, ideal para viviendas individuales o apoyo de boiler solar.",
+    image: "assets/img/modelos/t1100b.png",
     colorExterior: "Arena / Beige Claro",
     colorInterior: "Blanco Espumado Antibacterial",
     warranty: "30 años de garantía",
     layers: [
-      { name: "Capa 1 (Exterior)", desc: "Protección solar UV.", color: "#D4B996" },
-      { name: "Capa 2 (Intermedia)", desc: "Filtro negro anti-fotosíntesis.", color: "#1E293B" },
-      { name: "Capa 3 (Interior)", desc: "Interior liso espumado antibacterial.", color: "#E0F2FE" }
+      { name: "Capa Exterior", desc: "Protección solar UV.", color: "#D4B996" },
+      { name: "Capa Intermedia", desc: "Filtro negro anti-fotosíntesis.", color: "#1E293B" },
+      { name: "Capa Interior", desc: "Blanco espumado grado alimenticio.", color: "#E0F2FE" }
     ],
     specs: {
       "Capacidad": "450 Litros",
@@ -143,8 +145,8 @@ const CYTIMAZ_PRODUCTS = [
     },
     benefits: [
       "Ultra ligero para subir a azoteas sin grúa",
-      "Ideal para casas de campo o bodegas",
-      "Misma tecnología tricapa de los modelos grandes"
+      "Ideal para casas de campo, bodegas o departamentos",
+      "Protección tricapa completa"
     ]
   },
 
@@ -154,21 +156,21 @@ const CYTIMAZ_PRODUCTS = [
   {
     id: "tinaco-bicapa-1100",
     name: "Tinaco Bicapa 1,100 Litros",
-    shortName: "Bicapa 1100L",
+    shortName: "Bicapa 1,100L",
     category: "tinaco-bicapa",
     categoryLabel: "Tinaco Bicapa",
     capacity: 1100,
     peopleRecommended: "4 a 5 personas",
     featured: true,
-    badge: "Mejor Precio",
+    badge: "Mejor Precio / Calidad",
     tagline: "La opción más económica y durable para almacenar agua potable en casa.",
     image: "assets/img/modelos/t1100b.png",
     colorExterior: "Arena Claro",
     colorInterior: "Blanco Espumado Aislante",
     warranty: "15 años de garantía",
     layers: [
-      { name: "50% Capa Exterior", desc: "Polietileno de alta resistencia mecánica color arena con aditivo anti-UV.", color: "#D4B996" },
-      { name: "50% Capa Interior", desc: "Polietileno espumado color blanco: brinda rigidez estructural y aislamiento térmico.", color: "#FFFFFF" }
+      { name: "50% Capa Exterior", desc: "Polietileno virgen color arena de alta resistencia con aditivo anti-UV.", color: "#D4B996" },
+      { name: "50% Capa Interior", desc: "Polietileno espumado color blanco: rigidez y aislamiento térmico.", color: "#FFFFFF" }
     ],
     specs: {
       "Capacidad": "1,100 Litros",
@@ -185,45 +187,109 @@ const CYTIMAZ_PRODUCTS = [
     ]
   },
   {
-    id: "tinaco-bicapa-750",
-    name: "Tinaco Bicapa 750 Litros",
-    shortName: "Bicapa 750L",
+    id: "tinaco-bicapa-800",
+    name: "Tinaco Bicapa 800 Litros",
+    shortName: "Bicapa 800L",
     category: "tinaco-bicapa",
     categoryLabel: "Tinaco Bicapa",
-    capacity: 750,
-    peopleRecommended: "2 a 3 personas",
+    capacity: 800,
+    peopleRecommended: "3 a 4 personas",
     featured: false,
     badge: "Económico",
-    tagline: "Ligero, resistente y perfecto para casas pequeñas.",
-    image: "assets/img/modelos/tinaco_bicapa_generic.svg",
+    tagline: "Respaldo confiable y rendidor para familias medianas.",
+    image: "assets/img/modelos/t1100b.png",
     colorExterior: "Arena Claro",
     colorInterior: "Blanco Espumado",
     warranty: "15 años de garantía",
     layers: [
-      { name: "Capa Exterior", desc: "Polietileno Virgen Arena 50%", color: "#D4B996" },
-      { name: "Capa Interior", desc: "Polietileno Espumado Blanco 50%", color: "#FFFFFF" }
+      { name: "50% Exterior", desc: "Polietileno Virgen Arena", color: "#D4B996" },
+      { name: "50% Interior", desc: "Polietileno Espumado Blanco", color: "#FFFFFF" }
     ],
     specs: {
-      "Capacidad": "750 Litros",
-      "Diámetro": "1.02 m aprox.",
-      "Altura": "1.10 m aprox.",
+      "Capacidad": "800 Litros",
+      "Diámetro": "1.05 m aprox.",
+      "Altura": "1.18 m aprox.",
       "Conexión de salida": '1½" NPT',
       "Tipo de Tapa": "Rosca de seguridad",
       "Material": "HDPE Virgen Bicapa"
     },
     benefits: [
-      "Estructura robusta bicapa",
+      "Estructura robusta bicapa 50/50",
       "Inversión inteligente y duradera"
+    ]
+  },
+  {
+    id: "tinaco-bicapa-600",
+    name: "Tinaco Bicapa 600 Litros",
+    shortName: "Bicapa 600L",
+    category: "tinaco-bicapa",
+    categoryLabel: "Tinaco Bicapa",
+    capacity: 600,
+    peopleRecommended: "2 a 3 personas",
+    featured: false,
+    badge: "Compacto",
+    tagline: "Ligero y resistente para azoteas de poco espacio.",
+    image: "assets/img/modelos/t1100b.png",
+    colorExterior: "Arena Claro",
+    colorInterior: "Blanco Espumado",
+    warranty: "15 años de garantía",
+    layers: [
+      { name: "50% Exterior", desc: "Polietileno Virgen Arena", color: "#D4B996" },
+      { name: "50% Interior", desc: "Polietileno Espumado Blanco", color: "#FFFFFF" }
+    ],
+    specs: {
+      "Capacidad": "600 Litros",
+      "Diámetro": "0.95 m aprox.",
+      "Altura": "1.05 m aprox.",
+      "Conexión de salida": '1" / 1½" NPT',
+      "Tipo de Tapa": "Rosca de seguridad",
+      "Material": "HDPE Virgen Bicapa"
+    },
+    benefits: [
+      "Diseño práctico y funcional",
+      "Capa espumada para rigidez estructural"
+    ]
+  },
+  {
+    id: "tinaco-bicapa-450",
+    name: "Tinaco Bicapa 450 Litros",
+    shortName: "Bicapa 450L",
+    category: "tinaco-bicapa",
+    categoryLabel: "Tinaco Bicapa",
+    capacity: 450,
+    peopleRecommended: "1 a 2 personas",
+    featured: false,
+    badge: "Práctico",
+    tagline: "El más pequeño y económico de la línea bicapa.",
+    image: "assets/img/modelos/t1100b.png",
+    colorExterior: "Arena Claro",
+    colorInterior: "Blanco Espumado",
+    warranty: "15 años de garantía",
+    layers: [
+      { name: "50% Exterior", desc: "Polietileno Virgen Arena", color: "#D4B996" },
+      { name: "50% Interior", desc: "Polietileno Espumado Blanco", color: "#FFFFFF" }
+    ],
+    specs: {
+      "Capacidad": "450 Litros",
+      "Diámetro": "0.85 m aprox.",
+      "Altura": "0.98 m aprox.",
+      "Conexión de salida": '1" NPT',
+      "Tipo de Tapa": "Rosca hermética",
+      "Material": "HDPE Virgen Bicapa"
+    },
+    benefits: [
+      "Ultra compacto",
+      "Fácil transportación"
     ]
   },
 
   // ==========================================
-  // LÍNEA CISTERNAS (SUBSUELO Y SUPERFICIE)
+  // LÍNEA CISTERNAS (1100, 1100 BALA, 1300, 3000, 5500, 10000)
   // ==========================================
   {
     id: "cisterna-1100",
     name: "Cisterna Rotomoldeada 1,100 Litros",
-    shortName: "Cisterna 1100L",
+    shortName: "Cisterna 1,100L",
     category: "cisterna",
     categoryLabel: "Cisterna Reforzada",
     capacity: 1100,
@@ -231,17 +297,17 @@ const CYTIMAZ_PRODUCTS = [
     featured: false,
     badge: "Subsuelo / Superficie",
     tagline: "Cisterna de cuerpo reforzado para enterrar o colocar a nivel de piso.",
-    image: "assets/img/modelos/cisterna_generic.svg",
+    image: "assets/img/modelos/c3000b.png",
     colorExterior: "Azul Industrial",
     colorInterior: "Polietileno Virgen Grado Sanitario",
     warranty: "30 años de vida útil",
     layers: [
-      { name: "Estructura Monolítica Reforzada", desc: "100% Polietileno virgen de pared gruesa en múltiples cargas continuas sin soldaduras.", color: "#0284C7" }
+      { name: "Estructura Monolítica Reforzada", desc: "100% Polietileno virgen en 2 cargas continuas (18 kg PE) sin soldaduras.", color: "#0284C7" }
     ],
     specs: {
       "Capacidad": "1,100 Litros",
-      "Diámetro": "1.12 m",
-      "Altura": "1.35 m",
+      "Diámetro": "1.12 m aprox.",
+      "Altura": "1.35 m aprox.",
       "Resistencia": "Soporta presión de tierra y mantos freáticos",
       "Instalación": "Enterrada o sobre base plana",
       "Material": "Polietileno Virgen de Alto Impacto"
@@ -253,9 +319,72 @@ const CYTIMAZ_PRODUCTS = [
     ]
   },
   {
+    id: "cisterna-1100-bala",
+    name: "Cisterna Vertical Tipo Bala 1,100 Litros",
+    shortName: "Cisterna 1,100L Bala",
+    category: "cisterna",
+    categoryLabel: "Cisterna Vertical / Bala",
+    capacity: 1100,
+    peopleRecommended: "4 a 5 personas",
+    featured: true,
+    badge: "Formato Vertical Bala",
+    tagline: "Diseño esbelto vertical tipo bala, ideal para pasillos estrechos o excavaciones reducidas.",
+    image: "assets/img/modelos/c3000b.png",
+    colorExterior: "Azul Industrial / Negro",
+    colorInterior: "Sanitario Virgen",
+    warranty: "30 años de vida útil",
+    layers: [
+      { name: "Cuerpo Vertical Reforzado", desc: "Geometría cilíndrica vertical con hombros reforzados para resistir compactación.", color: "#0369A1" }
+    ],
+    specs: {
+      "Capacidad": "1,100 Litros",
+      "Formato": "Vertical / Tipo Bala",
+      "Diámetro": "0.95 m aprox.",
+      "Altura": "1.75 m aprox.",
+      "Aplicación": "Espacios angostos, cocheras o aljibes verticales",
+      "Material": "100% Polietileno Virgen"
+    },
+    benefits: [
+      "Aprovecha la altura ocupando mucho menos área de suelo",
+      "Fácil excavación y colocación en patios o pasillos",
+      "Estructura monolítica indeformable"
+    ]
+  },
+  {
+    id: "cisterna-1300",
+    name: "Cisterna Rotomoldeada 1,300 Litros",
+    shortName: "Cisterna 1,300L",
+    category: "cisterna",
+    categoryLabel: "Cisterna Reforzada",
+    capacity: 1300,
+    peopleRecommended: "5 a 6 personas",
+    featured: false,
+    badge: "Mayor Reserva",
+    tagline: "Un plus de capacidad para familias que buscan mayor tranquilidad hídrica.",
+    image: "assets/img/modelos/c3000b.png",
+    colorExterior: "Azul Industrial",
+    colorInterior: "Sanitario Virgen",
+    warranty: "30 años de garantía",
+    layers: [
+      { name: "Doble Carga Reforzada", desc: "Polietileno virgen de pared gruesa (21 kg PE total).", color: "#0284C7" }
+    ],
+    specs: {
+      "Capacidad": "1,300 Litros",
+      "Diámetro": "1.18 m aprox.",
+      "Altura": "1.45 m aprox.",
+      "Instalación": "Subterránea o Superficie",
+      "Material": "Polietileno de Alta Resistencia"
+    },
+    benefits: [
+      "200 litros adicionales sobre la cisterna estándar",
+      "Ideal para casas con hidroneumático",
+      "Paredes lisas antibacteriales"
+    ]
+  },
+  {
     id: "cisterna-3000",
     name: "Cisterna Rotomoldeada 3,000 Litros",
-    shortName: "Cisterna 3000L",
+    shortName: "Cisterna 3,000L",
     category: "cisterna",
     categoryLabel: "Cisterna Residencial",
     capacity: 3000,
@@ -268,12 +397,12 @@ const CYTIMAZ_PRODUCTS = [
     colorInterior: "Blanco / Azul Sanitario",
     warranty: "Garantía de por vida contra defectos de fábrica",
     layers: [
-      { name: "Cuerpo Doble Carga Pesada", desc: "Paredes ultra gruesas con venas y hombros de refuerzo geométrico.", color: "#0369A1" }
+      { name: "Cuerpo Doble Carga Pesada (45 kg PE)", desc: "Paredes ultra gruesas con venas y hombros de refuerzo geométrico.", color: "#0369A1" }
     ],
     specs: {
       "Capacidad": "3,000 Litros",
-      "Diámetro": "1.65 m",
-      "Altura": "1.80 m",
+      "Diámetro": "1.65 m aprox.",
+      "Altura": "1.80 m aprox.",
       "Tipo de tapa": 'Registro hermético con aro de venteo 24"',
       "Aplicación": "Residencial, Hotelería, Albercas y Edificios"
     },
@@ -286,7 +415,7 @@ const CYTIMAZ_PRODUCTS = [
   {
     id: "cisterna-5500",
     name: "Cisterna Industrial 5,500 Litros",
-    shortName: "Cisterna 5500L",
+    shortName: "Cisterna 5,500L",
     category: "cisterna",
     categoryLabel: "Cisterna Industrial",
     capacity: 5500,
@@ -299,19 +428,19 @@ const CYTIMAZ_PRODUCTS = [
     colorInterior: "Sanitario Virgen",
     warranty: "Garantía Industrial Cytimaz",
     layers: [
-      { name: "Cuádruple Carga de Resina (100 kg HDPE)", desc: "Fabricada en 4 cargas rotomoldeadas de 25 kg cada una para máxima densidad y resistencia.", color: "#0F3D69" }
+      { name: "Cuádruple Carga de Resina (100 kg HDPE)", desc: "Fabricada en 4 cargas rotomoldeadas de 25 kg cada una para máxima densidad.", color: "#0F3D69" }
     ],
     specs: {
       "Capacidad": "5,500 Litros",
       "Diámetro": "2.00 m aprox.",
       "Altura": "2.20 m aprox.",
       "Peso de material": "100 kg de polietileno virgen",
-      "Uso": "Agua potable, químicos ligeros, purificadoras y hoteles"
+      "Uso": "Agua potable, purificadoras, obras y hoteles"
     },
     benefits: [
       "Pared estructural de calibre extra grueso",
       "Soporta las condiciones más exigentes de terreno",
-      "Ahorro significativo frente a construcción de aljibes de concreto"
+      "Ahorro significativo frente a aljibes de concreto"
     ]
   },
   {
@@ -330,7 +459,7 @@ const CYTIMAZ_PRODUCTS = [
     colorInterior: "Blanco Sanitario",
     warranty: "Garantía de Fábrica Cytimaz",
     layers: [
-      { name: "Estructura Reforzada de Carga Masiva", desc: "Paredes de alto espesor y nervaduras reforzadas para máxima contención de volumen.", color: "#0A2540" }
+      { name: "Estructura Reforzada de Carga Masiva", desc: "Paredes de alto espesor y nervaduras de contención de volumen masivo.", color: "#0A2540" }
     ],
     specs: {
       "Capacidad": "10,000 Litros",
@@ -346,7 +475,7 @@ const CYTIMAZ_PRODUCTS = [
   },
 
   // ==========================================
-  // LÍNEA CONTENEDORES Y TAMBOS
+  // LÍNEA CONTENEDORES Y TAMBOS (200L)
   // ==========================================
   {
     id: "tambo-200",
@@ -364,12 +493,12 @@ const CYTIMAZ_PRODUCTS = [
     colorInterior: "Blanco Sanitario",
     warranty: "10 años",
     layers: [
-      { name: "Triple Carga Reforzada", desc: "Fabricado con 3 cargas de polietileno virgen (6 kg de material total).", color: "#0284C7" }
+      { name: "Triple Carga Reforzada (6 kg)", desc: "Fabricado con 3 cargas de polietileno virgen (2.5kg + 2.5kg + 1kg de refuerzo de base).", color: "#0284C7" }
     ],
     specs: {
       "Capacidad": "200 Litros (55 Galones)",
-      "Diámetro": "0.60 m",
-      "Altura": "0.95 m",
+      "Diámetro": "0.60 m aprox.",
+      "Altura": "0.95 m aprox.",
       "Tipo": "Boca ancha o tapones roscados",
       "Material": "Polietileno de Alta Resistencia"
     },
