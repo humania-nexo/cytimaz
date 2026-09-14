@@ -5,7 +5,7 @@
  * 2 LÍNEAS DE TINACOS:
  * 1. LÍNEA SUPREMA (TRICAPA):
  *    - Capa Exterior: Reflectante solar con filtro UV-8.
- *    - Capa Intermedia: Negra espumada (bloqueo total de luz, neutraliza algas/lama y estructura anti-deformación).
+ *    - Capa Intermedia: Negra espumada (bloqueo total de luz, neutraliza algas/lama y estructura anti-pandeo).
  *    - Capa Interior: Grado alimenticio con componente antibacterial activo (salud y máxima pureza).
  * 
  * 2. LÍNEA ESENCIAL (BICAPA):
@@ -44,7 +44,7 @@ const CYTIMAZ_PRODUCTS = [
     },
     layers: [
       { name: "Capa 1 Exterior (Reflectante UV-8)", desc: "Polietileno virgen con filtro UV-8 de máxima duración; reflecta los rayos solares y evita la degradación térmica.", color: "#D4B996" },
-      { name: "Capa 2 Intermedia (Negra Espumada)", desc: "Barrera negra espumada: bloquea 100% el paso de la luz, neutraliza el crecimiento de algas y lama, y brinda estructura celular anti-deformación.", color: "#1E293B" },
+      { name: "Capa 2 Intermedia (Negra Espumada)", desc: "Barrera negra espumada: bloquea 100% el paso de la luz, neutraliza el crecimiento de algas y lama, y brinda estructura celular anti-pandeo.", color: "#1E293B" },
       { name: "Capa 3 Interior (Antibacterial Activo)", desc: "Polietileno grado alimenticio con aditivo antibacterial activo; cuida la salud y conserva el agua pura e inodora.", color: "#E0F2FE" }
     ],
     specs: {
@@ -58,7 +58,7 @@ const CYTIMAZ_PRODUCTS = [
     },
     benefits: [
       "Componente antibacterial activo que cuida la salud familiar",
-      "Capa intermedia negra espumada anti-deformación",
+      "Capa intermedia negra espumada anti-pandeo",
       "Cero paso de luz: neutraliza totalmente algas y moho",
       "Filtro UV-8 especial para el calor extremo de Mazatlán"
     ]
@@ -135,7 +135,7 @@ const CYTIMAZ_PRODUCTS = [
     },
     layers: [
       { name: "Capa 1 Exterior", desc: "Protección solar UV-8.", color: "#D4B996" },
-      { name: "Capa 2 Intermedia", desc: "Negra espumada anti-deformación y anti-lama.", color: "#1E293B" },
+      { name: "Capa 2 Intermedia", desc: "Negra espumada anti-pandeo y anti-lama.", color: "#1E293B" },
       { name: "Capa 3 Interior", desc: "Antibacterial grado alimenticio.", color: "#E0F2FE" }
     ],
     specs: {
@@ -676,3 +676,4 @@ const CYTIMAZ_PRODUCTS = [
 if (typeof window !== "undefined") {
   window.CYTIMAZ_PRODUCTS = CYTIMAZ_PRODUCTS;
 }
+
