@@ -1,0 +1,146 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - COMPONENTE: COMPARADOR VISUAL DE MODELOS
+ * ====================================================================
+ */
+
+.comparator-section {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.comparator-card {
+  background-color: var(--color-bg-body);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-lg);
+  padding: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.comparator-selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.comparator-select-box label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comparator-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border-light);
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.comparator-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* Tabla comparativa */
+.comparator-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.comp-col {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.comp-col-features {
+  background-color: transparent;
+  border: none;
+  padding: 20px 10px;
+  justify-content: space-around;
+}
+
+.comp-feature-row {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--color-border-light);
+}
+
+.comp-feature-row:last-child {
+  border-bottom: none;
+}
+
+.comp-product-card {
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.comp-product-img {
+  max-height: 120px;
+  object-fit: contain;
+  margin: 0 auto 12px auto;
+}
+
+.comp-product-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+.comp-val-row {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: 0.88rem;
+  color: var(--color-text-main);
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-val-row:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .comparator-card {
+    padding: 18px;
+  }
+
+  .comparator-selectors {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .comparator-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .comp-col-features {
+    display: none;
+  }
+}

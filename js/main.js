@@ -2,8 +2,7 @@
  * ====================================================================
  * CYTIMAZ - CONTROLADOR PRINCIPAL (BOOTSTRAP)
  * ====================================================================
- * Este archivo inicializa todos los módulos y sincroniza los datos
- * de la empresa en la cabecera, botones de WhatsApp y pie de página.
+ * Inicializa todos los módulos y sincroniza los datos de contacto.
  */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -12,18 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. Sincronizar información de la empresa
   syncCompanyData();
 
-  // 2. Inicializar componentes
+  // 2. Inicializar componentes interactivos
   if (window.initHeader) window.initHeader();
   if (window.initCatalog) window.initCatalog();
   if (window.initProductModal) window.initProductModal();
   if (window.initCalculator) window.initCalculator();
+  if (window.initComparator) window.initComparator();
   if (window.initMascotBot) window.initMascotBot();
 });
 
-/**
- * Inserta automáticamente los números de teléfono, enlaces de WhatsApp
- * y redes sociales desde `js/data/company.js` a todos los elementos.
- */
 function syncCompanyData() {
   const company = window.CYTIMAZ_COMPANY;
   if (!company) return;
@@ -39,12 +35,12 @@ function syncCompanyData() {
     el.href = waUrl;
   });
 
-  // Nombre de la empresa y lema
+  // Slogan
   document.querySelectorAll(".company-slogan-text").forEach(el => {
     el.textContent = company.slogan;
   });
 
-  // Dirección y horarios
+  // Dirección y cobertura
   const addressEl = document.getElementById("footer-address-text");
   if (addressEl) addressEl.textContent = company.location.address;
 
@@ -64,7 +60,7 @@ function syncCompanyData() {
   const ttEl = document.getElementById("footer-tt-link");
   if (ttEl) ttEl.href = company.social.tiktok;
 
-  // Año actual en copyright
+  // Año actual
   const yearEl = document.getElementById("current-year-text");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 }
