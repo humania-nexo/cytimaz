@@ -1,0 +1,8 @@
+﻿# Archivos pesados de diseño y video temporal
+*.psd
+*.mp4
+desorden/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

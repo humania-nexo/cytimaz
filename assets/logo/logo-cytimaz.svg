@@ -1,0 +1,49 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <linearGradient id="waterAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="subtleDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Icon: Modern Geometric Rotomolded Tank + Water Wave -->
+  <g transform="translate(15, 10)">
+    <!-- Tank Body Contour -->
+    <path d="M 28 32 C 45 22 55 22 72 32 L 80 82 C 60 92 40 92 20 82 Z" fill="url(#logoBlueGrad)" filter="url(#subtleDrop)"/>
+    <!-- Tank Reinforcement Ribs -->
+    <path d="M 24 50 Q 50 42 76 50" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 22 66 Q 50 58 78 66" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <!-- Top Lid -->
+    <ellipse cx="50" cy="30" rx="26" ry="9" fill="#38BDF8" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Water Drop Sparkle in Center -->
+    <path d="M 50 48 C 50 48 40 60 40 68 C 40 73.5 44.5 78 50 78 C 55.5 78 60 73.5 60 68 C 60 60 50 48 50 48 Z" fill="#FFFFFF"/>
+    <circle cx="47" cy="65" r="2" fill="#0284C7"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(125, 68)">
+    <!-- Brand Main Name -->
+    <text x="0" y="0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="1.5" fill="#0F172A">
+      CYTI<tspan fill="#0284C7">MAZ</tspan>
+    </text>
+    <!-- Subtitle / Breakdown -->
+    <text x="2" y="24" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="3" fill="#64748B">
+      CISTERNAS Y TINACOS MAZATLÁN
+    </text>
+  </g>
+
+  <!-- Factory Badge Tag -->
+  <g transform="translate(365, 22)">
+    <rect width="98" height="22" rx="6" fill="#E0F2FE"/>
+    <text x="49" y="15" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0369A1" text-anchor="middle" letter-spacing="0.5">
+      ★ FÁBRICA
+    </text>
+  </g>
+</svg>

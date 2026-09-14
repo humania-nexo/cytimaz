@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Interna de Producción | Cytimaz Planta</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon-192.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0284C7">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <span class="brand-badge">PLANT</span>
+        <h1>Cytimaz <span class="sub-title">Calculadora de Rotomoldeo</span></h1>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn-settings" title="Ir a la Web Pública">🌐 Web Cytimaz</a>
+        <button id="btn-settings" class="btn-settings" title="Ajustes y Configuración">⚙️ Ajustes</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="app-nav">
+    <button class="nav-tab active" data-tab="tab-pt-mp">
+      <span class="tab-icon">📦</span>
+      <span class="tab-label">PT ➔ Materia Prima</span>
+    </button>
+    <button class="nav-tab" data-tab="tab-mp-pt">
+      <span class="tab-icon">🔄</span>
+      <span class="tab-label">Materia Prima ➔ PT</span>
+    </button>
+    <button class="nav-tab" data-tab="tab-informe">
+      <span class="tab-icon">📋</span>
+      <span class="tab-label">Fichas e Informe</span>
+    </button>
+  </nav>
+
+  <!-- Main Workspace -->
+  <main class="app-main">
+    <!-- Module 1: PT -> MP -->
+    <section id="tab-pt-mp" class="module-tab active">
+      <div class="module-header">
+        <h2>Planificación de Producción</h2>
+        <p>Agrega los modelos a fabricar para calcular los kilogramos y sacos de 24 kg necesarios.</p>
+      </div>
+      <div id="pt-mp-container" class="module-content"></div>
+    </section>
+
+    <!-- Module 2: MP -> PT -->
+    <section id="tab-mp-pt" class="module-tab">
+      <div class="module-header">
+        <h2>Capacidad con Materia Prima</h2>
+        <p>Ingresa los sacos o kg disponibles para calcular cuántas piezas completas puedes fabricar.</p>
+      </div>
+      <div id="mp-pt-container" class="module-content"></div>
+    </section>
+
+    <!-- Module 3: Technical Sheets -->
+    <section id="tab-informe" class="module-tab">
+      <div class="module-header">
+        <h2>Catálogo de Modelos y Capas</h2>
+        <p>Consulta fichas técnicas, radiografía de capas y pesos de producción.</p>
+      </div>
+      <div id="informe-container" class="module-content"></div>
+    </section>
+  </main>
+
+  <!-- Settings Modal -->
+  <div id="modal-settings" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>⚙️ Ajustes de Producción</h3>
+        <button id="btn-close-modal" class="modal-close">&times;</button>
+      </div>
+      <div id="settings-content" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="app-toast" class="toast hidden"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/mod-pt-mp.js"></script>
+  <script src="js/mod-mp-pt.js"></script>
+  <script src="js/mod-informe.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

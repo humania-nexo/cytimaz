@@ -1,0 +1,169 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - COMPONENTE: MODAL DE FICHA TÉCNICA
+ * ====================================================================
+ */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  max-width: 780px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: all var(--transition-normal);
+}
+
+.modal-backdrop.active .modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-bg-alt);
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  z-index: 10;
+  transition: all var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.modal-body {
+  padding: 32px;
+}
+
+.modal-header-info {
+  margin-bottom: 24px;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.modal-image-preview {
+  background: linear-gradient(180deg, #F1F5F9 0%, #FFFFFF 100%);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image-preview img {
+  max-height: 240px;
+  object-fit: contain;
+}
+
+/* Tabla de especificaciones */
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.specs-table td {
+  padding: 10px 0;
+}
+
+.specs-table td:first-child {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  width: 45%;
+}
+
+.specs-table td:last-child {
+  color: var(--color-dark);
+  font-weight: 800;
+}
+
+/* Lista de capas en el modal */
+.modal-layers-box {
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-layers-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.modal-layer-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.modal-layer-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* Footer de acciones en el modal */
+.modal-footer-actions {
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid var(--color-border-light);
+  padding-top: 20px;
+}
+
+.modal-footer-actions .btn {
+  flex: 1;
+}

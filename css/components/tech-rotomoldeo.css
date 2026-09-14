@@ -1,0 +1,131 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - COMPONENTE: TECNOLOGÍA DE ROTOMOLDEO Y CAPAS
+ * ====================================================================
+ */
+
+.tech-section {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.tech-layers-card {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-xl);
+}
+
+.tech-layers-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--color-white);
+}
+
+.tech-layers-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+}
+
+/* Lista visual de Capas */
+.layers-visual-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.layer-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  transition: background-color var(--transition-fast);
+}
+
+.layer-step-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.layer-color-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.layer-info h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-accent-cyan);
+  margin-bottom: 4px;
+}
+
+.layer-info p {
+  font-size: 0.88rem;
+  color: #E2E8F0;
+  line-height: 1.45;
+}
+
+/* Grid de Beneficios del Rotomoldeo */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.benefit-card {
+  background-color: var(--color-bg-body);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all var(--transition-normal);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.benefit-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}

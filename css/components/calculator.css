@@ -1,0 +1,177 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - COMPONENTE: CALCULADORA INTERACTIVA DE CAPACIDAD
+ * ====================================================================
+ */
+
+.calc-section {
+  background: linear-gradient(180deg, var(--color-bg-body) 0%, rgba(224, 242, 254, 0.5) 100%);
+}
+
+.calc-card-main {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-xl);
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.calc-steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Columna de Selección */
+.calc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.calc-group-label {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calc-people-selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.people-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 10px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border-light);
+  background-color: var(--color-bg-body);
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.people-btn .people-count {
+  font-size: 1.25rem;
+  color: var(--color-dark);
+}
+
+.people-btn .people-sub {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.people-btn:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.people-btn.active {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-blue);
+}
+
+.people-btn.active .people-count,
+.people-btn.active .people-sub {
+  color: var(--color-white);
+}
+
+/* Selector de tipo de instalación */
+.install-type-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.install-btn {
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border-light);
+  background-color: var(--color-bg-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-dark);
+  transition: all var(--transition-fast);
+}
+
+.install-btn:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.install-btn.active {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Tarjeta de Resultado */
+.calc-result-box {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-result-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.calc-result-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.calc-result-liters {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #38BDF8;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calc-result-desc {
+  font-size: 0.92rem;
+  color: #E0F2FE;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.calc-result-box .btn-whatsapp {
+  width: 100%;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.calc-result-box .btn-whatsapp:hover {
+  background-color: #F8FAFC;
+  transform: translateY(-2px);
+  color: var(--color-whatsapp-dark);
+}

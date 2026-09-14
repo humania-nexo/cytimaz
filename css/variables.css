@@ -1,0 +1,89 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - SISTEMA DE VARIABLES DE DISEÑO (DESIGN TOKENS)
+ * ====================================================================
+ * Aquí puedes modificar los colores principales, tipografías, sombras
+ * y espaciados de todo el sitio web en un solo lugar.
+ */
+
+:root {
+  /* ==========================================
+     PALETA DE COLORES CYTIMAZ (Azul, Blanco, Negro)
+     ========================================== */
+  
+  /* Tonos Azules (Color Primario - Agua, Industria, Confianza) */
+  --color-primary: #0284C7;         /* Azul vibrante principal */
+  --color-primary-hover: #0369A1;   /* Azul más oscuro para hovers */
+  --color-primary-dark: #075985;    /* Azul profundo */
+  --color-primary-light: #E0F2FE;   /* Azul muy claro para fondos y chips */
+  --color-primary-border: #BAE6FD;  /* Borde azul suave */
+  --color-accent-cyan: #38BDF8;     /* Cyan agua para brillos y detalles */
+
+  /* Tonos Blancos y Fondos Claros (Higiene y Limpieza) */
+  --color-white: #FFFFFF;
+  --color-bg-body: #F8FAFC;        /* Fondo general suave */
+  --color-bg-card: #FFFFFF;        /* Fondo de tarjetas de producto */
+  --color-bg-alt: #F1F5F9;         /* Fondo alternativo para secciones */
+  --color-border-light: #E2E8F0;   /* Líneas divisorias sutiles */
+
+  /* Tonos Negros y Carbón (Estructura, Resistencia y Legibilidad) */
+  --color-dark: #0F172A;           /* Negro carbón para títulos y textos fuertes */
+  --color-dark-surface: #1E293B;   /* Gris muy oscuro para footer y contrastes */
+  --color-text-main: #334155;      /* Texto de párrafos principal */
+  --color-text-muted: #64748B;     /* Texto secundario y leyendas */
+  --color-text-light: #94A3B8;     /* Texto tenue */
+
+  /* Color WhatsApp (Para botones directos de cotización) */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #20BA5A;
+  --color-whatsapp-dark: #128C7E;
+
+  /* Colores de Insignias y Capas */
+  --color-badge-gold: #F59E0B;
+  --color-badge-gold-bg: #FEF3C7;
+  --color-badge-green: #10B981;
+  --color-badge-green-bg: #D1FAE5;
+
+  /* ==========================================
+     TIPOGRAFÍA Y FUENTES
+     ========================================== */
+  --font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-heading: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* ==========================================
+     BORDES REDONDEADOS (BORDER RADIUS)
+     ========================================== */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ==========================================
+     SOMBRAS (BOX SHADOWS)
+     ========================================== */
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 6px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.15);
+  --shadow-blue: 0 8px 24px rgba(2, 132, 199, 0.25);
+  --shadow-wa: 0 8px 20px rgba(37, 211, 102, 0.3);
+
+  /* ==========================================
+     TRANSICIONES
+     ========================================== */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s ease;
+
+  /* ==========================================
+     DIMENSIONES Y Z-INDEX
+     ========================================== */
+  --container-max-width: 1200px;
+  --header-height: 76px;
+  --z-header: 100;
+  --z-modal: 1000;
+  --z-mascot: 900;
+  --z-toast: 1100;
+}

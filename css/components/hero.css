@@ -1,0 +1,171 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - COMPONENTE: HERO SECTION (PORTADA)
+ * ====================================================================
+ */
+
+.hero-section {
+  position: relative;
+  padding: 60px 0 80px 0;
+  background: linear-gradient(180deg, rgba(224, 242, 254, 0.45) 0%, rgba(248, 250, 252, 1) 100%);
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.hero-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary-border);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.hero-badge-pill .pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.hero-title {
+  font-size: 3.1rem;
+  font-weight: 900;
+  color: var(--color-dark);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.hero-title .highlight-blue {
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  color: var(--color-text-main);
+  line-height: 1.65;
+  margin-bottom: 32px;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+/* Métricas / Stats en Hero */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.hero-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stat-number {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-primary-dark);
+  line-height: 1.1;
+}
+
+.hero-stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Tarjeta / Visual en Hero */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card-featured {
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--color-border-light);
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+}
+
+.hero-card-img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  margin: 0 auto 16px auto;
+  transition: transform var(--transition-normal);
+}
+
+.hero-card-featured:hover .hero-card-img {
+  transform: scale(1.04);
+}
+
+.hero-floating-badge {
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-white);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 800;
+  box-shadow: var(--shadow-blue);
+}
+
+.hero-floating-badge-bottom {
+  position: absolute;
+  bottom: -16px;
+  left: 20px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  padding: 10px 18px;
+  border-radius: var(--radius-lg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
