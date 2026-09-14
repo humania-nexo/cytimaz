@@ -1,77 +1,109 @@
 ﻿/**
  * ====================================================================
- * CYTIMAZ - COMPONENTE: HERO SECTION (PORTADA)
+ * CYTIMAZ - COMPONENTE: HERO CINEMÁTICO (APPLE PRO & NVIDIA STYLE)
  * ====================================================================
  */
 
 .hero-section {
   position: relative;
-  padding: 60px 0 80px 0;
-  background: linear-gradient(180deg, rgba(224, 242, 254, 0.45) 0%, rgba(248, 250, 252, 1) 100%);
+  padding: 80px 0 100px 0;
+  background-color: var(--color-dark-canvas);
+  color: var(--color-white);
   overflow: hidden;
+}
+
+/* Malla de Iluminación Ambiental (Ambient Glow Mesh) */
+.hero-glow-mesh {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(2, 132, 199, 0.12) 45%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-glow-mesh-2 {
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(2, 132, 199, 0.18) 0%, transparent 65%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  gap: 48px;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-content {
-  max-width: 620px;
+  max-width: 640px;
 }
 
-.hero-badge-pill {
+/* Micro-Tag Técnico */
+.tech-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary-border);
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-primary-dark);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-electric-cyan);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
-.hero-badge-pill .pulse-dot {
+.tech-eyebrow .pulse-dot {
   width: 8px;
   height: 8px;
-  background-color: #10B981;
+  background-color: var(--color-electric-cyan);
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-  animation: pulse 2s infinite;
+  box-shadow: 0 0 10px var(--color-electric-cyan);
+  animation: pulseCyan 2s infinite;
 }
 
-@keyframes pulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+@keyframes pulseCyan {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 .hero-title {
-  font-size: 3.1rem;
+  font-size: 3.4rem;
   font-weight: 900;
-  color: var(--color-dark);
-  line-height: 1.15;
-  letter-spacing: -1px;
-  margin-bottom: 20px;
+  color: var(--color-white);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
 }
 
-.hero-title .highlight-blue {
-  color: var(--color-primary);
-  position: relative;
+.hero-title .gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 50%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
 .hero-description {
   font-size: 1.15rem;
-  color: var(--color-text-main);
+  color: #CBD5E1;
   line-height: 1.65;
   margin-bottom: 32px;
+  font-weight: 400;
 }
 
 .hero-cta-group {
@@ -81,13 +113,44 @@
   margin-bottom: 40px;
 }
 
-/* Métricas / Stats en Hero */
+/* Selector de Modo de Inspección */
+.inspection-mode-bar {
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px;
+  border-radius: var(--radius-full);
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.mode-pill {
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  color: #94A3B8;
+  background: transparent;
+  transition: all var(--transition-fast);
+}
+
+.mode-pill:hover {
+  color: var(--color-white);
+}
+
+.mode-pill.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+}
+
+/* Métricas de Alto Impacto */
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-top: 24px;
-  border-top: 1px solid var(--color-border-light);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-stat-item {
@@ -96,76 +159,74 @@
 }
 
 .hero-stat-number {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 900;
-  color: var(--color-primary-dark);
+  color: var(--color-white);
   line-height: 1.1;
 }
 
 .hero-stat-label {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-text-muted);
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-/* Tarjeta / Visual en Hero */
-.hero-visual {
+/* Escenario 3D Cinemático */
+.hero-stage {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 440px;
+}
+
+.stage-ambient-ring {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 50px rgba(2, 132, 199, 0.2);
+  z-index: 1;
 }
 
 .hero-card-featured {
   position: relative;
-  background-color: var(--color-white);
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: var(--radius-xl);
-  padding: 32px;
-  box-shadow: var(--shadow-xl);
-  border: 1px solid var(--color-border-light);
+  padding: 40px 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
-  max-width: 440px;
+  max-width: 460px;
   text-align: center;
+  z-index: 2;
 }
 
 .hero-card-img {
   width: 100%;
-  max-height: 280px;
+  max-height: 300px;
   object-fit: contain;
-  margin: 0 auto 16px auto;
-  transition: transform var(--transition-normal);
-}
-
-.hero-card-featured:hover .hero-card-img {
-  transform: scale(1.04);
+  margin: 0 auto 20px auto;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6));
+  transition: all var(--transition-normal);
 }
 
 .hero-floating-badge {
   position: absolute;
   top: -14px;
   right: 24px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  color: var(--color-white);
-  padding: 8px 16px;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 800;
-  box-shadow: var(--shadow-blue);
-}
-
-.hero-floating-badge-bottom {
-  position: absolute;
-  bottom: -16px;
-  left: 20px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border-light);
-  padding: 10px 18px;
-  border-radius: var(--radius-lg);
-  font-size: 0.85rem;
-  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-electric-cyan), var(--color-primary));
   color: var(--color-dark);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
 }

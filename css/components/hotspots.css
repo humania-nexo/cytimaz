@@ -1,0 +1,92 @@
+﻿/**
+ * ====================================================================
+ * CYTIMAZ - COMPONENTE: HOTSPOTS E INSPECCIÓN TÉCNICA (APPLE/NVIDIA STYLE)
+ * ====================================================================
+ */
+
+/* Pines de Hotspot Interactivos */
+.hotspot-pin {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  transition: transform var(--transition-fast);
+}
+
+.hotspot-pin:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.hotspot-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-electric-cyan);
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  box-shadow: 0 0 14px var(--color-electric-cyan);
+  position: relative;
+  z-index: 2;
+}
+
+.hotspot-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-electric-cyan);
+  border-radius: 50%;
+  animation: radarWave 2.2s infinite cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 1;
+}
+
+@keyframes radarWave {
+  0% { transform: scale(0.4); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Tooltip Emergente del Hotspot */
+.hotspot-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background-color: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--color-white);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(56, 189, 248, 0.2);
+  transition: all var(--transition-fast);
+  z-index: 20;
+}
+
+.hotspot-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(15, 23, 42, 0.94) transparent transparent transparent;
+}
+
+.hotspot-pin:hover .hotspot-tooltip,
+.hotspot-pin.active .hotspot-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}

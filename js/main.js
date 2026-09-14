@@ -2,17 +2,18 @@
  * ====================================================================
  * CYTIMAZ - CONTROLADOR PRINCIPAL (BOOTSTRAP)
  * ====================================================================
- * Inicializa todos los módulos y sincroniza los datos de contacto.
+ * Inicializa todos los módulos, hotspots e inspección técnica.
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("🚀 Cytimaz Web App iniciada correctamente.");
+  console.log("🚀 Cytimaz Avant-Garde Web App iniciada.");
 
-  // 1. Sincronizar información de la empresa
+  // 1. Sincronizar información de contacto
   syncCompanyData();
 
-  // 2. Inicializar componentes interactivos
+  // 2. Inicializar componentes
   if (window.initHeader) window.initHeader();
+  if (window.initHeroInspection) window.initHeroInspection();
   if (window.initCatalog) window.initCatalog();
   if (window.initProductModal) window.initProductModal();
   if (window.initCalculator) window.initCalculator();
