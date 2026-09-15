@@ -75,18 +75,18 @@ function initComparator() {
     
     let uvHtml = "";
     if (isSuprema) {
-      uvHtml = `<span class="comp-val-suprema-star">⭐ Escudo Solar UV-8</span>`;
+      uvHtml = `<span class="comp-val-suprema-star">⭐ Capa Exterior Clara + Filtro UV-8</span>`;
     } else if (isEsencial) {
-      uvHtml = `<span class="comp-val-check">✓ Virgen Reflectante</span>`;
+      uvHtml = `<span class="comp-val-check">✓ Capa Exterior Arena (Refleja el sol)</span>`;
     } else {
       uvHtml = `<span class="comp-val-check">✓ Carga Pesada UV</span>`;
     }
 
     let antiAlgasHtml = "";
     if (isSuprema) {
-      antiAlgasHtml = `<span class="comp-val-suprema-star">⭐ Capa Negra Espumada (Cero Lama)</span>`;
+      antiAlgasHtml = `<span class="comp-val-suprema-star">⭐ Núcleo Negro Espumado (Cero Lama)</span>`;
     } else if (isEsencial) {
-      antiAlgasHtml = `<span class="comp-val-cross">— No disponible en Bicapa</span>`;
+      antiAlgasHtml = `<span class="comp-val-cross">— Sin capa intermedia negra</span>`;
     } else {
       antiAlgasHtml = `<span class="comp-val-check">✓ Cuerpo Opaco Anti-Fotosíntesis</span>`;
     }
@@ -95,16 +95,16 @@ function initComparator() {
     if (isSuprema) {
       antiDeformacionHtml = `<span class="comp-val-suprema-star">⭐ Núcleo Espumado + Anillos Anti-Pandeo</span>`;
     } else if (isEsencial) {
-      antiDeformacionHtml = `<span class="comp-val-check">✓ Anillos Estructurales Anti-Pandeo</span>`;
+      antiDeformacionHtml = `<span class="comp-val-check">✓ Capa Interna Blanca Espumada + Anillos</span>`;
     } else {
       antiDeformacionHtml = `<span class="comp-val-check">✓ Nervaduras y Hombros Reforzados</span>`;
     }
 
     let antibacterialHtml = "";
     if (isSuprema) {
-      antibacterialHtml = `<span class="comp-val-suprema-star">⭐ Aditivo Antibacterial Activo</span>`;
+      antibacterialHtml = `<span class="comp-val-suprema-star">⭐ Blanco Antibacterial Activo (FDA)</span>`;
     } else if (isEsencial) {
-      antibacterialHtml = `<span class="comp-val-check">✓ Blanco Grado Alimenticio</span>`;
+      antibacterialHtml = `<span class="comp-val-check">✓ Blanco Espumado Grado Alimenticio</span>`;
     } else {
       antibacterialHtml = `<span class="comp-val-check">✓ Sanitario Grado Alimenticio</span>`;
     }

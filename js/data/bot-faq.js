@@ -74,13 +74,13 @@ const CYTIMAZ_BOT_DATA = {
     },
 
     bicapa_vs_tricapa: {
-      text: "¡Excelente pregunta! Ambos son de polietileno 100% virgen grado alimenticio, pero con estas diferencias:",
+      text: "¡Excelente pregunta! Ambos son de polietileno 100% virgen grado alimenticio, pero con estas funciones de ingeniería:",
       bullets: [
-        "⚪ **Línea Esencial (Bicapa - 5 Años Garantía):** Exterior virgen con aditivo reflectante + capa interna blanca lisa. Muy económica y durable.",
-        "⭐ **Línea Suprema (Tricapa - 10 Años Garantía):** Incluye **capa intermedia negra espumada con filtro UV-8** que bloquea la luz del sol al 100% (cero lama/algas) e interior antibacterial activo. Es la opción ideal para el calor y sol de Mazatlán."
+        "⚪ **Línea Esencial (Bicapa - 5 Años de Garantía):** Capa exterior color arena que **refleja los rayos solares** evitando que el agua se caliente (a diferencia de tinacos negros comunes) y resiste la degradación solar. Su **capa interior es blanca espumada grado alimenticio**, lo que aporta gran resistencia estructural contra la deformación, no altera el olor/sabor del agua y facilita la inspección de limpieza por su tono claro.",
+        "⭐ **Línea Suprema (Tricapa - 10 Años de Garantía):** Capa exterior clara con **filtro UV-8** que refleja la radiación solar y el calor. Su **capa intermedia negra espumada** bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas o lama) además de reforzar la estructura contra el pandeo. Y su **capa interna blanca lisa antibacterial** previene bacterias y mantiene la máxima inocuidad."
       ],
-      ctaText: "Cotizar Línea Suprema",
-      whatsappMessage: "¡Hola Cytimaz! Quiero informes y precios de la Línea Suprema Tricapa."
+      ctaText: "Cotizar por WhatsApp",
+      whatsappMessage: "¡Hola Cytimaz! Quiero informes y cotización de la Línea Suprema / Línea Esencial."
     },
 
     cisterna_bala: {

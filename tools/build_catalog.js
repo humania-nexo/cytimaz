@@ -17,7 +17,7 @@ const products = [
     tagline: "Protección total para 1 a 2 personas o departamentos en Mazatlán.",
     image: "assets/img/productos/T450L/T450L.png",
     colors: [
-      { name: "Negro UV", hex: "#1E293B", img: "assets/img/productos/T450L/T450L.png" }
+      { name: "Arena / Claro UV", hex: "#D4C3A3", img: "assets/img/productos/T450L/T450L.png" }
     ],
     peopleRecommended: "1 a 2 personas",
     specs: {
@@ -31,15 +31,15 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Reflectante UV-8", color: "#1E293B", desc: "Bloquea los rayos ultravioleta y resiste el calor extremo de la costa de Mazatlán." },
-      { name: "Capa Intermedia Negra Espumada", color: "#0F172A", desc: "Bloqueo 100% de la luz solar (cero lama y algas) y rigidez estructural anti-pandeo." },
-      { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio certificado. Superficie lisa que previene colonias bacterianas y no altera olor ni sabor." }
+      { name: "Capa Exterior (Color Claro con Filtro UV-8)", color: "#D4C3A3", desc: "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie." },
+      { name: "Capa Intermedia (Núcleo Negro Espumado)", color: "#0F172A", desc: "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación." },
+      { name: "Capa Interna (Blanca Lisa Antibacterial)", color: "#FFFFFF", desc: "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Filtro UV-8 de máxima duración bajo el sol de Mazatlán.",
-      "Núcleo espumado anti-algas (agua 100% transparente sin lama).",
-      "Anillos estructurales anti-pandeo.",
+      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
+      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
+      "Capa interna blanca lisa antibacterial grado alimenticio (sin olor ni sabor).",
       "10 Años de garantía por defectos de fábrica con respaldo local directo."
     ]
   },
@@ -55,7 +55,7 @@ const products = [
     tagline: "Reserva higiénica ideal para 2 a 3 personas.",
     image: "assets/img/productos/T600L/T600L.png",
     colors: [
-      { name: "Negro UV", hex: "#1E293B", img: "assets/img/productos/T600L/T600L.png" }
+      { name: "Arena / Claro UV", hex: "#D4C3A3", img: "assets/img/productos/T600L/T600L.png" }
     ],
     peopleRecommended: "2 a 3 personas",
     specs: {
@@ -69,16 +69,16 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Reflectante UV-8", color: "#1E293B", desc: "Bloquea la radiación solar y conserva el polímero inalterable por décadas." },
-      { name: "Capa Intermedia Negra Espumada", color: "#0F172A", desc: "Opacidad absoluta que neutraliza la fotosíntesis de bacterias y lama." },
-      { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio certificado de fácil limpieza y desinfección." }
+      { name: "Capa Exterior (Color Claro con Filtro UV-8)", color: "#D4C3A3", desc: "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie." },
+      { name: "Capa Intermedia (Núcleo Negro Espumado)", color: "#0F172A", desc: "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación." },
+      { name: "Capa Interna (Blanca Lisa Antibacterial)", color: "#FFFFFF", desc: "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Protección antibacterial activa continua.",
-      "Estructura robusta reforzada anti-deformación y anti-pandeo.",
-      "Tapa rosca hermética que evita el ingreso de insectos y polvo.",
-      "Garantía de 10 años por defectos de fábrica."
+      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
+      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
+      "Capa interna blanca lisa antibacterial grado alimenticio (sin olor ni sabor).",
+      "10 Años de garantía por defectos de fábrica con respaldo local directo."
     ]
   },
   {
@@ -93,7 +93,7 @@ const products = [
     tagline: "Excelente relación volumen/presión para familias de 3 a 4 personas.",
     image: "assets/img/productos/T800L/T800L.png",
     colors: [
-      { name: "Negro UV", hex: "#1E293B", img: "assets/img/productos/T800L/T800L.png" }
+      { name: "Arena / Claro UV", hex: "#D4C3A3", img: "assets/img/productos/T800L/T800L.png" }
     ],
     peopleRecommended: "3 a 4 personas",
     specs: {
@@ -107,16 +107,16 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Reflectante UV-8", color: "#1E293B", desc: "Escudo térmico contra el sol de Sinaloa." },
-      { name: "Capa Intermedia Negra Espumada", color: "#0F172A", desc: "Bloqueo fotónico 100% anti-lama y estabilidad estructural." },
-      { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio con iones antibacterianos." }
+      { name: "Capa Exterior (Color Claro con Filtro UV-8)", color: "#D4C3A3", desc: "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie." },
+      { name: "Capa Intermedia (Núcleo Negro Espumado)", color: "#0F172A", desc: "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación." },
+      { name: "Capa Interna (Blanca Lisa Antibacterial)", color: "#FFFFFF", desc: "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Capacidad ideal para viviendas de tamaño medio sin sobrecargar la losa.",
-      "Triple capa coextruida en una sola pieza sin soldaduras.",
-      "Resistencia térmica superior que mantiene el agua fresca.",
-      "10 Años de garantía por defectos de fábrica."
+      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
+      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
+      "Capa interna blanca lisa antibacterial grado alimenticio (sin olor ni sabor).",
+      "10 Años de garantía por defectos de fábrica con respaldo local directo."
     ]
   },
   {
@@ -131,7 +131,7 @@ const products = [
     tagline: "El estándar insignia para residencias de 4 a 5 personas en Mazatlán.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
-      { name: "Negro UV", hex: "#1E293B", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
+      { name: "Arena / Claro UV", hex: "#D4C3A3", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
     ],
     peopleRecommended: "4 a 5 personas",
     specs: {
@@ -145,15 +145,15 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Reflectante UV-8", color: "#1E293B", desc: "Escudo solar exterior que evita el envejecimiento prematuro del polímero." },
-      { name: "Capa Intermedia Negra Espumada", color: "#0F172A", desc: "Bloqueo lumínico total, evitando la proliferación de algas y hongos." },
-      { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio con protección antibacterial que cuida la salud familiar." }
+      { name: "Capa Exterior (Color Claro con Filtro UV-8)", color: "#D4C3A3", desc: "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie." },
+      { name: "Capa Intermedia (Núcleo Negro Espumado)", color: "#0F172A", desc: "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación." },
+      { name: "Capa Interna (Blanca Lisa Antibacterial)", color: "#FFFFFF", desc: "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS (Válvula, Flotador, Multiconector, Tapa Rosca, Capuchón y Venteo).",
       "El tinaco predilecto por instaladores y familias en Mazatlán.",
-      "Cero sabor y cero olor en el agua potable.",
-      "Anillos de refuerzo anti-pandeo integrados en el moldeado.",
+      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
+      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
       "10 Años de garantía por defectos de fábrica con respaldo local inmediato."
     ]
   },
@@ -169,7 +169,7 @@ const products = [
     tagline: "Gran reserva residencial y comercial para 5 a 6 personas.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
-      { name: "Negro UV", hex: "#1E293B", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
+      { name: "Arena / Claro UV", hex: "#D4C3A3", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
     ],
     peopleRecommended: "5 a 6 personas",
     specs: {
@@ -183,15 +183,16 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Reflectante UV-8", color: "#1E293B", desc: "Protección ultra-resistente contra el intemperismo." },
-      { name: "Capa Intermedia Negra Espumada", color: "#0F172A", desc: "Núcleo de bloqueo de luz y resistencia a deformaciones." },
-      { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio de alta pureza." }
+      { name: "Capa Exterior (Color Claro con Filtro UV-8)", color: "#D4C3A3", desc: "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie." },
+      { name: "Capa Intermedia (Núcleo Negro Espumado)", color: "#0F172A", desc: "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación." },
+      { name: "Capa Interna (Blanca Lisa Antibacterial)", color: "#FFFFFF", desc: "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Autonomía garantizada ante cortes de agua en la red pública.",
-      "Máximo volumen en el mismo diámetro de base (110 cm).",
-      "10 Años de garantía por defectos de fábrica."
+      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
+      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
+      "10 Años de garantía por defectos de fábrica con respaldo local directo."
     ]
   },
 
@@ -210,7 +211,7 @@ const products = [
     tagline: "Almacenamiento accesible con polímero 100% virgen.",
     image: "assets/img/productos/T450L/T450L.png",
     colors: [
-      { name: "Negro", hex: "#1E293B", img: "assets/img/productos/T450L/T450L.png" }
+      { name: "Arena Solar", hex: "#D4C3A3", img: "assets/img/productos/T450L/T450L.png" }
     ],
     peopleRecommended: "1 a 2 personas",
     specs: {
@@ -224,13 +225,14 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Virgen Negra", color: "#1E293B", desc: "Polímero virgen con aditivo reflectante UV." },
-      { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Superficie blanca lisa que permite inspeccionar la calidad del agua." }
+      { name: "Capa Exterior (Color Arena con Protección UV)", color: "#D4C3A3", desc: "Color arena de polietileno virgen reflectante. A diferencia de tinacos negros convencionales, reflecta los rayos solares evitando que el agua se caliente, con alta resistencia a la intemperie y a la degradación solar." },
+      { name: "Capa Interna (Blanca Espumada Grado Alimenticio)", color: "#FFFFFF", desc: "Capa interior espumada en color blanco. Aporta rigidez y resistencia estructural contra la deformación, y al ser 100% grado alimenticio no altera el color, olor ni sabor del agua, facilitando evaluaciones e inspecciones rápidas por su tono claro." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Excelente relación calidad-precio.",
-      "Fabricado con polietileno 100% virgen sin reciclados quebradizos.",
+      "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
+      "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
+      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
       "Garantía de 5 años por defectos de fábrica."
     ]
   },
@@ -246,7 +248,7 @@ const products = [
     tagline: "Reserva confiable para 2 a 3 personas al mejor costo de fábrica.",
     image: "assets/img/productos/T600L/T600L.png",
     colors: [
-      { name: "Negro", hex: "#1E293B", img: "assets/img/productos/T600L/T600L.png" }
+      { name: "Arena Solar", hex: "#D4C3A3", img: "assets/img/productos/T600L/T600L.png" }
     ],
     peopleRecommended: "2 a 3 personas",
     specs: {
@@ -260,13 +262,14 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Virgen Negra", color: "#1E293B", desc: "Polímero virgen con aditivo reflectante UV." },
-      { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Superficie higiénica grado alimenticio." }
+      { name: "Capa Exterior (Color Arena con Protección UV)", color: "#D4C3A3", desc: "Color arena de polietileno virgen reflectante. A diferencia de tinacos negros convencionales, reflecta los rayos solares evitando que el agua se caliente, con alta resistencia a la intemperie y a la degradación solar." },
+      { name: "Capa Interna (Blanca Espumada Grado Alimenticio)", color: "#FFFFFF", desc: "Capa interior espumada en color blanco. Aporta rigidez y resistencia estructural contra la deformación, y al ser 100% grado alimenticio no altera el color, olor ni sabor del agua, facilitando evaluaciones e inspecciones rápidas por su tono claro." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Ahorro inteligente sin sacrificar durabilidad virgen.",
-      "Anillos de refuerzo anti-pandeo integrados.",
+      "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
+      "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
+      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
       "Garantía de 5 años por defectos de fábrica."
     ]
   },
@@ -282,7 +285,7 @@ const products = [
     tagline: "Capacidad intermedia para 3 a 4 personas.",
     image: "assets/img/productos/T800L/T800L.png",
     colors: [
-      { name: "Negro", hex: "#1E293B", img: "assets/img/productos/T800L/T800L.png" }
+      { name: "Arena Solar", hex: "#D4C3A3", img: "assets/img/productos/T800L/T800L.png" }
     ],
     peopleRecommended: "3 a 4 personas",
     specs: {
@@ -296,13 +299,14 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Virgen Negra", color: "#1E293B", desc: "Protección solar reflectante." },
-      { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Interior blanco para fácil monitoreo del agua." }
+      { name: "Capa Exterior (Color Arena con Protección UV)", color: "#D4C3A3", desc: "Color arena de polietileno virgen reflectante. A diferencia de tinacos negros convencionales, reflecta los rayos solares evitando que el agua se caliente, con alta resistencia a la intemperie y a la degradación solar." },
+      { name: "Capa Interna (Blanca Espumada Grado Alimenticio)", color: "#FFFFFF", desc: "Capa interior espumada en color blanco. Aporta rigidez y resistencia estructural contra la deformación, y al ser 100% grado alimenticio no altera el color, olor ni sabor del agua, facilitando evaluaciones e inspecciones rápidas por su tono claro." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Polímero virgen de alta densidad.",
-      "Resistencia a impactos térmicos.",
+      "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
+      "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
+      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
       "Garantía de 5 años por defectos de fábrica."
     ]
   },
@@ -318,7 +322,7 @@ const products = [
     tagline: "El volumen clásico familiar de 1100L con precio directo de fábrica.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
-      { name: "Negro", hex: "#1E293B", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
+      { name: "Arena Solar", hex: "#D4C3A3", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
     ],
     peopleRecommended: "4 a 5 personas",
     specs: {
@@ -332,13 +336,14 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Virgen Negra", color: "#1E293B", desc: "Polietileno virgen reflectante UV." },
-      { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Capa interna blanca lisa grado alimenticio." }
+      { name: "Capa Exterior (Color Arena con Protección UV)", color: "#D4C3A3", desc: "Color arena de polietileno virgen reflectante. A diferencia de tinacos negros convencionales, reflecta los rayos solares evitando que el agua se caliente, con alta resistencia a la intemperie y a la degradación solar." },
+      { name: "Capa Interna (Blanca Espumada Grado Alimenticio)", color: "#FFFFFF", desc: "Capa interior espumada en color blanco. Aporta rigidez y resistencia estructural contra la deformación, y al ser 100% grado alimenticio no altera el color, olor ni sabor del agua, facilitando evaluaciones e inspecciones rápidas por su tono claro." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Capacidad estándar para viviendas familiares completas.",
-      "Fabricación monolítica por rotomoldeo.",
+      "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
+      "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
+      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
       "Garantía de 5 años por defectos de fábrica."
     ]
   },
@@ -354,7 +359,7 @@ const products = [
     tagline: "Volumen superior al precio más competitivo para 5 a 6 personas.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
-      { name: "Negro", hex: "#1E293B", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
+      { name: "Arena Solar", hex: "#D4C3A3", img: "assets/img/productos/T1100Estandar/1100Estandar.png" }
     ],
     peopleRecommended: "5 a 6 personas",
     specs: {
@@ -368,12 +373,14 @@ const products = [
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     layers: [
-      { name: "Capa Exterior Virgen Negra", color: "#1E293B", desc: "Polietileno virgen de alta densidad." },
-      { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Capa interior blanca grado alimenticio." }
+      { name: "Capa Exterior (Color Arena con Protección UV)", color: "#D4C3A3", desc: "Color arena de polietileno virgen reflectante. A diferencia de tinacos negros convencionales, reflecta los rayos solares evitando que el agua se caliente, con alta resistencia a la intemperie y a la degradación solar." },
+      { name: "Capa Interna (Blanca Espumada Grado Alimenticio)", color: "#FFFFFF", desc: "Capa interior espumada en color blanco. Aporta rigidez y resistencia estructural contra la deformación, y al ser 100% grado alimenticio no altera el color, olor ni sabor del agua, facilitando evaluaciones e inspecciones rápidas por su tono claro." }
     ],
     benefits: [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Gran autonomía de agua.",
+      "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
+      "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
+      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
       "Garantía de 5 años por defectos de fábrica."
     ]
   },
@@ -817,8 +824,8 @@ const products = [
   },
   {
     id: "acc-tapa",
-    name: "Tapa de Rosca 18\"",
-    shortName: "Tapa de Rosca 18\"",
+    name: "Tapa de Rosca para Tinaco",
+    shortName: "Tapa de Rosca",
     category: "accesorios",
     categoryLabel: "Accesorios de Fábrica",
     capacity: 0,
@@ -831,7 +838,7 @@ const products = [
     ],
     peopleRecommended: "Tinacos 450L a 1300L",
     specs: {
-      "Diámetro": "18 Pulgadas (45 cm)",
+      "Diámetro": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
       "Tipo de Cierre": "Rosca estándar",
       "Material": "Polietileno virgen con protección UV"
     },
