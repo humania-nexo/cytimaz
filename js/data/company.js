@@ -53,8 +53,9 @@ const CYTIMAZ_COMPANY = {
   // Datos de Webmaster / Soporte Técnico
   webmaster: {
     email: "antropoware@gmail.com",
-    phone: "+52 (55) 1375-0569",
-    phoneRaw: "5513750569"
+    whatsapp: "+52 (55) 1375-0569",
+    whatsappRaw: "525513750569",
+    whatsappUrl: "https://wa.me/525513750569?text=%C2%A1Hola!%20Contacto%20con%20el%20Webmaster%20de%20Cytimaz."
   },
 
   // Beneficios de marca
