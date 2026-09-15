@@ -741,12 +741,12 @@ window.CYTIMAZ_PRODUCTS = [
     "badge": "Industrial & Agrícola",
     "warranty": "Garantía por Defectos de Fábrica",
     "tagline": "El tanque de máxima escala para industrias, fraccionamientos y agricultura.",
-    "image": "assets/img/productos/C5500L/C5500LAzul.png",
+    "image": "assets/img/productos/C10000L/C10000L.png",
     "colors": [
       {
         "name": "Azul Industrial",
         "hex": "#0284C7",
-        "img": "assets/img/productos/C5500L/C5500LAzul.png"
+        "img": "assets/img/productos/C10000L/C10000L.png"
       }
     ],
     "peopleRecommended": "Desarrollos e Industria",
