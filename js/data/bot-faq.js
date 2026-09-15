@@ -10,9 +10,9 @@
 
 const CYTIMAZ_BOT_DATA = {
   mascot: {
-    name: "Tinacín",
-    title: "Asistente Virtual Cytimaz",
-    greeting: "¡Hola! 👋 Soy Tinacín, la mascota y asesor virtual de Cytimaz (Cisternas y Tinacos Mazatlán). ¿En qué te puedo orientar hoy?",
+    name: "Tina",
+    title: "Asesora Virtual Cytimaz",
+    greeting: "¡Hola! 👋 Soy Tina, tu asesora virtual de Cytimaz (Cisternas y Tinacos Mazatlán). ¿En qué te puedo orientar hoy?",
     statusText: "En línea | Respuesta inmediata"
   },
 

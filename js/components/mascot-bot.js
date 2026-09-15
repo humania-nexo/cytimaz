@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE JS: MASCOTA ASISTENTE VIRTUAL ("TINACÍN")
  * ====================================================================
@@ -71,7 +71,7 @@ function initMascotBot() {
 
     // 2. Si es WhatsApp directo, abrir inmediatamente
     if (option.id === "whatsapp_directo") {
-      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526691234567";
+      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
       const waText = encodeURIComponent(botData.responses.whatsapp_directo.whatsappMessage);
       window.open(`https://wa.me/${waNumber}?text=${waText}`, "_blank");
     }
@@ -89,7 +89,7 @@ function initMascotBot() {
         }
 
         // Añadir botón de acción hacia WhatsApp
-        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526691234567";
+        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
         const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(resp.whatsappMessage)}`;
         
         fullHtml += `
@@ -144,7 +144,7 @@ function initMascotBot() {
     typing.id = "chat-typing-indicator";
     typing.innerHTML = `
       <span style="display: inline-flex; gap: 4px; align-items: center; color: var(--color-text-muted);">
-        Tinacín está escribiendo...
+        Tina está escribiendo...
       </span>
     `;
     messagesBody.appendChild(typing);

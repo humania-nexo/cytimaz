@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE: MASCOTA ASISTENTE VIRTUAL ("TINACÍN")
  * ====================================================================
@@ -50,42 +50,76 @@
   50% { transform: translateY(-4px); }
 }
 
-/* Botón disparador de la Mascota */
+/* Botón disparador de la Mascota Tina */
 .mascot-launcher-btn {
-  width: 68px;
-  height: 68px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
   background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
-  box-shadow: var(--shadow-xl);
-  border: 3px solid var(--color-white);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.45), 0 0 18px rgba(56, 189, 248, 0.5);
+  border: 3.5px solid var(--color-white);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all var(--transition-normal);
-  padding: 6px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  padding: 4px;
+  animation: tinaFloatAxialGlow 3.6s ease-in-out infinite;
+  cursor: pointer;
 }
 
 .mascot-launcher-btn:hover {
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.5);
+  animation-play-state: paused;
+  transform: scale(1.12) rotate(4deg);
+  box-shadow: 0 16px 36px rgba(2, 132, 199, 0.7), 0 0 35px rgba(56, 189, 248, 0.9);
 }
 
 .mascot-launcher-btn img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+  transition: transform var(--transition-fast);
+}
+
+.mascot-launcher-btn:hover img {
+  transform: scale(1.05);
 }
 
 .mascot-badge-online {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
   width: 16px;
   height: 16px;
   background-color: #10B981;
   border-radius: 50%;
-  border: 2px solid var(--color-white);
+  border: 2.5px solid var(--color-white);
+  box-shadow: 0 0 8px #10B981;
+}
+
+/* Animación de Flote, Movimiento Axial y Resplandor Luminoso */
+@keyframes tinaFloatAxialGlow {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.4), 0 0 15px rgba(56, 189, 248, 0.4);
+  }
+  25% {
+    transform: translateY(-6px) rotate(-2.5deg);
+    box-shadow: 0 12px 28px rgba(2, 132, 199, 0.55), 0 0 24px rgba(56, 189, 248, 0.65);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+    box-shadow: 0 16px 34px rgba(2, 132, 199, 0.65), 0 0 32px rgba(56, 189, 248, 0.8);
+  }
+  75% {
+    transform: translateY(-4px) rotate(2.5deg);
+    box-shadow: 0 12px 28px rgba(2, 132, 199, 0.55), 0 0 24px rgba(56, 189, 248, 0.65);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.4), 0 0 15px rgba(56, 189, 248, 0.4);
+  }
 }
 
 /* Ventana Principal del Chat */
