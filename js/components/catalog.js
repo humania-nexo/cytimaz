@@ -93,6 +93,10 @@ function initCatalog() {
 
       // Resumen de capacidad
       const capacityText = product.capacity > 0 ? `${product.capacity.toLocaleString()} Litros` : "Accesorios";
+      const includesFreeKit = product.category.includes('tinacos') || product.category === 'cisternas';
+      const freeKitHtml = includesFreeKit 
+        ? `<div style="display: flex; align-items: center; gap: 6px; font-size: 0.76rem; font-weight: 800; color: #059669; background: #ECFDF5; padding: 4px 10px; border-radius: 9999px; margin-bottom: 10px; border: 1px solid #A7F3D0; width: fit-content;">🎁 ¡Incluye Kit de Accesorios GRATIS!</div>`
+        : "";
 
       card.innerHTML = `
         <div class="card-header-visual">
@@ -105,6 +109,7 @@ function initCatalog() {
           <h3 class="card-title">${product.name}</h3>
           <p class="card-tagline">${product.tagline}</p>
 
+          ${freeKitHtml}
           ${colorsHtml}
 
           <div class="card-quick-specs">

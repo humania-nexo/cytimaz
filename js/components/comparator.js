@@ -109,9 +109,11 @@ function initComparator() {
       antibacterialHtml = `<span class="comp-val-check">✓ Sanitario Grado Alimenticio</span>`;
     }
 
+    const accesoriosHtml = `<span class="comp-val-suprema-star" style="color: #059669; font-weight: 800;">🎁 ¡Kit Completo GRATIS!</span>`;
+
     const garantiaHtml = isSuprema
-      ? `<strong style="color: var(--color-primary-dark); font-size: 0.95rem;">🛡️ 30 Años de Fábrica</strong>`
-      : (isEsencial ? `<strong style="color: var(--color-dark); font-size: 0.95rem;">🛡️ 10 Años de Fábrica</strong>` : `<strong style="color: var(--color-primary-dark); font-size: 0.95rem;">🛡️ Garantía de Fábrica</strong>`);
+      ? `<strong style="color: var(--color-primary-dark); font-size: 0.92rem;">🛡️ 10 Años por Defecto de Fábrica</strong>`
+      : (isEsencial ? `<strong style="color: var(--color-dark); font-size: 0.92rem;">🛡️ 5 Años por Defecto de Fábrica</strong>` : `<strong style="color: var(--color-primary-dark); font-size: 0.92rem;">🛡️ Garantía de Fábrica</strong>`);
 
     const enfoqueHtml = isSuprema
       ? `<span style="color: var(--color-primary-dark); font-weight: 800; font-size: 0.85rem;">🏆 Salud, Pureza y Máxima Calidad</span>`
@@ -128,6 +130,7 @@ function initComparator() {
       <div class="comp-val-row">${antiAlgasHtml}</div>
       <div class="comp-val-row">${antiDeformacionHtml}</div>
       <div class="comp-val-row">${antibacterialHtml}</div>
+      <div class="comp-val-row">${accesoriosHtml}</div>
       <div class="comp-val-row">${garantiaHtml}</div>
       <div class="comp-val-row">${enfoqueHtml}</div>
 

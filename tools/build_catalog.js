@@ -3,7 +3,7 @@ const path = require('path');
 
 const products = [
   // ==========================================
-  // LÍNEA SUPREMA (TRICAPA)
+  // LÍNEA SUPREMA (TRICAPA) - 10 AÑOS GARANTÍA
   // ==========================================
   {
     id: "t-450-suprema",
@@ -13,7 +13,7 @@ const products = [
     categoryLabel: "⭐ Línea Suprema (Tricapa)",
     capacity: 450,
     badge: "Compacto Premium",
-    warranty: "30 Años de Garantía de Fábrica",
+    warranty: "10 Años de Garantía por Defectos de Fábrica",
     tagline: "Protección total para 1 a 2 personas o departamentos en Mazatlán.",
     image: "assets/img/productos/T450L/T450L.png",
     colors: [
@@ -25,7 +25,8 @@ const products = [
       "Tecnología": "Tricapa Sincronizada",
       "Diámetro": "86 cm",
       "Altura": "93 cm",
-      "Garantía": "30 Años Directa de Fábrica",
+      "Garantía": "10 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen con Filtro UV-8",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -35,10 +36,11 @@ const products = [
       { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio certificado. Superficie lisa que previene colonias bacterianas y no altera olor ni sabor." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Filtro UV-8 de máxima duración bajo el sol de Mazatlán.",
       "Núcleo espumado anti-algas (agua 100% transparente sin lama).",
       "Anillos estructurales anti-pandeo.",
-      "Garantía de 30 años con soporte local directo de fábrica."
+      "10 Años de garantía por defectos de fábrica con respaldo local directo."
     ]
   },
   {
@@ -49,7 +51,7 @@ const products = [
     categoryLabel: "⭐ Línea Suprema (Tricapa)",
     capacity: 600,
     badge: "Hogar Mediano",
-    warranty: "30 Años de Garantía de Fábrica",
+    warranty: "10 Años de Garantía por Defectos de Fábrica",
     tagline: "Reserva higiénica ideal para 2 a 3 personas.",
     image: "assets/img/productos/T600L/T600L.png",
     colors: [
@@ -61,7 +63,8 @@ const products = [
       "Tecnología": "Tricapa Sincronizada",
       "Diámetro": "88 cm",
       "Altura": "112 cm",
-      "Garantía": "30 Años Directa de Fábrica",
+      "Garantía": "10 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen con Filtro UV-8",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -71,10 +74,11 @@ const products = [
       { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio certificado de fácil limpieza y desinfección." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Protección antibacterial activa continua.",
-      "Estructura robusta reforzada anti-deformación.",
+      "Estructura robusta reforzada anti-deformación y anti-pandeo.",
       "Tapa rosca hermética que evita el ingreso de insectos y polvo.",
-      "Garantía extendida de 30 años directa de fábrica."
+      "Garantía de 10 años por defectos de fábrica."
     ]
   },
   {
@@ -85,7 +89,7 @@ const products = [
     categoryLabel: "⭐ Línea Suprema (Tricapa)",
     capacity: 800,
     badge: "Alta Capacidad Residencial",
-    warranty: "30 Años de Garantía de Fábrica",
+    warranty: "10 Años de Garantía por Defectos de Fábrica",
     tagline: "Excelente relación volumen/presión para familias de 3 a 4 personas.",
     image: "assets/img/productos/T800L/T800L.png",
     colors: [
@@ -97,7 +101,8 @@ const products = [
       "Tecnología": "Tricapa Sincronizada",
       "Diámetro": "110 cm",
       "Altura": "132 cm",
-      "Garantía": "30 Años Directa de Fábrica",
+      "Garantía": "10 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen con Filtro UV-8",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -107,10 +112,11 @@ const products = [
       { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio con iones antibacterianos." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Capacidad ideal para viviendas de tamaño medio sin sobrecargar la losa.",
       "Triple capa coextruida en una sola pieza sin soldaduras.",
       "Resistencia térmica superior que mantiene el agua fresca.",
-      "30 Años de garantía."
+      "10 Años de garantía por defectos de fábrica."
     ]
   },
   {
@@ -121,7 +127,7 @@ const products = [
     categoryLabel: "⭐ Línea Suprema (Tricapa)",
     capacity: 1100,
     badge: "El Más Vendido ★",
-    warranty: "30 Años de Garantía de Fábrica",
+    warranty: "10 Años de Garantía por Defectos de Fábrica",
     tagline: "El estándar insignia para residencias de 4 a 5 personas en Mazatlán.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
@@ -133,7 +139,8 @@ const products = [
       "Tecnología": "Tricapa Sincronizada",
       "Diámetro": "110 cm",
       "Altura": "140 cm",
-      "Garantía": "30 Años Directa de Fábrica",
+      "Garantía": "10 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen con Filtro UV-8",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -143,10 +150,11 @@ const products = [
       { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio con protección antibacterial que cuida la salud familiar." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS (Válvula, Flotador, Multiconector, Tapa Rosca, Capuchón y Venteo).",
       "El tinaco predilecto por instaladores y familias en Mazatlán.",
       "Cero sabor y cero olor en el agua potable.",
       "Anillos de refuerzo anti-pandeo integrados en el moldeado.",
-      "30 Años de respaldo local inmediato."
+      "10 Años de garantía por defectos de fábrica con respaldo local inmediato."
     ]
   },
   {
@@ -157,7 +165,7 @@ const products = [
     categoryLabel: "⭐ Línea Suprema (Tricapa)",
     capacity: 1300,
     badge: "Máxima Autonomía",
-    warranty: "30 Años de Garantía de Fábrica",
+    warranty: "10 Años de Garantía por Defectos de Fábrica",
     tagline: "Gran reserva residencial y comercial para 5 a 6 personas.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
@@ -169,7 +177,8 @@ const products = [
       "Tecnología": "Tricapa Sincronizada",
       "Diámetro": "110 cm",
       "Altura": "152 cm",
-      "Garantía": "30 Años Directa de Fábrica",
+      "Garantía": "10 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen con Filtro UV-8",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -179,14 +188,15 @@ const products = [
       { name: "Capa Interna Antibacterial Activa", color: "#FFFFFF", desc: "Grado alimenticio de alta pureza." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Autonomía garantizada ante cortes de agua en la red pública.",
       "Máximo volumen en el mismo diámetro de base (110 cm).",
-      "Garantía de 30 años."
+      "10 Años de garantía por defectos de fábrica."
     ]
   },
 
   // ==========================================
-  // LÍNEA ESENCIAL (BICAPA)
+  // LÍNEA ESENCIAL (BICAPA) - 5 AÑOS GARANTÍA
   // ==========================================
   {
     id: "t-450-esencial",
@@ -196,7 +206,7 @@ const products = [
     categoryLabel: "Línea Esencial (Bicapa)",
     capacity: 450,
     badge: "Económico & Eficiente",
-    warranty: "10 Años de Garantía de Fábrica",
+    warranty: "5 Años de Garantía por Defectos de Fábrica",
     tagline: "Almacenamiento accesible con polímero 100% virgen.",
     image: "assets/img/productos/T450L/T450L.png",
     colors: [
@@ -208,7 +218,8 @@ const products = [
       "Tecnología": "Bicapa Coextruida",
       "Diámetro": "86 cm",
       "Altura": "93 cm",
-      "Garantía": "10 Años Directa de Fábrica",
+      "Garantía": "5 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -217,9 +228,10 @@ const products = [
       { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Superficie blanca lisa que permite inspeccionar la calidad del agua." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Excelente relación calidad-precio.",
       "Fabricado con polietileno 100% virgen sin reciclados quebradizos.",
-      "Garantía de 10 años directa de fábrica."
+      "Garantía de 5 años por defectos de fábrica."
     ]
   },
   {
@@ -230,7 +242,7 @@ const products = [
     categoryLabel: "Línea Esencial (Bicapa)",
     capacity: 600,
     badge: "Económico & Eficiente",
-    warranty: "10 Años de Garantía de Fábrica",
+    warranty: "5 Años de Garantía por Defectos de Fábrica",
     tagline: "Reserva confiable para 2 a 3 personas al mejor costo de fábrica.",
     image: "assets/img/productos/T600L/T600L.png",
     colors: [
@@ -242,7 +254,8 @@ const products = [
       "Tecnología": "Bicapa Coextruida",
       "Diámetro": "88 cm",
       "Altura": "112 cm",
-      "Garantía": "10 Años Directa de Fábrica",
+      "Garantía": "5 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -251,9 +264,10 @@ const products = [
       { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Superficie higiénica grado alimenticio." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Ahorro inteligente sin sacrificar durabilidad virgen.",
       "Anillos de refuerzo anti-pandeo integrados.",
-      "Garantía de 10 años."
+      "Garantía de 5 años por defectos de fábrica."
     ]
   },
   {
@@ -264,7 +278,7 @@ const products = [
     categoryLabel: "Línea Esencial (Bicapa)",
     capacity: 800,
     badge: "Económico & Eficiente",
-    warranty: "10 Años de Garantía de Fábrica",
+    warranty: "5 Años de Garantía por Defectos de Fábrica",
     tagline: "Capacidad intermedia para 3 a 4 personas.",
     image: "assets/img/productos/T800L/T800L.png",
     colors: [
@@ -276,7 +290,8 @@ const products = [
       "Tecnología": "Bicapa Coextruida",
       "Diámetro": "110 cm",
       "Altura": "132 cm",
-      "Garantía": "10 Años Directa de Fábrica",
+      "Garantía": "5 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -285,9 +300,10 @@ const products = [
       { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Interior blanco para fácil monitoreo del agua." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Polímero virgen de alta densidad.",
       "Resistencia a impactos térmicos.",
-      "Garantía de 10 años."
+      "Garantía de 5 años por defectos de fábrica."
     ]
   },
   {
@@ -298,7 +314,7 @@ const products = [
     categoryLabel: "Línea Esencial (Bicapa)",
     capacity: 1100,
     badge: "Calidad Accesible",
-    warranty: "10 Años de Garantía de Fábrica",
+    warranty: "5 Años de Garantía por Defectos de Fábrica",
     tagline: "El volumen clásico familiar de 1100L con precio directo de fábrica.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
@@ -310,7 +326,8 @@ const products = [
       "Tecnología": "Bicapa Coextruida",
       "Diámetro": "110 cm",
       "Altura": "140 cm",
-      "Garantía": "10 Años Directa de Fábrica",
+      "Garantía": "5 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -319,9 +336,10 @@ const products = [
       { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Capa interna blanca lisa grado alimenticio." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Capacidad estándar para viviendas familiares completas.",
       "Fabricación monolítica por rotomoldeo.",
-      "Garantía de 10 años."
+      "Garantía de 5 años por defectos de fábrica."
     ]
   },
   {
@@ -332,7 +350,7 @@ const products = [
     categoryLabel: "Línea Esencial (Bicapa)",
     capacity: 1300,
     badge: "Gran Capacidad Bicapa",
-    warranty: "10 Años de Garantía de Fábrica",
+    warranty: "5 Años de Garantía por Defectos de Fábrica",
     tagline: "Volumen superior al precio más competitivo para 5 a 6 personas.",
     image: "assets/img/productos/T1100Estandar/1100Estandar.png",
     colors: [
@@ -344,7 +362,8 @@ const products = [
       "Tecnología": "Bicapa Coextruida",
       "Diámetro": "110 cm",
       "Altura": "152 cm",
-      "Garantía": "10 Años Directa de Fábrica",
+      "Garantía": "5 Años por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno 100% Virgen",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
@@ -353,8 +372,9 @@ const products = [
       { name: "Capa Interna Blanca Grado Alimenticio", color: "#FFFFFF", desc: "Capa interior blanca grado alimenticio." }
     ],
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
       "Gran autonomía de agua.",
-      "Garantía de 10 años directa de fábrica."
+      "Garantía de 5 años por defectos de fábrica."
     ]
   },
 
@@ -369,7 +389,7 @@ const products = [
     categoryLabel: "Cisterna Vertical / Bala",
     capacity: 1100,
     badge: "Ahorro de Espacio",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Diseño esbelto ideal para pasillos de servicio y espacios reducidos.",
     image: "assets/img/productos/C1100Vertical/C1100 verticalArena.png",
     colors: [
@@ -383,11 +403,13 @@ const products = [
       "Formato": "Cilindro Vertical Bala",
       "Diámetro": "86 cm",
       "Altura": "1.80 m",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno Virgen de Alta Densidad",
       "Uso": "Subsuelo o Superficie en pasillos angostos"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Solo 86 cm de diámetro: cabe en cualquier pasillo o patio de servicio.",
       "Disponible en colores Arena, Azul y Neutro.",
       "Alta resistencia estructural monolítica."
@@ -401,7 +423,7 @@ const products = [
     categoryLabel: "Cisterna Estándar Subsuelo",
     capacity: 1100,
     badge: "Residencial Subsuelo",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Aljibe monolítico para enterrar en casa habitación.",
     image: "assets/img/productos/C1100Estandar/1100EstandarAzul.png",
     colors: [
@@ -414,11 +436,13 @@ const products = [
       "Capacidad": "1,100 Litros",
       "Diámetro": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
       "Altura": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno de Alta Resistencia para Entierro",
       "Uso": "Subsuelo / Aljibe Residencial"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Disponible en Azul, Negro y Neutro.",
       "Paredes extra gruesas para soportar la presión del terreno húmedo.",
       "Totalmente libre de filtraciones y salitre."
@@ -432,7 +456,7 @@ const products = [
     categoryLabel: "Cisterna Reforzada",
     capacity: 1300,
     badge: "Reforzada Subsuelo",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Cisterna para viviendas con alta demanda hídrica.",
     image: "assets/img/productos/C1300L/C1300LNegro.png",
     colors: [
@@ -444,11 +468,13 @@ const products = [
       "Capacidad": "1,300 Litros",
       "Diámetro": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
       "Altura": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno Virgen Reforzado",
       "Uso": "Subsuelo"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Disponible en Negro y Neutro.",
       "Cinturones de refuerzo geométrico para enterrar sin fisuras.",
       "Fácil interconexión a bombas centrífugas o sumergibles."
@@ -462,7 +488,7 @@ const products = [
     categoryLabel: "Cisterna Gran Reserva",
     capacity: 3000,
     badge: "Residencial & Comercial",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "La preferida para condominios, residencias grandes y comercios.",
     image: "assets/img/productos/C3000L/C3000LArena.png",
     colors: [
@@ -475,11 +501,13 @@ const products = [
       "Capacidad": "3,000 Litros",
       "Diámetro": "1.60 m",
       "Altura": "1.80 m",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno de Alta Densidad (HDPE)",
       "Uso": "Subsuelo / Superficie"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Disponible en Arena, Azul y Neutro.",
       "Medidas oficiales: 1.60 m de diámetro x 1.80 m de altura.",
       "Capacidad para abastecer pequeños hoteles, restaurantes o casas multifamiliares."
@@ -493,7 +521,7 @@ const products = [
     categoryLabel: "Cisterna Industrial & Agrícola",
     capacity: 5500,
     badge: "Alto Volumen",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Almacenamiento masivo para complejos comerciales, campos agrícolas y naves.",
     image: "assets/img/productos/C5500L/C5500LAzul.png",
     colors: [
@@ -505,11 +533,13 @@ const products = [
       "Capacidad": "5,500 Litros",
       "Diámetro": "1.92 m",
       "Altura": "1.95 m",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno Virgen Extra Grueso",
       "Uso": "Subsuelo o Almacenamiento en Superficie"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Disponible en Azul y Blanco Neutro.",
       "Dimensiones: 1.92 m de diámetro x 1.95 m de altura.",
       "Homologada para agua de procesos, riego y contingencias."
@@ -523,7 +553,7 @@ const products = [
     categoryLabel: "Cisterna Mega Volumen",
     capacity: 10000,
     badge: "Industrial & Agrícola",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "El tanque de máxima escala para industrias, fraccionamientos y agricultura.",
     image: "assets/img/productos/C5500L/C5500LAzul.png",
     colors: [
@@ -534,11 +564,13 @@ const products = [
       "Capacidad": "10,000 Litros",
       "Diámetro": "2.33 m",
       "Altura": "2.85 m",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno de Alta Densidad Reforzado",
       "Uso": "Subsuelo o Naves Industriales"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Medidas oficiales: 2.33 m de diámetro x 2.85 m de altura.",
       "Gran espesor de pared para resistir presiones hidrostáticas masivas.",
       "Atención directa a proyectos y constructoras de Mazatlán."
@@ -552,7 +584,7 @@ const products = [
     categoryLabel: "Tinaco / Cisterna Horizontal",
     capacity: 600,
     badge: "Bajo Perfil",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Diseño horizontal aerodinámico para techos bajos o transporte en camionetas.",
     image: "assets/img/productos/THorizontal600L/THorizontal600L.png",
     colors: [
@@ -565,10 +597,12 @@ const products = [
       "Largo": "1.15 m",
       "Ancho": "80 cm",
       "Altura": "1.00 m",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno Virgen Grado Alimenticio"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Medidas: 1.15 m Largo x 80 cm Ancho x 1.00 m Altura.",
       "Centro de gravedad bajo para transporte seguro en pick-ups y remolques.",
       "Pies de apoyo rotomoldeados integrados en el cuerpo."
@@ -582,7 +616,7 @@ const products = [
     categoryLabel: "Tinaco / Cisterna Horizontal",
     capacity: 1100,
     badge: "Perfil Bajo & Transporte",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Excelente para pipas ligeras, remolques y techos de altura restringida.",
     image: "assets/img/productos/CHorizontal1100L/CHorizontal1100L.png",
     colors: [
@@ -595,10 +629,12 @@ const products = [
       "Largo": "1.37 m",
       "Ancho": "1.00 m",
       "Altura": "1.13 m",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
+      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno Virgen Grado Alimenticio"
     },
     benefits: [
+      "🎁 Incluye kit completo de accesorios GRATIS.",
       "Medidas: 1.37 m Largo x 1.00 m Ancho x 1.13 m Altura.",
       "Bases de asiento moldeadas que proporcionan gran estabilidad dinámica.",
       "Apto para agua potable y químicos ligeros compatibles."
@@ -616,7 +652,7 @@ const products = [
     categoryLabel: "Tambos y Almacenamiento",
     capacity: 200,
     badge: "Multiuso Industrial",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Contenedor versátil para agua, líquidos de taller y almacenamiento.",
     image: "assets/img/productos/Tambo200L/Tambo200LAzul.png",
     colors: [
@@ -629,7 +665,7 @@ const products = [
       "Capacidad": "200 Litros",
       "Diámetro": "55 cm",
       "Altura": "85 cm",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
       "Material": "Polietileno Virgen de Alto Impacto"
     },
     benefits: [
@@ -646,7 +682,7 @@ const products = [
     categoryLabel: "Sector Agropecuario",
     capacity: 800,
     badge: "Uso Rudo Ganadero",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Resistente a pisadas, mordidas y rayos UV en campo ganadero.",
     image: "assets/img/productos/contenedorIBC_Tote/bebederoAnimal/bebederoAnimal.png",
     colors: [
@@ -658,7 +694,7 @@ const products = [
       "Diámetro Superior": "1.40 m",
       "Diámetro Inferior": "1.10 m",
       "Altura": "64 cm",
-      "Garantía": "Directa de Fábrica",
+      "Garantía": "Por Defectos de Fábrica",
       "Material": "Polietileno de Alta Resistencia contra Impactos"
     },
     benefits: [
@@ -675,7 +711,7 @@ const products = [
     categoryLabel: "Contenedor Industrial IBC",
     capacity: 1000,
     badge: "Estructura de Acero Galvanizado",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Contenedor industrial con jaula de acero para manipulación con montacargas.",
     image: "assets/img/productos/contenedorIBC_Tote/contenedorIBC_Tote.png",
     colors: [
@@ -704,7 +740,7 @@ const products = [
     categoryLabel: "Envases y Bidones",
     capacity: 20,
     badge: "Transporte Seguro",
-    warranty: "Garantía Directa de Fábrica",
+    warranty: "Garantía por Defectos de Fábrica",
     tagline: "Envase reforzado con asa integrada para transporte de líquidos.",
     image: "assets/img/productos/Bidon20L/Bidon20L.png",
     colors: [
@@ -829,6 +865,32 @@ const products = [
       "Mejora la presión constante en regaderas y grifos.",
       "Evita el golpe de ariete.",
       "Fácil inserción en el multiconector Cytimaz."
+    ]
+  },
+  {
+    id: "acc-capuchon",
+    name: "Capuchón de Venteo / Jarro de Aire",
+    shortName: "Capuchón",
+    category: "accesorios",
+    categoryLabel: "Accesorios de Fábrica",
+    capacity: 0,
+    badge: "Protección Climática",
+    warranty: "Garantía de Fábrica",
+    tagline: "Terminal superior de protección para evitar la entrada de suciedad, hojas e insectos.",
+    image: "assets/img/productos/Accesorios/capuchon.png",
+    colors: [
+      { name: "Estándar", hex: "#0284C7", img: "assets/img/productos/Accesorios/capuchon.png" }
+    ],
+    peopleRecommended: "Instalaciones Hidráulicas",
+    specs: {
+      "Material": "Polímero de alta durabilidad UV",
+      "Medidas": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
+      "Función": "Protección de boca de venteo / jarro de aire"
+    },
+    benefits: [
+      "Evita que el agua de lluvia o suciedad ambiental ingrese al respiradero.",
+      "Impide la entrada de insectos voladores al sistema de agua.",
+      "Ajuste hermético y seguro."
     ]
   }
 ];
