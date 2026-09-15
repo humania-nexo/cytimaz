@@ -817,14 +817,14 @@ const products = [
   },
   {
     id: "acc-tapa",
-    name: "Tapa de Rosca Hermética 18\"",
+    name: "Tapa de Rosca 18\"",
     shortName: "Tapa de Rosca 18\"",
     category: "accesorios",
     categoryLabel: "Accesorios de Fábrica",
     capacity: 0,
-    badge: "Anti-Contaminación",
+    badge: "Cierre Roscado",
     warranty: "Garantía de Fábrica",
-    tagline: "Cierre seguro que impide la entrada de polvo, insectos y agua de lluvia.",
+    tagline: "Cierre de rosca práctico que evita la entrada de polvo, hojas e insectos.",
     image: "assets/img/productos/Accesorios/tapa de rosca.png",
     colors: [
       { name: "Negro", hex: "#1E293B", img: "assets/img/productos/Accesorios/tapa de rosca.png" }
@@ -832,13 +832,13 @@ const products = [
     peopleRecommended: "Tinacos 450L a 1300L",
     specs: {
       "Diámetro": "18 Pulgadas (45 cm)",
-      "Cierre": "Roscado de ajuste hermético",
-      "Material": "Polietileno virgen con aditivo UV"
+      "Tipo de Cierre": "Rosca estándar",
+      "Material": "Polietileno virgen con protección UV"
     },
     benefits: [
-      "No se vuela con los fuertes vientos costeros de Mazatlán.",
-      "Previene la contaminación por mosquitos y lluvia ácida.",
-      "Rosca fluida de fácil apertura manual."
+      "No se vuela con el viento de la azotea.",
+      "Protege el interior del polvo, hojas y suciedad ambiental.",
+      "Fácil de abrir y cerrar a mano para mantenimiento y lavado."
     ]
   },
   {
