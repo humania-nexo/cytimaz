@@ -57,7 +57,7 @@ function initCatalog() {
 
       // Función generadora de link de WhatsApp
       const getWaLink = (colorName) => {
-        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
+        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
         let text = `¡Hola Cytimaz! Me interesa cotizar el modelo: *${product.name}*`;
         if (product.capacity > 0) {
           text += ` (${product.capacity} Litros)`;

@@ -52,7 +52,7 @@ function initProductModal() {
     const currentImg = activeColor ? activeColor.img : product.image;
 
     const getWaLink = (colorName) => {
-      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
+      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
       let text = `¡Hola Cytimaz! Me interesa ordenar el modelo: *${product.name}*`;
       if (product.capacity > 0) {
         text += ` (Capacidad: ${product.capacity}L)`;

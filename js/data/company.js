@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - DATOS CENTRALIZADOS DE LA EMPRESA
  * ====================================================================
@@ -10,29 +10,30 @@ const CYTIMAZ_COMPANY = {
   // Nombre y lema comercial
   name: "Cytimaz",
   fullName: "Cisternas y Tinacos Mazatlán",
-  slogan: "Fabricación por Rotomoldeo con Polietileno 100% Virgen",
-  description: "Especialistas en la fabricación y venta directa de tinacos bicapa, tricapa y cisternas industriales en Mazatlán, Sinaloa. Calidad, durabilidad y máxima resistencia al sol del puerto.",
+  slogan: "La Única Fábrica de Tinacos y Cisternas en Mazatlán • Polietileno 100% Virgen",
+  description: "La única fábrica de tinacos y cisternas por rotomoldeo en Mazatlán, Sinaloa. Venta directa sin intermediarios, máxima calidad, grado alimenticio y resistencia al calor del puerto.",
 
   // Contacto principal (WhatsApp de ventas / atención directa)
   whatsapp: {
-    number: "526699297695", // <-- Número directo oficial de atención
-    displayNumber: "+52 (669) 929-7695",
+    number: "526692516688", // <-- Nuevo teléfono oficial de contacto
+    displayNumber: "+52 (669) 251-6688",
     defaultMessage: "¡Hola Cytimaz! Me comunico desde la página web, me gustaría solicitar una cotización.",
     advisorName: "Ventas Cytimaz"
   },
 
   // Teléfonos de contacto
   phone: {
-    direct: "(669) 929-7695",
-    plant: "(669) 929-7695"
+    direct: "(669) 251-6688",
+    plant: "(669) 251-6688"
   },
 
   // Ubicación física de la fábrica y cobertura
   location: {
     city: "Mazatlán, Sinaloa, México",
     coverage: "Entregas en todo Mazatlán, Villa Unión, Concordia y el sur de Sinaloa",
-    address: "Mazatlán, Sinaloa, México",
-    googleMapsUrl: "https://maps.google.com/?q=Mazatlan+Sinaloa"
+    address: "Av. Francisco González Bocanegra #8708, Col. El Conchi II, C.P. 82134, Mazatlán, Sinaloa",
+    postalCode: "82134",
+    googleMapsUrl: "https://maps.google.com/?q=Av.+Francisco+Gonzalez+Bocanegra+8708+El+Conchi+II+Mazatlan+Sinaloa+82134"
   },
 
   // Horarios de atención
@@ -52,8 +53,8 @@ const CYTIMAZ_COMPANY = {
   // Beneficios de marca
   highlights: [
     {
-      title: "Directo de Fábrica",
-      desc: "Mejor precio garantizado sin intermediarios ni costos inflados.",
+      title: "Única Fábrica en Mazatlán",
+      desc: "Fabricación 100% local en Mazatlán: sin fletes costosos, entrega inmediata y garantía directa de fábrica.",
       icon: "factory"
     },
     {

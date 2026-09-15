@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - BASE DE DIÁLOGOS Y PREGUNTAS FRECUENTES DEL ASISTENTE
  * ====================================================================
@@ -44,8 +44,13 @@ const CYTIMAZ_BOT_DATA = {
     },
     {
       id: "garantia",
-      label: "⭐ Garantía de 30 Años",
+      label: "⭐ Garantías de Fábrica (10 y 5 Años)",
       icon: "award"
+    },
+    {
+      id: "ubicacion",
+      label: "📍 Dirección de la Fábrica en Mazatlán",
+      icon: "building"
     },
     {
       id: "whatsapp_directo",
@@ -57,31 +62,32 @@ const CYTIMAZ_BOT_DATA = {
 
   responses: {
     recomendar: {
-      text: "¡Con gusto! Fabricamos directamente por rotomoldeo las siguientes capacidades exactas:",
+      text: "¡Con gusto! Fabricamos directamente por rotomoldeo en Mazatlán las siguientes capacidades (¡todas incluyen Kit de Accesorios GRATIS!):",
       bullets: [
         "🪣 **Tambos Industriales:** 200 Litros.",
-        "🏠 **Tinacos (Tricapa y Bicapa):** 450L, 600L, 800L y 1,100 Litros.",
-        "🧱 **Cisternas Reforzadas:** 1,100L, 1,100L Bala Vertical, 1,300L, 3,000L, 5,500L y 10,000 Litros."
+        "🏠 **Tinacos (Tricapa y Bicapa):** 450L, 600L, 800L, 1,100L y 1,300 Litros.",
+        "🧱 **Cisternas Reforzadas:** 1,100L, 1,100L Bala Vertical, 1,300L, 3,000L, 5,500L y 10,000 Litros.",
+        "🚚 **Horizontales:** 600L y 1,100 Litros."
       ],
       ctaText: "Cotizar por WhatsApp",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas con entrega en Mazatlán."
     },
 
     bicapa_vs_tricapa: {
-      text: "¡Excelente pregunta! Ambos son de polietileno 100% virgen, pero la diferencia está en la protección solar:",
+      text: "¡Excelente pregunta! Ambos son de polietileno 100% virgen grado alimenticio, pero con estas diferencias:",
       bullets: [
-        "🟠 **Bicapa (2 Capas):** Capa exterior arena + capa interior blanca espumada aislante. Muy durable y accesible.",
-        "⭐ **Tricapa (3 Capas):** Incluye una **capa intermedia negra con filtro UV-8** que bloquea la luz del sol al 100%, impidiendo totalmente la fotosíntesis y el nacimiento de lama/algas verdes. Es el más recomendado para el fuerte sol de Mazatlán."
+        "⚪ **Línea Esencial (Bicapa - 5 Años Garantía):** Exterior virgen con aditivo reflectante + capa interna blanca lisa. Muy económica y durable.",
+        "⭐ **Línea Suprema (Tricapa - 10 Años Garantía):** Incluye **capa intermedia negra espumada con filtro UV-8** que bloquea la luz del sol al 100% (cero lama/algas) e interior antibacterial activo. Es la opción ideal para el calor y sol de Mazatlán."
       ],
-      ctaText: "Cotizar Tinaco Tricapa",
-      whatsappMessage: "¡Hola Cytimaz! Quiero más informes y precios del Tinaco Tricapa con filtro UV."
+      ctaText: "Cotizar Línea Suprema",
+      whatsappMessage: "¡Hola Cytimaz! Quiero informes y precios de la Línea Suprema Tricapa."
     },
 
     cisterna_bala: {
-      text: "Nuestra **Cisterna Vertical Tipo Bala de 1,100L** es una solución innovadora:",
+      text: "Nuestra **Cisterna Vertical Tipo Bala de 1,100L** es ideal para ahorrar espacio:",
       bullets: [
-        "📐 **Diseño Esbelto Vertical:** Ocupa mucho menos espacio en suelo (apenas 0.95m de diámetro).",
-        "🏠 **Ideal para Pasillos y Cocheras:** Perfecta para casas con poco patio o excavaciones estrechas.",
+        "📐 **Diseño Esbelto Vertical:** Apenas 86 cm de diámetro y 1.80 m de altura.",
+        "🏠 **Ideal para Pasillos y Patios Angostos:** Disponible en colores Arena, Azul y Neutro.",
         "🛡️ **100% Polietileno Virgen:** Fabricada en una sola pieza monolítica de alta resistencia."
       ],
       ctaText: "Cotizar Cisterna Bala 1,100L",
@@ -89,40 +95,52 @@ const CYTIMAZ_BOT_DATA = {
     },
 
     envios: {
-      text: "¡Sí! Realizamos entregas directas desde nuestra planta de fabricación:",
+      text: "¡Sí! Somos la **única fábrica de tinacos en Mazatlán**, lo que nos permite ofrecer entregas inmediatas:",
       bullets: [
         "📍 Cobertura en **todo Mazatlán** y zonas conurbadas.",
-        "🚚 Entregas a pie de calle / obra y envíos a municipios cercanos (Villa Unión, Concordia, El Rosario, etc.).",
-        "⏱️ Tiempos de entrega rápidos gracias a que tenemos stock permanente de fábrica."
+        "🚚 Entregas a pie de calle / obra y envíos a municipios cercanos (Villa Unión, Concordia, El Rosario, Escuinapa).",
+        "⏱️ Stock permanente sin esperas de fletes de fuera."
       ],
       ctaText: "Consultar entrega a mi colonia",
-      whatsappMessage: "¡Hola Cytimaz! Me gustaría saber el costo de flete y tiempo de entrega a mi colonia en Mazatlán."
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría saber el tiempo de entrega a mi colonia en Mazatlán."
     },
 
     mayoreo: {
-      text: "¡Por supuesto! Al ser fabricantes directos por rotomoldeo, ofrecemos **precios y condiciones preferenciales** para:",
+      text: "¡Por supuesto! Al ser la única fábrica local de rotomoldeo, ofrecemos **precios directos de fábrica** para:",
       bullets: [
         "🏢 Constructoras y desarrolladores de vivienda.",
-        "🏬 Ferreterías y casas de materiales.",
-        "👨‍🔧 Plomeros, contratistas y purificadoras de agua."
+        "🏬 Ferreterías y casas de materiales de Sinaloa.",
+        "👨‍🔧 Plomeros, contratistas e instaladores."
       ],
       ctaText: "Solicitar lista de precios de Mayoreo",
       whatsappMessage: "¡Hola Cytimaz! Me comunico como contratista/ferretería y me interesa su lista de precios de mayoreo."
     },
 
     garantia: {
-      text: "Nuestros productos cuentan con el respaldo de fabricación por rotomoldeo en una sola pieza monolítica:",
+      text: "Nuestros productos cuentan con garantía respaldada directamente en nuestra planta de Mazatlán:",
       bullets: [
-        "🛡️ **Tinacos Tricapa y Cisternas:** Hasta 30 años de garantía de fábrica.",
-        "🛡️ **Tinacos Bicapa:** 15 años de garantía.",
-        "✅ **100% Polietileno Virgen:** Grado alimenticio, sin materiales reciclados contaminantes."
+        "⭐ **Línea Suprema (Tricapa):** 10 Años de garantía por defectos de fábrica.",
+        "🛡️ **Línea Esencial (Bicapa):** 5 Años de garantía por defectos de fábrica.",
+        "🎁 **Accesorios GRATIS:** Válvula, flotador, multiconector, tapa rosca, capuchón y venteo incluidos.",
+        "✅ **100% Polietileno Virgen:** Grado alimenticio certificado."
       ],
       ctaText: "Hablar con un asesor de ventas",
-      whatsappMessage: "¡Hola Cytimaz! Quisiera conocer más sobre las garantías y especificaciones de sus productos."
+      whatsappMessage: "¡Hola Cytimaz! Quisiera conocer más sobre las garantías de sus productos."
+    },
+
+    ubicacion: {
+      text: "Nuestra planta de fabricación está ubicada en Mazatlán:",
+      bullets: [
+        "📍 **Dirección:** Av. Francisco González Bocanegra #8708, Col. El Conchi II, C.P. 82134, Mazatlán, Sinaloa.",
+        "⏰ **Horario:** Lunes a Viernes de 8:00 AM a 6:00 PM | Sábados de 8:00 AM a 2:00 PM.",
+        "📞 **Teléfono / WhatsApp:** +52 (669) 251-6688."
+      ],
+      ctaText: "Abrir Ubicación en Google Maps",
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría visitar la fábrica o recibir la ubicación para pasar a recoger."
     },
 
     whatsapp_directo: {
-      text: "¡Perfecto! Te conecto directamente con nuestro equipo de atención a clientes en WhatsApp (+52 669 929-7695) para una cotización inmediata.",
+      text: "¡Perfecto! Te conecto directamente con nuestro equipo de atención a clientes en WhatsApp (+52 669 251-6688) para una cotización inmediata.",
       bullets: [],
       ctaText: "Abrir chat de WhatsApp",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría que un asesor me atienda para cotizar tinacos/cisternas."
@@ -133,3 +151,4 @@ const CYTIMAZ_BOT_DATA = {
 if (typeof window !== "undefined") {
   window.CYTIMAZ_BOT_DATA = CYTIMAZ_BOT_DATA;
 }
+

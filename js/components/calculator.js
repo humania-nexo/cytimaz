@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE JS: CALCULADORA DE CAPACIDAD PARA EL HOGAR
  * ====================================================================
@@ -105,7 +105,7 @@ function initCalculator() {
     resultDesc.textContent = desc;
 
     // Actualizar botón de WhatsApp
-    const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
+    const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
     const waMsg = encodeURIComponent(`¡Hola Cytimaz! Calculé en la web la capacidad para ${selectedPeople} personas (${selectedType}) y me recomendó: *${waProduct}*. ¿Me pueden dar precio con entrega en Mazatlán?`);
     resultWaBtn.href = `https://wa.me/${waNumber}?text=${waMsg}`;
   }

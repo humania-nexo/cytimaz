@@ -59,7 +59,7 @@ function initComparator() {
   }
 
   function buildProductColHtml(prod) {
-    const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
+    const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
     const waText = encodeURIComponent(`¡Hola Cytimaz! Me interesa cotizar el modelo: *${prod.name}* tras revisarlo en el comparador.`);
     const waLink = `https://wa.me/${waNumber}?text=${waText}`;
 
