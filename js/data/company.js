@@ -50,6 +50,13 @@ const CYTIMAZ_COMPANY = {
     tiktok: "https://tiktok.com/@cytimaz"
   },
 
+  // Datos de Webmaster / Soporte Técnico
+  webmaster: {
+    email: "antropoware@gmail.com",
+    phone: "+52 (55) 1375-0569",
+    phoneRaw: "5513750569"
+  },
+
   // Beneficios de marca
   highlights: [
     {

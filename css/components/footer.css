@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE: FOOTER (PIE DE PÁGINA)
  * ====================================================================
@@ -111,4 +111,33 @@
   gap: 16px;
   font-size: 0.82rem;
   color: var(--color-text-muted);
+}
+
+.footer-webmaster {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #94A3B8;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.webmaster-link {
+  color: #38BDF8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.webmaster-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.webmaster-sep {
+  color: #64748B;
 }
