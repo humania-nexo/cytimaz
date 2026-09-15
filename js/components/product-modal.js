@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE JS: MODAL DE FICHA TÉCNICA
  * ====================================================================
@@ -35,13 +35,34 @@ function initProductModal() {
     document.body.style.overflow = "";
   }
 
-  function openProductModal(productId) {
+  function openProductModal(productId, initialColorName = null) {
     const product = window.CYTIMAZ_PRODUCTS?.find(p => p.id === productId);
     if (!product || !modalContentContainer) return;
 
-    const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526691234567";
-    const waText = encodeURIComponent(`¡Hola Cytimaz! Me interesa ordenar el modelo: *${product.name}* (Capacidad: ${product.capacity}L). ¿Tienen disponibilidad y entrega en Mazatlán?`);
-    const waLink = `https://wa.me/${waNumber}?text=${waText}`;
+    // Determinar color seleccionado
+    let activeColor = null;
+    if (product.colors && product.colors.length > 0) {
+      if (initialColorName) {
+        activeColor = product.colors.find(c => c.name === initialColorName) || product.colors[0];
+      } else {
+        activeColor = product.colors[0];
+      }
+    }
+
+    const currentImg = activeColor ? activeColor.img : product.image;
+
+    const getWaLink = (colorName) => {
+      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
+      let text = `¡Hola Cytimaz! Me interesa ordenar el modelo: *${product.name}*`;
+      if (product.capacity > 0) {
+        text += ` (Capacidad: ${product.capacity}L)`;
+      }
+      if (colorName) {
+        text += ` en color *${colorName}*`;
+      }
+      text += `. ¿Tienen disponibilidad y entrega en Mazatlán?`;
+      return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+    };
 
     // Construir tabla de especificaciones
     let specsHtml = "";
@@ -54,6 +75,30 @@ function initProductModal() {
           </tr>
         `;
       }
+    }
+
+    // Selector de colores en el modal
+    let modalColorSelectorHtml = "";
+    if (product.colors && product.colors.length > 1) {
+      modalColorSelectorHtml = `
+        <div class="modal-color-selector">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted);">Colores:</span>
+          <div class="modal-color-swatches">
+            ${product.colors.map(c => `
+              <button type="button" 
+                class="modal-color-swatch-btn ${c.name === (activeColor ? activeColor.name : '') ? 'active' : ''}" 
+                style="background-color: ${c.hex};" 
+                title="${c.name}"
+                data-img="${c.img}"
+                data-name="${c.name}">
+              </button>
+            `).join("")}
+          </div>
+          <span class="modal-color-selected-text" style="font-size: 0.82rem; font-weight: 800; color: var(--color-dark); margin-left: auto;">
+            ${activeColor ? activeColor.name : ''}
+          </span>
+        </div>
+      `;
     }
 
     // Construir desglose de capas
@@ -74,12 +119,36 @@ function initProductModal() {
       `;
     }
 
+    // Radiografía visual si aplica
+    let xrayVisualHtml = "";
+    if (product.category === "tinacos-suprema") {
+      xrayVisualHtml = `
+        <div class="modal-xray-box">
+          <div style="font-size: 0.78rem; font-weight: 800; color: var(--color-electric-cyan); text-transform: uppercase; letter-spacing: 0.5px;">
+            Inspección Estructural Oficial
+          </div>
+          <h4 style="font-size: 1rem; font-weight: 800; margin: 4px 0 8px 0;">Radiografía Línea Suprema (Tricapa)</h4>
+          <img src="assets/img/productos/RadiografiaTricapa/RadiografiaTricapa.png" alt="Radiografía Tricapa Cytimaz" class="modal-xray-img">
+        </div>
+      `;
+    } else if (product.category === "tinacos-esencial") {
+      xrayVisualHtml = `
+        <div class="modal-xray-box">
+          <div style="font-size: 0.78rem; font-weight: 800; color: var(--color-electric-cyan); text-transform: uppercase; letter-spacing: 0.5px;">
+            Inspección Estructural Oficial
+          </div>
+          <h4 style="font-size: 1rem; font-weight: 800; margin: 4px 0 8px 0;">Radiografía Línea Esencial (Bicapa)</h4>
+          <img src="assets/img/productos/RadiografiaTricapa/RadiografiaBicapa.png" alt="Radiografía Bicapa Cytimaz" class="modal-xray-img">
+        </div>
+      `;
+    }
+
     // Construir lista de beneficios
     let benefitsHtml = "";
     if (product.benefits && product.benefits.length > 0) {
       benefitsHtml = `
         <div style="margin-bottom: 20px;">
-          <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">Ventajas Destacadas:</h4>
+          <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">Ventajas Destacadas de Fábrica:</h4>
           <ul style="padding-left: 20px; font-size: 0.88rem; color: var(--color-text-main);">
             ${product.benefits.map(b => `<li style="margin-bottom: 4px;">${b}</li>`).join("")}
           </ul>
@@ -90,13 +159,16 @@ function initProductModal() {
     modalContentContainer.innerHTML = `
       <div class="modal-header-info">
         <span class="badge badge-primary">${product.categoryLabel}</span>
-        <h2 style="font-size: 1.7rem; font-weight: 900; color: var(--color-dark); margin-top: 6px;">${product.name}</h2>
-        <p style="color: var(--color-text-muted); font-size: 0.95rem;">${product.tagline}</p>
+        <h2 style="font-size: 1.6rem; font-weight: 900; color: var(--color-dark); margin-top: 6px;">${product.name}</h2>
+        <p style="color: var(--color-text-muted); font-size: 0.92rem;">${product.tagline}</p>
       </div>
 
       <div class="modal-grid">
-        <div class="modal-image-preview">
-          <img src="${product.image}" alt="${product.name}">
+        <div>
+          <div class="modal-image-preview">
+            <img src="${currentImg}" alt="${product.name}" id="modal-main-product-img">
+          </div>
+          ${modalColorSelectorHtml}
         </div>
         <div>
           <table class="specs-table">
@@ -110,16 +182,39 @@ function initProductModal() {
         </div>
       </div>
 
+      ${xrayVisualHtml}
       ${layersHtml}
       ${benefitsHtml}
 
       <div class="modal-footer-actions">
         <button type="button" class="btn btn-outline" id="modal-btn-back">Cerrar</button>
-        <a href="${waLink}" target="_blank" rel="noopener" class="btn btn-whatsapp">
+        <a href="${getWaLink(activeColor ? activeColor.name : null)}" target="_blank" rel="noopener" class="btn btn-whatsapp" id="modal-wa-submit-link">
           💬 Cotizar este Modelo por WhatsApp
         </a>
       </div>
     `;
+
+    // Asignar interactividad a los botones de color dentro del modal
+    if (product.colors && product.colors.length > 1) {
+      const modalSwatchBtns = modalContentContainer.querySelectorAll(".modal-color-swatch-btn");
+      const modalImg = modalContentContainer.querySelector("#modal-main-product-img");
+      const modalColorText = modalContentContainer.querySelector(".modal-color-selected-text");
+      const modalWaLink = modalContentContainer.querySelector("#modal-wa-submit-link");
+
+      modalSwatchBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          modalSwatchBtns.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const imgSrc = btn.getAttribute("data-img");
+          const colName = btn.getAttribute("data-name");
+
+          if (modalImg && imgSrc) modalImg.src = imgSrc;
+          if (modalColorText) modalColorText.textContent = colName;
+          if (modalWaLink) modalWaLink.href = getWaLink(colName);
+        });
+      });
+    }
 
     document.getElementById("modal-btn-back")?.addEventListener("click", closeModal);
 
@@ -134,3 +229,4 @@ function initProductModal() {
 if (typeof window !== "undefined") {
   window.initProductModal = initProductModal;
 }
+

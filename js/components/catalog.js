@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE JS: CATÁLOGO DINÁMICO DE PRODUCTOS
  * ====================================================================
@@ -44,18 +44,55 @@ function initCatalog() {
       const card = document.createElement("div");
       card.className = "product-card";
 
+      // Estado de color seleccionado para esta tarjeta
+      let selectedColor = (product.colors && product.colors.length > 0) ? product.colors[0] : null;
+
       // Determinar clase de badge
       let badgeClass = "badge-primary";
-      if (product.badge.toLowerCase().includes("vendido") || product.badge.toLowerCase().includes("calidad")) {
+      if (product.badge.toLowerCase().includes("vendido") || product.badge.toLowerCase().includes("suprema") || product.badge.toLowerCase().includes("premium")) {
         badgeClass = "badge-gold";
-      } else if (product.badge.toLowerCase().includes("económico") || product.badge.toLowerCase().includes("compacto")) {
+      } else if (product.badge.toLowerCase().includes("económico") || product.badge.toLowerCase().includes("compacto") || product.badge.toLowerCase().includes("eficiente")) {
         badgeClass = "badge-green";
       }
 
-      // Mensaje de WhatsApp pre-llenado
-      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526691234567";
-      const waText = encodeURIComponent(`¡Hola Cytimaz! Me interesa cotizar el modelo: *${product.name}* (${product.capacity} Litros).`);
-      const waLink = `https://wa.me/${waNumber}?text=${waText}`;
+      // Función generadora de link de WhatsApp
+      const getWaLink = (colorName) => {
+        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526699297695";
+        let text = `¡Hola Cytimaz! Me interesa cotizar el modelo: *${product.name}*`;
+        if (product.capacity > 0) {
+          text += ` (${product.capacity} Litros)`;
+        }
+        if (colorName) {
+          text += ` en color *${colorName}*`;
+        }
+        text += `. ¿Tienen entregas en Mazatlán?`;
+        return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+      };
+
+      // HTML del selector de colores si existen variantes
+      let colorsHtml = "";
+      if (product.colors && product.colors.length > 1) {
+        colorsHtml = `
+          <div class="card-color-selector">
+            <span class="color-selector-label">Color:</span>
+            <div class="color-swatches-group">
+              ${product.colors.map((c, i) => `
+                <button type="button" 
+                  class="color-swatch-btn ${i === 0 ? 'active' : ''}" 
+                  style="background-color: ${c.hex};" 
+                  title="${c.name}"
+                  data-img="${c.img}"
+                  data-name="${c.name}">
+                </button>
+              `).join("")}
+            </div>
+            <span class="color-name-text">${product.colors[0].name}</span>
+          </div>
+        `;
+      }
+
+      // Resumen de capacidad
+      const capacityText = product.capacity > 0 ? `${product.capacity.toLocaleString()} Litros` : "Accesorios";
 
       card.innerHTML = `
         <div class="card-header-visual">
@@ -68,13 +105,15 @@ function initCatalog() {
           <h3 class="card-title">${product.name}</h3>
           <p class="card-tagline">${product.tagline}</p>
 
+          ${colorsHtml}
+
           <div class="card-quick-specs">
             <div class="spec-mini-item">
               <span class="spec-mini-label">Capacidad</span>
-              <span class="spec-mini-val">${product.capacity.toLocaleString()} Litros</span>
+              <span class="spec-mini-val">${capacityText}</span>
             </div>
             <div class="spec-mini-item">
-              <span class="spec-mini-label">Recomendado</span>
+              <span class="spec-mini-label">Uso / Perfil</span>
               <span class="spec-mini-val">${product.peopleRecommended}</span>
             </div>
           </div>
@@ -83,18 +122,43 @@ function initCatalog() {
             <button type="button" class="btn btn-outline btn-sm btn-view-modal" data-id="${product.id}">
               📋 Ficha Técnica
             </button>
-            <a href="${waLink}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <a href="${getWaLink(selectedColor ? selectedColor.name : null)}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm card-wa-btn">
               💬 Cotizar
             </a>
           </div>
         </div>
       `;
 
+      // Eventos interactivos de cambio de color
+      if (product.colors && product.colors.length > 1) {
+        const swatchBtns = card.querySelectorAll(".color-swatch-btn");
+        const cardImg = card.querySelector(".card-product-img");
+        const colorNameText = card.querySelector(".color-name-text");
+        const waBtn = card.querySelector(".card-wa-btn");
+
+        swatchBtns.forEach(btn => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            swatchBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const imgSrc = btn.getAttribute("data-img");
+            const colName = btn.getAttribute("data-name");
+
+            if (cardImg && imgSrc) cardImg.src = imgSrc;
+            if (colorNameText) colorNameText.textContent = colName;
+            if (waBtn) waBtn.href = getWaLink(colName);
+
+            selectedColor = product.colors.find(c => c.name === colName) || product.colors[0];
+          });
+        });
+      }
+
       // Evento para abrir modal de ficha técnica
       const modalBtn = card.querySelector(".btn-view-modal");
       modalBtn.addEventListener("click", () => {
         if (window.openProductModal) {
-          window.openProductModal(product.id);
+          window.openProductModal(product.id, selectedColor ? selectedColor.name : null);
         }
       });
 
@@ -106,3 +170,4 @@ function initCatalog() {
 if (typeof window !== "undefined") {
   window.initCatalog = initCatalog;
 }
+

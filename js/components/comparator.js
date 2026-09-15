@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE JS: COMPARADOR MATRIZ LADO A LADO
  * ====================================================================
@@ -63,12 +63,12 @@ function initComparator() {
     const waText = encodeURIComponent(`¡Hola Cytimaz! Me interesa cotizar el modelo: *${prod.name}* tras revisarlo en el comparador.`);
     const waLink = `https://wa.me/${waNumber}?text=${waText}`;
 
-    const isSuprema = prod.line === "suprema";
-    const isEsencial = prod.line === "esencial";
-    const isCisterna = prod.line === "cisterna";
+    const isSuprema = prod.category === "tinacos-suprema";
+    const isEsencial = prod.category === "tinacos-esencial";
+    const isCisterna = prod.category === "cisternas";
 
     const badgeClass = isSuprema ? "badge-suprema-gold" : "badge-esencial-blue";
-    const lineBadge = isSuprema ? "⭐ Línea Suprema (Tricapa)" : (isEsencial ? "Línea Esencial (Bicapa)" : "Línea Industrial");
+    const lineBadge = prod.categoryLabel;
 
     // Filas de matriz
     const virgenHtml = `<span class="comp-val-check">✓ 100% Virgen FDA</span>`;
@@ -93,9 +93,9 @@ function initComparator() {
 
     let antiDeformacionHtml = "";
     if (isSuprema) {
-      antiDeformacionHtml = `<span class="comp-val-suprema-star">⭐ Núcleo Celular Anti-Deformación</span>`;
+      antiDeformacionHtml = `<span class="comp-val-suprema-star">⭐ Núcleo Espumado + Anillos Anti-Pandeo</span>`;
     } else if (isEsencial) {
-      antiDeformacionHtml = `<span class="comp-val-cross">— Estructura Estándar</span>`;
+      antiDeformacionHtml = `<span class="comp-val-check">✓ Anillos Estructurales Anti-Pandeo</span>`;
     } else {
       antiDeformacionHtml = `<span class="comp-val-check">✓ Nervaduras y Hombros Reforzados</span>`;
     }
@@ -109,9 +109,9 @@ function initComparator() {
       antibacterialHtml = `<span class="comp-val-check">✓ Sanitario Grado Alimenticio</span>`;
     }
 
-    const garantiaHtml = isSuprema || isCisterna
+    const garantiaHtml = isSuprema
       ? `<strong style="color: var(--color-primary-dark); font-size: 0.95rem;">🛡️ 30 Años de Fábrica</strong>`
-      : `<strong style="color: var(--color-dark); font-size: 0.95rem;">🛡️ 15 Años de Fábrica</strong>`;
+      : (isEsencial ? `<strong style="color: var(--color-dark); font-size: 0.95rem;">🛡️ 10 Años de Fábrica</strong>` : `<strong style="color: var(--color-primary-dark); font-size: 0.95rem;">🛡️ Garantía de Fábrica</strong>`);
 
     const enfoqueHtml = isSuprema
       ? `<span style="color: var(--color-primary-dark); font-weight: 800; font-size: 0.85rem;">🏆 Salud, Pureza y Máxima Calidad</span>`
@@ -122,7 +122,7 @@ function initComparator() {
       <h4 class="comp-product-title">${prod.name}</h4>
       <span class="comp-line-badge ${badgeClass}">${lineBadge}</span>
       
-      <div class="comp-val-row"><strong>${prod.capacity.toLocaleString()} Litros</strong></div>
+      <div class="comp-val-row"><strong>${prod.capacity > 0 ? prod.capacity.toLocaleString() + ' Litros' : 'Accesorio'}</strong></div>
       <div class="comp-val-row">${virgenHtml}</div>
       <div class="comp-val-row">${uvHtml}</div>
       <div class="comp-val-row">${antiAlgasHtml}</div>

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE: CATÁLOGO DE PRODUCTOS
  * ====================================================================
@@ -187,4 +187,58 @@
   width: 100%;
   padding: 10px 12px;
   font-size: 0.88rem;
+}
+
+/* Selector Interactivo de Colores */
+.card-color-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 8px 10px;
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.color-selector-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.color-swatches-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.color-swatch-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #CBD5E1;
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  position: relative;
+}
+
+.color-swatch-btn:hover {
+  transform: scale(1.2);
+}
+
+.color-swatch-btn.active {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light), 0 2px 4px rgba(0,0,0,0.15);
+  transform: scale(1.15);
+}
+
+.color-name-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-left: auto;
 }

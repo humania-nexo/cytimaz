@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - COMPONENTE JS: HERO CINEMÁTICO & MODO DE INSPECCIÓN
  * ====================================================================
@@ -14,18 +14,18 @@ function initHeroInspection() {
 
   const modes = {
     showcase: {
-      image: "assets/img/modelos/t1100b.png",
-      badge: "★ Vista Exterior de Alta Definición",
+      image: "assets/img/productos/T1100Estandar/1100Estandar.png",
+      badge: "★ Tinaco Línea Suprema 1100L (Tricapa Antibacterial)",
       showHotspots: true
     },
     xray: {
-      image: "assets/img/modelos/tinaco_tricapa_generic.svg",
-      badge: "🔬 Radiografía de 3 Capas Sincronizadas",
+      image: "assets/img/productos/RadiografiaTricapa/RadiografiaTricapa.png",
+      badge: "🔬 Radiografía Oficial de 3 Capas Sincronizadas",
       showHotspots: false
     },
     cisterna: {
-      image: "assets/img/modelos/c3000b.png",
-      badge: "🏗️ Cisterna Monolítica de Subsuelo",
+      image: "assets/img/productos/C3000L/C3000LAzul.png",
+      badge: "🏗️ Cisterna Monolítica Reforzada de Subsuelo 3000L",
       showHotspots: false
     }
   };
