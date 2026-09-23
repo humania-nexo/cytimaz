@@ -71,7 +71,7 @@ function initMascotBot() {
 
     // 2. Si es WhatsApp directo, abrir inmediatamente
     if (option.id === "whatsapp_directo") {
-      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
+      const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692682093";
       const waText = encodeURIComponent(botData.responses.whatsapp_directo.whatsappMessage);
       window.open(`https://wa.me/${waNumber}?text=${waText}`, "_blank");
     }
@@ -89,7 +89,7 @@ function initMascotBot() {
         }
 
         // Añadir botón de acción hacia WhatsApp
-        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692516688";
+        const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692682093";
         const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(resp.whatsappMessage)}`;
         
         fullHtml += `

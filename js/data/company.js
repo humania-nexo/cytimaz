@@ -15,16 +15,16 @@ const CYTIMAZ_COMPANY = {
 
   // Contacto principal (WhatsApp de ventas / atención directa)
   whatsapp: {
-    number: "526692516688", // <-- Nuevo teléfono oficial de contacto
-    displayNumber: "+52 (669) 251-6688",
+    number: "526692682093", // <-- Teléfono oficial de contacto
+    displayNumber: "+52 (669) 268-2093",
     defaultMessage: "¡Hola Cytimaz! Me comunico desde la página web, me gustaría solicitar una cotización.",
     advisorName: "Ventas Cytimaz"
   },
 
   // Teléfonos de contacto
   phone: {
-    direct: "(669) 251-6688",
-    plant: "(669) 251-6688"
+    direct: "(669) 268-2093",
+    plant: "(669) 268-2093"
   },
 
   // Ubicación física de la fábrica y cobertura

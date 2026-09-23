@@ -133,14 +133,14 @@ const CYTIMAZ_BOT_DATA = {
       bullets: [
         "📍 **Dirección:** Av. Francisco González Bocanegra #8708, Col. El Conchi II, C.P. 82134, Mazatlán, Sinaloa.",
         "⏰ **Horario:** Lunes a Viernes de 8:00 AM a 6:00 PM | Sábados de 8:00 AM a 2:00 PM.",
-        "📞 **Teléfono / WhatsApp:** +52 (669) 251-6688."
+        "📞 **Teléfono / WhatsApp:** +52 (669) 268-2093."
       ],
       ctaText: "Abrir Ubicación en Google Maps",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría visitar la fábrica o recibir la ubicación para pasar a recoger."
     },
 
     whatsapp_directo: {
-      text: "¡Perfecto! Te conecto directamente con nuestro equipo de atención a clientes en WhatsApp (+52 669 251-6688) para una cotización inmediata.",
+      text: "¡Perfecto! Te conecto directamente con nuestro equipo de atención a clientes en WhatsApp (+52 669 268-2093) para una cotización inmediata.",
       bullets: [],
       ctaText: "Abrir chat de WhatsApp",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría que un asesor me atienda para cotizar tinacos/cisternas."
