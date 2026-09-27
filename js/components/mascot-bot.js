@@ -292,7 +292,8 @@ function initMascotBot() {
     if (!text) return "";
     return text
       .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-      .replace(/\*(.*?)\*/g, "<em>$1</em>");
+      .replace(/\*(.*?)\*/g, "<em>$1</em>")
+      .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener" style="color: var(--color-primary); text-decoration: underline; font-weight: 700;">$1</a>');
   }
 }
 

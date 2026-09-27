@@ -393,10 +393,13 @@ const CYTIMAZ_BOT_DATA = {
 
     {
       id: "offtopic_creador",
-      keywords: ["quien te creo", "quien te hizo", "quien te programo", "quien es tu creador", "quien te invento", "quien te diseno", "quien te desarrollo", "quien te fabrico"],
-      text: "Fui creada y programada por el equipo de **Cytimaz** (Cisternas y Tinacos Mazatlán) 🏭⚓ para que cualquier persona en Mazatlán y Sinaloa pueda cotizar directamente de fábrica sin salir de casa.",
-      bullets: [],
-      ctaText: "Cotizar directo de fábrica",
+      keywords: ["quien te creo", "quien te hizo", "quien te programo", "quien es tu creador", "quien te invento", "quien te diseno", "quien te desarrollo", "quien te fabrico", "sapiensia", "sapiensia clan", "sapiensiaclan"],
+      text: "Fui creada y desarrollada con mucho talento por el equipo de **[Sapiensia Clan](https://www.sapiensiaclan.com)** para **Cytimaz** (Cisternas y Tinacos Mazatlán) 🚀⚓.",
+      bullets: [
+        "🌐 **Sitio Web Oficial:** [www.sapiensiaclan.com](https://www.sapiensiaclan.com)",
+        "💡 **Misión:** Brindarte la mejor experiencia digital interactiva, cotizaciones rápidas y atención 24/7 sin intermediarios."
+      ],
+      ctaText: "Hablar con Ventas por WhatsApp",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría solicitar una cotización directa de fábrica."
     },
 
