@@ -508,6 +508,23 @@
       <div class="chat-messages-body" id="chat-messages-body"></div>
       <div class="chat-quick-options" id="chat-quick-options"></div>
 
+      <!-- Caja de texto y entrada interactiva con Tina -->
+      <form class="chat-input-form" id="chat-input-form" autocomplete="off">
+        <input 
+          type="text" 
+          id="chat-user-input" 
+          class="chat-user-input" 
+          placeholder="Escribe tu duda (ej. precios, 1100L, bicapa...)" 
+          maxlength="250"
+          aria-label="Escribe tu pregunta para Tina">
+        <button type="submit" class="chat-send-btn" id="chat-send-btn" aria-label="Enviar pregunta" title="Enviar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+
       <div class="chat-footer-cta" id="chat-footer-cta">
         <a href="https://wa.me/526692682093?text=%C2%A1Hola%20Cytimaz!%20Me%20gustar%C3%ADa%20que%20un%20asesor%20me%20atienda." target="_blank" rel="noopener" class="btn btn-whatsapp company-whatsapp-link">
           💬 Abrir WhatsApp con un Asesor
