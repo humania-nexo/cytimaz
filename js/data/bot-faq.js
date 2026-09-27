@@ -342,8 +342,8 @@ const CYTIMAZ_BOT_DATA = {
 
     {
       id: "saludo",
-      keywords: ["hola", "buen dia", "buenos dias", "buenas tardes", "buenas noches", "que tal", "hey", "tina", "saludos", "como estas"],
-      text: "¡Hola! 👋 Mucho gusto. Soy Tina, tu asesora de Cytimaz. ¿Qué capacidad o producto estás buscando hoy? Con gusto te ayudo a cotizar o resolver tus dudas.",
+      keywords: ["hola", "buen dia", "buenos dias", "buenas tardes", "buenas noches", "que tal", "hey", "saludos", "como estas", "que haces", "que onda"],
+      text: "¡Hola! 👋 Mucho gusto. Soy Tina, tu asesora virtual de Cytimaz. ¿Qué capacidad o producto estás buscando hoy? Con gusto te ayudo a cotizar o resolver cualquier duda.",
       bullets: [],
       ctaText: "Hablar por WhatsApp",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas. ¿Tienen disponible?"
@@ -356,6 +356,110 @@ const CYTIMAZ_BOT_DATA = {
       bullets: [],
       ctaText: "Abrir WhatsApp",
       whatsappMessage: "¡Hola Cytimaz! Me gustaría solicitar una cotización."
+    },
+
+    // ==========================================
+    // BATERÍA DE PREGUNTAS OFF-TOPIC & PERSONALIDAD
+    // ==========================================
+    {
+      id: "offtopic_quien_es_ia",
+      keywords: ["eres una ia", "eres ia", "eres un bot", "eres robot", "eres inteligencia artificial", "eres real", "eres humana", "eres persona", "eres de verdad", "quien eres en realidad"],
+      text: "¡Soy **Tina**, la asesora virtual inteligente de Cytimaz! 🤖💧 Tengo un corazón de polietileno virgen y algoritmos programados para ayudarte a encontrar el mejor tinaco o cisterna para tu hogar o proyecto en Mazatlán.",
+      bullets: [
+        "🧠 **Especialidad:** Rotomoldeo, capacidades de agua y tecnología Bicapa.",
+        "⚡ **Superpoder:** Cotizaciones rápidas y atención 24/7 sin intermediarios."
+      ],
+      ctaText: "Cotizar con Tina en WhatsApp",
+      whatsappMessage: "¡Hola Tina! Me gustaría hacer una cotización de tinacos/cisternas Cytimaz."
+    },
+
+    {
+      id: "offtopic_por_que_tina",
+      keywords: ["por que te llamas tina", "por que tina", "que significa tina", "quien es tina", "de donde viene tu nombre", "quien eres tu"],
+      text: "¡Me llamo **Tina** en honor a los tinacos y a la pureza del agua limpia! 💧 Soy la mascota y asesora oficial de Cytimaz. Me apasiona el rotomoldeo, el color arena que refleja los rayos del sol y cuidar que en Mazatlán nunca falte agua.",
+      bullets: [],
+      ctaText: "Hablar con un asesor",
+      whatsappMessage: "¡Hola Cytimaz! Quiero consultar precios de sus tinacos y cisternas."
+    },
+
+    {
+      id: "offtopic_edad",
+      keywords: ["cuantos anos tienes", "cuantos anos tenes", "cual es tu edad", "que edad tienes", "cuando naciste", "fecha de nacimiento", "edad de tina"],
+      text: "Tengo apenas unos meses en el ciberespacio, pero al igual que los tinacos Cytimaz... ¡tengo garantía para durar muchísimos años bajo el sol de Mazatlán! ☀️⏳",
+      bullets: [],
+      ctaText: "Ver catálogo de productos",
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría conocer sus modelos y capacidades disponibles."
+    },
+
+    {
+      id: "offtopic_creador",
+      keywords: ["quien te creo", "quien te hizo", "quien te programo", "quien es tu creador", "quien te invento", "quien te diseno", "quien te desarrollo", "quien te fabrico"],
+      text: "Fui creada y programada por el equipo de **Cytimaz** (Cisternas y Tinacos Mazatlán) 🏭⚓ para que cualquier persona en Mazatlán y Sinaloa pueda cotizar directamente de fábrica sin salir de casa.",
+      bullets: [],
+      ctaText: "Cotizar directo de fábrica",
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría solicitar una cotización directa de fábrica."
+    },
+
+    {
+      id: "offtopic_piropos_pareja",
+      keywords: ["tienes novio", "te quieres casar", "casate conmigo", "estas soltera", "tienes pareja", "te amo", "eres hermosa", "eres linda", "eres guapa", "me gustas", "novia", "guapa"],
+      text: "¡Jajaja, qué halago! 🥰 Pero mi único y verdadero amor es el **agua limpia de Mazatlán y los tinacos Bicapa color Arena**. Aunque si quieres hacerme muy feliz, ¡cotízate un tinaco con su Kit de Accesorios GRATIS! 😉💧",
+      bullets: [],
+      ctaText: "Cotizar Tinaco Bicapa",
+      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco con su Kit GRATIS. ¿Tienen disponible?"
+    },
+
+    {
+      id: "offtopic_mazatlan_cultura",
+      keywords: ["te gusta mazatlan", "mariscos", "aguachile", "banda", "carnaval", "malecon", "playa", "eres de mazatlan", "sinaloa", "pacifico", "eres pata salada", "pata salada"],
+      text: "¡Uff, 100% Pata Salada de corazón! 🌊⚓ Me fascina el malecón de Mazatlán, la brisa marina, el calorcito del puerto y un buen aguachile. Por eso me enorgullece que seamos la **única fábrica de tinacos de rotomoldeo en Mazatlán**.",
+      bullets: [
+        "🏭 Fabricación 100% local en Mazatlán.",
+        "🚚 Entregas directas a pie de obra en todo el puerto y sur de Sinaloa."
+      ],
+      ctaText: "Contactar a la Fábrica en Mazatlán",
+      whatsappMessage: "¡Hola Cytimaz! Me interesa comprar tinacos fabricados en Mazatlán."
+    },
+
+    {
+      id: "offtopic_favorito",
+      keywords: ["cual es tu tinaco favorito", "tu producto favorito", "que tinaco te gusta mas", "cual recomiendas tu", "tu favorito", "el mejor tinaco"],
+      text: "¡Mi favorito de corazón es el **Tinaco Cytimaz de 1,100 Litros en color Arena Solar**! ☀️ Es el rey de las azoteas en Mazatlán porque su color arena refleja la radiación solar, mantiene el agua fresca, no se deforma e incluye su Kit de Accesorios GRATIS.",
+      bullets: [],
+      ctaText: "Cotizar Tinaco 1,100L",
+      whatsappMessage: "¡Hola Cytimaz! Me interesa el Tinaco de 1,100 Litros color Arena. ¿Lo tienen disponible?"
+    },
+
+    {
+      id: "offtopic_chiste",
+      keywords: ["cuentame un chiste", "dime un chiste", "chiste", "chistes", "broma", "cuentame algo gracioso", "hazme reir", "algo divertido"],
+      text: "¡Ahí te va uno bien fresquecito! 😄<br><br>— *¿Qué le dijo un tinaco Cytimaz al sol ardiente de Mazatlán?*<br>— *«¡Pégale todo lo que quieras con tus rayos UV, que mi capa exterior color Arena te los refleja toditos!»* ☀️🛡️💧",
+      bullets: [],
+      ctaText: "Cotizar Tinaco Resistente al Sol",
+      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco resistente al calor. ¿Tienen disponible?"
+    },
+
+    {
+      id: "offtopic_competencia",
+      keywords: ["rotoplas", "citijal", "eureka", "tecnotanques", "competencia", "otras marcas", "marca rotoplas"],
+      text: "¡Hay varias marcas conocidas, pero ninguna tiene nuestra ventaja: **somos la única fábrica local en Mazatlán**! 🏭",
+      bullets: [
+        "💰 **Precios directos de fábrica** sin intermediarios ni costos inflados.",
+        "⏱️ **Entrega inmediata** sin esperar fletes foráneos de Guadalajara o CDMX.",
+        "🎁 **Kit de Accesorios GRATIS** incluido en cada tinaco.",
+        "⭐ **Garantía de 5 Años** con atención directa en El Conchi II."
+      ],
+      ctaText: "Comparar precios por WhatsApp",
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría comparar precios de sus tinacos vs otras marcas."
+    },
+
+    {
+      id: "offtopic_filosofia",
+      keywords: ["sentido de la vida", "que es la vida", "filosofia", "secreto del exito", "el agua es vida", "frase del dia"],
+      text: "Como decía el gran Bruce Lee: *«Sé como el agua, amigo mío... vacía tu mente, sé amorfo, moldeable»* 🌊<br><br>Y como decimos en Cytimaz: *«¡Y guárdala siempre limpia y fresca en un tinaco de polietileno 100% virgen!»* ⚓💧",
+      bullets: [],
+      ctaText: "Cotizar con Cytimaz",
+      whatsappMessage: "¡Hola Cytimaz! Me interesa cotizar tinacos/cisternas para mi hogar."
     }
   ],
 
