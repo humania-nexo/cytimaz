@@ -10,6 +10,8 @@ const CYTIMAZ_COMPANY = {
   // Nombre y lema comercial
   name: "Cytimaz",
   fullName: "Cisternas y Tinacos Mazatlán",
+  website: "https://cytimaz.com",
+  domain: "cytimaz.com",
   slogan: "La Única Fábrica de Tinacos y Cisternas en Mazatlán • Polietileno 100% Virgen",
   description: "La única fábrica de tinacos y cisternas por rotomoldeo en Mazatlán, Sinaloa. Venta directa sin intermediarios, máxima calidad, grado alimenticio y resistencia al calor del puerto.",
 
