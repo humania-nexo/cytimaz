@@ -53,14 +53,14 @@ function initProductModal() {
 
     const getWaLink = (colorName) => {
       const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692682093";
-      let text = `¡Hola Cytimaz! Me interesa ordenar el modelo: *${product.name}*`;
+      let text = `¡Hola Cytimaz! Me interesa cotizar el modelo: *${product.name}*`;
       if (product.capacity > 0) {
         text += ` (Capacidad: ${product.capacity}L)`;
       }
       if (colorName) {
         text += ` en color *${colorName}*`;
       }
-      text += `. ¿Tienen disponibilidad y entrega en Mazatlán?`;
+      text += `.`;
       return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
     };
 

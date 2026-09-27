@@ -70,7 +70,7 @@ const CYTIMAZ_BOT_DATA = {
         "🚚 **Horizontales:** 600L y 1,100 Litros."
       ],
       ctaText: "Cotizar por WhatsApp",
-      whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas con entrega en Mazatlán."
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas."
     },
 
     tecnologia_tinacos: {
@@ -82,7 +82,7 @@ const CYTIMAZ_BOT_DATA = {
         "⭐ **5 Años de Garantía:** Directa de fábrica con respaldo inmediato en Mazatlán."
       ],
       ctaText: "Cotizar Tinaco por WhatsApp",
-      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco con entrega en Mazatlán."
+      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco."
     },
 
     cisterna_bala: {
@@ -104,7 +104,7 @@ const CYTIMAZ_BOT_DATA = {
         "⏱️ Stock permanente sin esperas de fletes de fuera."
       ],
       ctaText: "Consultar entrega a mi colonia",
-      whatsappMessage: "¡Hola Cytimaz! Me gustaría saber el tiempo de entrega a mi colonia en Mazatlán."
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría consultar los tiempos de entrega a mi colonia."
     },
 
     mayoreo: {

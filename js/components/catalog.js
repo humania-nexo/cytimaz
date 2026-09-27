@@ -65,7 +65,7 @@ function initCatalog() {
         if (colorName) {
           text += ` en color *${colorName}*`;
         }
-        text += `. ¿Tienen entregas en Mazatlán?`;
+        text += `.`;
         return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
       };
 
