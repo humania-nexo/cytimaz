@@ -47,7 +47,7 @@ const CYTIMAZ_COMPANY = {
 
   // Redes sociales
   social: {
-    facebook: "https://facebook.com/cytimaz",
+    facebook: "https://www.facebook.com/profile.php?id=61590706070225",
     instagram: "https://instagram.com/cytimaz",
     tiktok: "https://tiktok.com/@cytimaz"
   },
