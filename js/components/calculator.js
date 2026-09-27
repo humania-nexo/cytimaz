@@ -106,7 +106,7 @@ function initCalculator() {
 
     // Actualizar botón de WhatsApp
     const waNumber = window.CYTIMAZ_COMPANY?.whatsapp?.number || "526692682093";
-    const waMsg = encodeURIComponent(`¡Hola Cytimaz! Calculé en la web la capacidad para ${selectedPeople} personas (${selectedType}) y me recomendó: *${waProduct}*. ¿Me pueden dar precio?`);
+    const waMsg = encodeURIComponent(`¡Hola Cytimaz! Calculé en la web la capacidad para ${selectedPeople} personas (${selectedType}) y me recomendó: *${waProduct}*. ¿Lo tienen disponible y cuál sería el precio?`);
     resultWaBtn.href = `https://wa.me/${waNumber}?text=${waMsg}`;
   }
 

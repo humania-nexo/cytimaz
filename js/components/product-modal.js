@@ -60,7 +60,7 @@ function initProductModal() {
       if (colorName) {
         text += ` en color *${colorName}*`;
       }
-      text += `.`;
+      text += `. ¿Lo tienen disponible?`;
       return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
     };
 

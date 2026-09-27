@@ -70,7 +70,7 @@ const CYTIMAZ_BOT_DATA = {
         "🚚 **Horizontales:** 600L y 1,100 Litros."
       ],
       ctaText: "Cotizar por WhatsApp",
-      whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas."
+      whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas. ¿Tienen disponible?"
     },
 
     tecnologia_tinacos: {
@@ -82,7 +82,7 @@ const CYTIMAZ_BOT_DATA = {
         "⭐ **5 Años de Garantía:** Directa de fábrica con respaldo inmediato en Mazatlán."
       ],
       ctaText: "Cotizar Tinaco por WhatsApp",
-      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco."
+      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco. ¿Lo tienen disponible?"
     },
 
     cisterna_bala: {
@@ -93,7 +93,7 @@ const CYTIMAZ_BOT_DATA = {
         "🛡️ **100% Polietileno Virgen:** Fabricada en una sola pieza monolítica de alta resistencia."
       ],
       ctaText: "Cotizar Cisterna Bala 1,100L",
-      whatsappMessage: "¡Hola Cytimaz! Me interesa la Cisterna Vertical Bala de 1,100 Litros."
+      whatsappMessage: "¡Hola Cytimaz! Me interesa la Cisterna Vertical Bala de 1,100 Litros. ¿La tienen disponible?"
     },
 
     envios: {
