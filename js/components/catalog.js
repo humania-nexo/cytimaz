@@ -49,7 +49,7 @@ function initCatalog() {
 
       // Determinar clase de badge
       let badgeClass = "badge-primary";
-      if (product.badge.toLowerCase().includes("vendido") || product.badge.toLowerCase().includes("suprema") || product.badge.toLowerCase().includes("premium")) {
+      if (product.badge.toLowerCase().includes("vendido") || product.badge.toLowerCase().includes("popular") || product.badge.toLowerCase().includes("premium")) {
         badgeClass = "badge-gold";
       } else if (product.badge.toLowerCase().includes("económico") || product.badge.toLowerCase().includes("compacto") || product.badge.toLowerCase().includes("eficiente")) {
         badgeClass = "badge-green";

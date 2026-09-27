@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ====================================================================
  * CYTIMAZ - CONTROLADOR PRINCIPAL (BOOTSTRAP)
  * ====================================================================
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.initCatalog) window.initCatalog();
   if (window.initProductModal) window.initProductModal();
   if (window.initCalculator) window.initCalculator();
-  if (window.initComparator) window.initComparator();
   if (window.initMascotBot) window.initMascotBot();
 });
 

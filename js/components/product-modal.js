@@ -121,23 +121,13 @@ function initProductModal() {
 
     // Radiografía visual si aplica
     let xrayVisualHtml = "";
-    if (product.category === "tinacos-suprema") {
+    if (product.category === "tinacos") {
       xrayVisualHtml = `
         <div class="modal-xray-box">
           <div style="font-size: 0.78rem; font-weight: 800; color: var(--color-electric-cyan); text-transform: uppercase; letter-spacing: 0.5px;">
             Inspección Estructural Oficial
           </div>
-          <h4 style="font-size: 1rem; font-weight: 800; margin: 4px 0 8px 0;">Radiografía Línea Suprema (Tricapa)</h4>
-          <img src="assets/img/productos/RadiografiaTricapa/RadiografiaTricapa.png" alt="Radiografía Tricapa Cytimaz" class="modal-xray-img">
-        </div>
-      `;
-    } else if (product.category === "tinacos-esencial") {
-      xrayVisualHtml = `
-        <div class="modal-xray-box">
-          <div style="font-size: 0.78rem; font-weight: 800; color: var(--color-electric-cyan); text-transform: uppercase; letter-spacing: 0.5px;">
-            Inspección Estructural Oficial
-          </div>
-          <h4 style="font-size: 1rem; font-weight: 800; margin: 4px 0 8px 0;">Radiografía Línea Esencial (Bicapa)</h4>
+          <h4 style="font-size: 1rem; font-weight: 800; margin: 4px 0 8px 0;">Radiografía Estructural Bicapa Cytimaz</h4>
           <img src="assets/img/productos/RadiografiaTricapa/RadiografiaBicapa.png" alt="Radiografía Bicapa Cytimaz" class="modal-xray-img">
         </div>
       `;

@@ -15,12 +15,12 @@ function initHeroInspection() {
   const modes = {
     showcase: {
       image: "assets/img/productos/T1100Estandar/1100Estandar.png",
-      badge: "★ Tinaco Línea Suprema 1100L (Tricapa Antibacterial)",
+      badge: "★ Tinaco Cytimaz 1100L (Exterior Arena / Interior Blanco Espumado)",
       showHotspots: true
     },
     xray: {
-      image: "assets/img/productos/RadiografiaTricapa/RadiografiaTricapa.png",
-      badge: "🔬 Radiografía Oficial de 3 Capas Sincronizadas",
+      image: "assets/img/productos/RadiografiaTricapa/RadiografiaBicapa.png",
+      badge: "🔬 Radiografía Estructural (Bicapa Coextruida)",
       showHotspots: false
     },
     cisterna: {

@@ -50,27 +50,27 @@ function initCalculator() {
       // Tinacos de azotea
       switch (selectedPeople) {
         case "1-2":
-          title = "Tinaco Tricapa / Bicapa";
+          title = "Tinaco Cytimaz Residencial";
           liters = "450L - 600L";
-          desc = "Ideal para departamentos, viviendas de 1 a 2 personas o apoyo para boiler solar.";
-          waProduct = "Tinaco de 600 Litros";
+          desc = "Ideal para departamentos, viviendas de 1 a 2 personas o apoyo para calentador solar.";
+          waProduct = "Tinaco Cytimaz de 600 Litros";
           break;
         case "3-4":
-          title = "Tinaco Tricapa Mazatlán";
+          title = "Tinaco Cytimaz Mazatlán";
           liters = "800L - 1,100L";
-          desc = "Nuestras capacidades más populares. Brindan de 2 a 3 días de autonomía garantizada para familias medianas.";
-          waProduct = "Tinaco Tricapa de 1,100 Litros";
+          desc = "Nuestras capacidades más populares con capa interior blanca espumada. Brindan de 2 a 3 días de reserva garantizada para familias medianas.";
+          waProduct = "Tinaco Cytimaz de 1,100 Litros";
           break;
         case "5-6":
-          title = "Tinaco Tricapa 1,100L o Batería Doble";
-          liters = "1,100 Litros";
-          desc = "Recomendamos el tinaco de 1,100L o instalar dos unidades interconectadas para mayor reserva.";
-          waProduct = "Tinaco Tricapa de 1,100 Litros";
+          title = "Tinaco Cytimaz 1,100L o 1,300L";
+          liters = "1,100L - 1,300L";
+          desc = "Recomendamos el tinaco de 1,100L o 1,300L para familias medianas y grandes que buscan máxima autonomía.";
+          waProduct = "Tinaco Cytimaz de 1,100L / 1,300L";
           break;
         case "7+":
-          title = "Tinaco 1,100L + Cisterna en Planta Baja";
+          title = "Tinaco 1,100L / 1,300L + Cisterna en Planta Baja";
           liters = "1,100L + Cisterna";
-          desc = "Para familias numerosas o residencias grandes, lo ideal es combinar un tinaco de 1,100L en azotea con una cisterna subterránea.";
+          desc = "Para familias numerosas o residencias grandes, lo ideal es combinar un tinaco de 1,100L en azotea con una cisterna en planta baja.";
           waProduct = "Paquete Tinaco 1,100L y Cisterna";
           break;
       }

@@ -8,285 +8,15 @@
 
 window.CYTIMAZ_PRODUCTS = [
   {
-    "id": "t-450-suprema",
-    "name": "Tinaco Línea Suprema 450L (Tricapa)",
-    "shortName": "Tinaco 450L Tricapa",
-    "category": "tinacos-suprema",
-    "categoryLabel": "⭐ Línea Suprema (Tricapa)",
+    "id": "t-450",
+    "name": "Tinaco Cytimaz 450L",
+    "shortName": "Tinaco 450L",
+    "category": "tinacos",
+    "categoryLabel": "Tinaco Residencial",
     "capacity": 450,
-    "badge": "Compacto Premium",
-    "warranty": "10 Años de Garantía por Defectos de Fábrica",
-    "tagline": "Protección total para 1 a 2 personas o departamentos en Mazatlán.",
-    "image": "assets/img/productos/T450L/T450L.png",
-    "colors": [
-      {
-        "name": "Arena / Claro UV",
-        "hex": "#D4C3A3",
-        "img": "assets/img/productos/T450L/T450L.png"
-      }
-    ],
-    "peopleRecommended": "1 a 2 personas",
-    "specs": {
-      "Capacidad": "450 Litros",
-      "Tecnología": "Tricapa Sincronizada",
-      "Diámetro": "86 cm",
-      "Altura": "93 cm",
-      "Garantía": "10 Años por Defectos de Fábrica",
-      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen con Filtro UV-8",
-      "Refuerzo": "Anillos estructurales anti-pandeo"
-    },
-    "layers": [
-      {
-        "name": "Capa Exterior (Color Claro con Filtro UV-8)",
-        "color": "#D4C3A3",
-        "desc": "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie."
-      },
-      {
-        "name": "Capa Intermedia (Núcleo Negro Espumado)",
-        "color": "#0F172A",
-        "desc": "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación."
-      },
-      {
-        "name": "Capa Interna (Blanca Lisa Antibacterial)",
-        "color": "#FFFFFF",
-        "desc": "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua."
-      }
-    ],
-    "benefits": [
-      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
-      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
-      "Capa interna blanca lisa antibacterial grado alimenticio (sin olor ni sabor).",
-      "10 Años de garantía por defectos de fábrica con respaldo local directo."
-    ]
-  },
-  {
-    "id": "t-600-suprema",
-    "name": "Tinaco Línea Suprema 600L (Tricapa)",
-    "shortName": "Tinaco 600L Tricapa",
-    "category": "tinacos-suprema",
-    "categoryLabel": "⭐ Línea Suprema (Tricapa)",
-    "capacity": 600,
-    "badge": "Hogar Mediano",
-    "warranty": "10 Años de Garantía por Defectos de Fábrica",
-    "tagline": "Reserva higiénica ideal para 2 a 3 personas.",
-    "image": "assets/img/productos/T600L/T600L.png",
-    "colors": [
-      {
-        "name": "Arena / Claro UV",
-        "hex": "#D4C3A3",
-        "img": "assets/img/productos/T600L/T600L.png"
-      }
-    ],
-    "peopleRecommended": "2 a 3 personas",
-    "specs": {
-      "Capacidad": "600 Litros",
-      "Tecnología": "Tricapa Sincronizada",
-      "Diámetro": "88 cm",
-      "Altura": "112 cm",
-      "Garantía": "10 Años por Defectos de Fábrica",
-      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen con Filtro UV-8",
-      "Refuerzo": "Anillos estructurales anti-pandeo"
-    },
-    "layers": [
-      {
-        "name": "Capa Exterior (Color Claro con Filtro UV-8)",
-        "color": "#D4C3A3",
-        "desc": "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie."
-      },
-      {
-        "name": "Capa Intermedia (Núcleo Negro Espumado)",
-        "color": "#0F172A",
-        "desc": "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación."
-      },
-      {
-        "name": "Capa Interna (Blanca Lisa Antibacterial)",
-        "color": "#FFFFFF",
-        "desc": "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua."
-      }
-    ],
-    "benefits": [
-      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
-      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
-      "Capa interna blanca lisa antibacterial grado alimenticio (sin olor ni sabor).",
-      "10 Años de garantía por defectos de fábrica con respaldo local directo."
-    ]
-  },
-  {
-    "id": "t-800-suprema",
-    "name": "Tinaco Línea Suprema 800L (Tricapa)",
-    "shortName": "Tinaco 800L Tricapa",
-    "category": "tinacos-suprema",
-    "categoryLabel": "⭐ Línea Suprema (Tricapa)",
-    "capacity": 800,
-    "badge": "Alta Capacidad Residencial",
-    "warranty": "10 Años de Garantía por Defectos de Fábrica",
-    "tagline": "Excelente relación volumen/presión para familias de 3 a 4 personas.",
-    "image": "assets/img/productos/T800L/T800L.png",
-    "colors": [
-      {
-        "name": "Arena / Claro UV",
-        "hex": "#D4C3A3",
-        "img": "assets/img/productos/T800L/T800L.png"
-      }
-    ],
-    "peopleRecommended": "3 a 4 personas",
-    "specs": {
-      "Capacidad": "800 Litros",
-      "Tecnología": "Tricapa Sincronizada",
-      "Diámetro": "110 cm",
-      "Altura": "132 cm",
-      "Garantía": "10 Años por Defectos de Fábrica",
-      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen con Filtro UV-8",
-      "Refuerzo": "Anillos estructurales anti-pandeo"
-    },
-    "layers": [
-      {
-        "name": "Capa Exterior (Color Claro con Filtro UV-8)",
-        "color": "#D4C3A3",
-        "desc": "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie."
-      },
-      {
-        "name": "Capa Intermedia (Núcleo Negro Espumado)",
-        "color": "#0F172A",
-        "desc": "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación."
-      },
-      {
-        "name": "Capa Interna (Blanca Lisa Antibacterial)",
-        "color": "#FFFFFF",
-        "desc": "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua."
-      }
-    ],
-    "benefits": [
-      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
-      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
-      "Capa interna blanca lisa antibacterial grado alimenticio (sin olor ni sabor).",
-      "10 Años de garantía por defectos de fábrica con respaldo local directo."
-    ]
-  },
-  {
-    "id": "t-1100-suprema",
-    "name": "Tinaco Línea Suprema 1100L (Tricapa)",
-    "shortName": "Tinaco 1100L Tricapa",
-    "category": "tinacos-suprema",
-    "categoryLabel": "⭐ Línea Suprema (Tricapa)",
-    "capacity": 1100,
-    "badge": "El Más Vendido ★",
-    "warranty": "10 Años de Garantía por Defectos de Fábrica",
-    "tagline": "El estándar insignia para residencias de 4 a 5 personas en Mazatlán.",
-    "image": "assets/img/productos/T1100Estandar/1100Estandar.png",
-    "colors": [
-      {
-        "name": "Arena / Claro UV",
-        "hex": "#D4C3A3",
-        "img": "assets/img/productos/T1100Estandar/1100Estandar.png"
-      }
-    ],
-    "peopleRecommended": "4 a 5 personas",
-    "specs": {
-      "Capacidad": "1,100 Litros",
-      "Tecnología": "Tricapa Sincronizada",
-      "Diámetro": "110 cm",
-      "Altura": "140 cm",
-      "Garantía": "10 Años por Defectos de Fábrica",
-      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen con Filtro UV-8",
-      "Refuerzo": "Anillos estructurales anti-pandeo"
-    },
-    "layers": [
-      {
-        "name": "Capa Exterior (Color Claro con Filtro UV-8)",
-        "color": "#D4C3A3",
-        "desc": "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie."
-      },
-      {
-        "name": "Capa Intermedia (Núcleo Negro Espumado)",
-        "color": "#0F172A",
-        "desc": "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación."
-      },
-      {
-        "name": "Capa Interna (Blanca Lisa Antibacterial)",
-        "color": "#FFFFFF",
-        "desc": "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua."
-      }
-    ],
-    "benefits": [
-      "🎁 Incluye kit completo de accesorios GRATIS (Válvula, Flotador, Multiconector, Tapa Rosca, Capuchón y Venteo).",
-      "El tinaco predilecto por instaladores y familias en Mazatlán.",
-      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
-      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
-      "10 Años de garantía por defectos de fábrica con respaldo local inmediato."
-    ]
-  },
-  {
-    "id": "t-1300-suprema",
-    "name": "Tinaco Línea Suprema 1300L (Tricapa)",
-    "shortName": "Tinaco 1300L Tricapa",
-    "category": "tinacos-suprema",
-    "categoryLabel": "⭐ Línea Suprema (Tricapa)",
-    "capacity": 1300,
-    "badge": "Máxima Autonomía",
-    "warranty": "10 Años de Garantía por Defectos de Fábrica",
-    "tagline": "Gran reserva residencial y comercial para 5 a 6 personas.",
-    "image": "assets/img/productos/T1100Estandar/1100Estandar.png",
-    "colors": [
-      {
-        "name": "Arena / Claro UV",
-        "hex": "#D4C3A3",
-        "img": "assets/img/productos/T1100Estandar/1100Estandar.png"
-      }
-    ],
-    "peopleRecommended": "5 a 6 personas",
-    "specs": {
-      "Capacidad": "1,300 Litros",
-      "Tecnología": "Tricapa Sincronizada",
-      "Diámetro": "110 cm",
-      "Altura": "152 cm",
-      "Garantía": "10 Años por Defectos de Fábrica",
-      "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen con Filtro UV-8",
-      "Refuerzo": "Anillos estructurales anti-pandeo"
-    },
-    "layers": [
-      {
-        "name": "Capa Exterior (Color Claro con Filtro UV-8)",
-        "color": "#D4C3A3",
-        "desc": "Color claro formulado para reflectar los rayos del sol y el calor, resistiendo a la degradación climática y a la intemperie."
-      },
-      {
-        "name": "Capa Intermedia (Núcleo Negro Espumado)",
-        "color": "#0F172A",
-        "desc": "Bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas y lama), aportando además rigidez estructural y resistencia contra la deformación."
-      },
-      {
-        "name": "Capa Interna (Blanca Lisa Antibacterial)",
-        "color": "#FFFFFF",
-        "desc": "Polietileno 100% virgen grado alimenticio certificado con aditivo antibacterial que no altera el olor, sabor ni color del agua."
-      }
-    ],
-    "benefits": [
-      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
-      "Autonomía garantizada ante cortes de agua en la red pública.",
-      "Capa exterior clara que reflecta la radiación solar y evita el calentamiento del agua.",
-      "Núcleo negro espumado que bloquea 100% los rayos UV (cero algas/lama) y refuerza la estructura.",
-      "10 Años de garantía por defectos de fábrica con respaldo local directo."
-    ]
-  },
-  {
-    "id": "t-450-esencial",
-    "name": "Tinaco Línea Esencial 450L (Bicapa)",
-    "shortName": "Tinaco 450L Bicapa",
-    "category": "tinacos-esencial",
-    "categoryLabel": "Línea Esencial (Bicapa)",
-    "capacity": 450,
-    "badge": "Económico & Eficiente",
+    "badge": "Compacto",
     "warranty": "5 Años de Garantía por Defectos de Fábrica",
-    "tagline": "Almacenamiento accesible con polímero 100% virgen.",
+    "tagline": "Almacenamiento accesible y durable para 1 a 2 personas o departamentos.",
     "image": "assets/img/productos/T450L/T450L.png",
     "colors": [
       {
@@ -298,12 +28,12 @@ window.CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "1 a 2 personas",
     "specs": {
       "Capacidad": "450 Litros",
-      "Tecnología": "Bicapa Coextruida",
+      "Tecnología": "Bicapa Coextruida (Exterior Arena UV / Interior Blanco Espumado)",
       "Diámetro": "86 cm",
       "Altura": "93 cm",
       "Garantía": "5 Años por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen",
+      "Material": "Polietileno 100% Virgen Grado Alimenticio con Filtro UV",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     "layers": [
@@ -323,17 +53,17 @@ window.CYTIMAZ_PRODUCTS = [
       "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
       "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
       "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
-      "Garantía de 5 años por defectos de fábrica."
+      "Garantía de 5 años por defectos de fábrica con respaldo local directo en Mazatlán."
     ]
   },
   {
-    "id": "t-600-esencial",
-    "name": "Tinaco Línea Esencial 600L (Bicapa)",
-    "shortName": "Tinaco 600L Bicapa",
-    "category": "tinacos-esencial",
-    "categoryLabel": "Línea Esencial (Bicapa)",
+    "id": "t-600",
+    "name": "Tinaco Cytimaz 600L",
+    "shortName": "Tinaco 600L",
+    "category": "tinacos",
+    "categoryLabel": "Tinaco Residencial",
     "capacity": 600,
-    "badge": "Económico & Eficiente",
+    "badge": "Hogar Mediano",
     "warranty": "5 Años de Garantía por Defectos de Fábrica",
     "tagline": "Reserva confiable para 2 a 3 personas al mejor costo de fábrica.",
     "image": "assets/img/productos/T600L/T600L.png",
@@ -347,12 +77,12 @@ window.CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "2 a 3 personas",
     "specs": {
       "Capacidad": "600 Litros",
-      "Tecnología": "Bicapa Coextruida",
+      "Tecnología": "Bicapa Coextruida (Exterior Arena UV / Interior Blanco Espumado)",
       "Diámetro": "88 cm",
       "Altura": "112 cm",
       "Garantía": "5 Años por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen",
+      "Material": "Polietileno 100% Virgen Grado Alimenticio con Filtro UV",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     "layers": [
@@ -372,19 +102,19 @@ window.CYTIMAZ_PRODUCTS = [
       "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
       "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
       "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
-      "Garantía de 5 años por defectos de fábrica."
+      "Garantía de 5 años por defectos de fábrica con respaldo local directo en Mazatlán."
     ]
   },
   {
-    "id": "t-800-esencial",
-    "name": "Tinaco Línea Esencial 800L (Bicapa)",
-    "shortName": "Tinaco 800L Bicapa",
-    "category": "tinacos-esencial",
-    "categoryLabel": "Línea Esencial (Bicapa)",
+    "id": "t-800",
+    "name": "Tinaco Cytimaz 800L",
+    "shortName": "Tinaco 800L",
+    "category": "tinacos",
+    "categoryLabel": "Tinaco Residencial",
     "capacity": 800,
-    "badge": "Económico & Eficiente",
+    "badge": "Capacidad Media",
     "warranty": "5 Años de Garantía por Defectos de Fábrica",
-    "tagline": "Capacidad intermedia para 3 a 4 personas.",
+    "tagline": "Capacidad intermedia ideal para familias de 3 a 4 personas.",
     "image": "assets/img/productos/T800L/T800L.png",
     "colors": [
       {
@@ -396,12 +126,12 @@ window.CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "3 a 4 personas",
     "specs": {
       "Capacidad": "800 Litros",
-      "Tecnología": "Bicapa Coextruida",
+      "Tecnología": "Bicapa Coextruida (Exterior Arena UV / Interior Blanco Espumado)",
       "Diámetro": "110 cm",
       "Altura": "132 cm",
       "Garantía": "5 Años por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen",
+      "Material": "Polietileno 100% Virgen Grado Alimenticio con Filtro UV",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     "layers": [
@@ -421,17 +151,17 @@ window.CYTIMAZ_PRODUCTS = [
       "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
       "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
       "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
-      "Garantía de 5 años por defectos de fábrica."
+      "Garantía de 5 años por defectos de fábrica con respaldo local directo en Mazatlán."
     ]
   },
   {
-    "id": "t-1100-esencial",
-    "name": "Tinaco Línea Esencial 1100L (Bicapa)",
-    "shortName": "Tinaco 1100L Bicapa",
-    "category": "tinacos-esencial",
-    "categoryLabel": "Línea Esencial (Bicapa)",
+    "id": "t-1100",
+    "name": "Tinaco Cytimaz 1100L",
+    "shortName": "Tinaco 1100L",
+    "category": "tinacos",
+    "categoryLabel": "Tinaco Residencial",
     "capacity": 1100,
-    "badge": "Calidad Accesible",
+    "badge": "El Más Vendido ★",
     "warranty": "5 Años de Garantía por Defectos de Fábrica",
     "tagline": "El volumen clásico familiar de 1100L con precio directo de fábrica.",
     "image": "assets/img/productos/T1100Estandar/1100Estandar.png",
@@ -445,12 +175,12 @@ window.CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "4 a 5 personas",
     "specs": {
       "Capacidad": "1,100 Litros",
-      "Tecnología": "Bicapa Coextruida",
+      "Tecnología": "Bicapa Coextruida (Exterior Arena UV / Interior Blanco Espumado)",
       "Diámetro": "110 cm",
       "Altura": "140 cm",
       "Garantía": "5 Años por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen",
+      "Material": "Polietileno 100% Virgen Grado Alimenticio con Filtro UV",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     "layers": [
@@ -466,21 +196,21 @@ window.CYTIMAZ_PRODUCTS = [
       }
     ],
     "benefits": [
-      "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
+      "🎁 Incluye kit completo de accesorios GRATIS (Válvula, Flotador, Multiconector, Tapa Rosca, Capuchón y Venteo).",
+      "El tinaco predilecto por instaladores y familias en Mazatlán.",
       "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
       "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
-      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
-      "Garantía de 5 años por defectos de fábrica."
+      "Garantía de 5 años por defectos de fábrica con respaldo local directo en Mazatlán."
     ]
   },
   {
-    "id": "t-1300-esencial",
-    "name": "Tinaco Línea Esencial 1300L (Bicapa)",
-    "shortName": "Tinaco 1300L Bicapa",
-    "category": "tinacos-esencial",
-    "categoryLabel": "Línea Esencial (Bicapa)",
+    "id": "t-1300",
+    "name": "Tinaco Cytimaz 1300L",
+    "shortName": "Tinaco 1300L",
+    "category": "tinacos",
+    "categoryLabel": "Tinaco Residencial",
     "capacity": 1300,
-    "badge": "Gran Capacidad Bicapa",
+    "badge": "Gran Capacidad",
     "warranty": "5 Años de Garantía por Defectos de Fábrica",
     "tagline": "Volumen superior al precio más competitivo para 5 a 6 personas.",
     "image": "assets/img/productos/T1100Estandar/1100Estandar.png",
@@ -494,12 +224,12 @@ window.CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "5 a 6 personas",
     "specs": {
       "Capacidad": "1,300 Litros",
-      "Tecnología": "Bicapa Coextruida",
+      "Tecnología": "Bicapa Coextruida (Exterior Arena UV / Interior Blanco Espumado)",
       "Diámetro": "110 cm",
       "Altura": "152 cm",
       "Garantía": "5 Años por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
-      "Material": "Polietileno 100% Virgen",
+      "Material": "Polietileno 100% Virgen Grado Alimenticio con Filtro UV",
       "Refuerzo": "Anillos estructurales anti-pandeo"
     },
     "layers": [
@@ -516,10 +246,10 @@ window.CYTIMAZ_PRODUCTS = [
     ],
     "benefits": [
       "🎁 Incluye kit completo de accesorios GRATIS de fábrica.",
+      "Gran autonomía de agua para residencias y comercios.",
       "Capa exterior color arena que reflecta los rayos solares y evita el calentamiento del agua.",
       "Capa interior blanca espumada que aporta rigidez estructural y resistencia a la deformación.",
-      "Interior blanco grado alimenticio que no altera el agua y facilita la inspección de pureza.",
-      "Garantía de 5 años por defectos de fábrica."
+      "Garantía de 5 años por defectos de fábrica con respaldo local directo en Mazatlán."
     ]
   },
   {
@@ -1034,7 +764,7 @@ window.CYTIMAZ_PRODUCTS = [
     ],
     "peopleRecommended": "Todos los modelos",
     "specs": {
-      "Compatibilidad": "Tinacos Línea Suprema y Esencial",
+      "Compatibilidad": "Tinacos y Cisternas Cytimaz",
       "Material": "Polipropileno de alta resistencia",
       "Incluye": "Válvula de esfera integrada y conexión a tubo de venteo"
     },

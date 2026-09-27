@@ -23,8 +23,8 @@ const CYTIMAZ_BOT_DATA = {
       icon: "calculator"
     },
     {
-      id: "bicapa_vs_tricapa",
-      label: "🛡️ Diferencia entre Bicapa y Tricapa",
+      id: "tecnologia_tinacos",
+      label: "🛡️ ¿Cómo están fabricados los tinacos Cytimaz?",
       icon: "layers"
     },
     {
@@ -44,7 +44,7 @@ const CYTIMAZ_BOT_DATA = {
     },
     {
       id: "garantia",
-      label: "⭐ Garantías de Fábrica (10 y 5 Años)",
+      label: "⭐ Garantía de Fábrica (5 Años)",
       icon: "award"
     },
     {
@@ -65,7 +65,7 @@ const CYTIMAZ_BOT_DATA = {
       text: "¡Con gusto! Fabricamos directamente por rotomoldeo en Mazatlán las siguientes capacidades (¡todas incluyen Kit de Accesorios GRATIS!):",
       bullets: [
         "🪣 **Tambos Industriales:** 200 Litros.",
-        "🏠 **Tinacos (Tricapa y Bicapa):** 450L, 600L, 800L, 1,100L y 1,300 Litros.",
+        "🏠 **Tinacos Residenciales:** 450L, 600L, 800L, 1,100L y 1,300 Litros.",
         "🧱 **Cisternas Reforzadas:** 1,100L, 1,100L Bala Vertical, 1,300L, 3,000L, 5,500L y 10,000 Litros.",
         "🚚 **Horizontales:** 600L y 1,100 Litros."
       ],
@@ -73,14 +73,16 @@ const CYTIMAZ_BOT_DATA = {
       whatsappMessage: "¡Hola Cytimaz! Me gustaría cotizar tinacos/cisternas con entrega en Mazatlán."
     },
 
-    bicapa_vs_tricapa: {
-      text: "¡Excelente pregunta! Ambos son de polietileno 100% virgen grado alimenticio, pero con estas funciones de ingeniería:",
+    tecnologia_tinacos: {
+      text: "Nuestros tinacos están fabricados con polietileno 100% virgen grado alimenticio en dos capas sincronizadas por rotomoldeo:",
       bullets: [
-        "⚪ **Línea Esencial (Bicapa - 5 Años de Garantía):** Capa exterior color arena que **refleja los rayos solares** evitando que el agua se caliente (a diferencia de tinacos negros comunes) y resiste la degradación solar. Su **capa interior es blanca espumada grado alimenticio**, lo que aporta gran resistencia estructural contra la deformación, no altera el olor/sabor del agua y facilita la inspección de limpieza por su tono claro.",
-        "⭐ **Línea Suprema (Tricapa - 10 Años de Garantía):** Capa exterior clara con **filtro UV-8** que refleja la radiación solar y el calor. Su **capa intermedia negra espumada** bloquea al 100% los rayos UV evitando la fotosíntesis (cero formación de algas o lama) además de reforzar la estructura contra el pandeo. Y su **capa interna blanca lisa antibacterial** previene bacterias y mantiene la máxima inocuidad."
+        "☀️ **Capa Exterior Color Arena con Filtro UV:** A diferencia de tinacos negros tradicionales que absorben calor, su color arena **refleja la radiación solar evitando que el agua se caliente** y previene la degradación por la intemperie.",
+        "🛡️ **Capa Interior Blanca Espumada:** Aporta gran rigidez estructural contra la deformación y el pandeo, no altera el olor ni sabor del agua (grado alimenticio) y su tono blanco facilita realizar evaluaciones de limpieza.",
+        "🎁 **Kit de Accesorios GRATIS:** Todos nuestros tinacos incluyen válvula, flotador, multiconector, tapa rosca, capuchón y venteo sin costo adicional.",
+        "⭐ **5 Años de Garantía:** Directa de fábrica con respaldo inmediato en Mazatlán."
       ],
-      ctaText: "Cotizar por WhatsApp",
-      whatsappMessage: "¡Hola Cytimaz! Quiero informes y cotización de la Línea Suprema / Línea Esencial."
+      ctaText: "Cotizar Tinaco por WhatsApp",
+      whatsappMessage: "¡Hola Cytimaz! Quiero cotizar un tinaco con entrega en Mazatlán."
     },
 
     cisterna_bala: {
@@ -119,10 +121,9 @@ const CYTIMAZ_BOT_DATA = {
     garantia: {
       text: "Nuestros productos cuentan con garantía respaldada directamente en nuestra planta de Mazatlán:",
       bullets: [
-        "⭐ **Línea Suprema (Tricapa):** 10 Años de garantía por defectos de fábrica.",
-        "🛡️ **Línea Esencial (Bicapa):** 5 Años de garantía por defectos de fábrica.",
-        "🎁 **Accesorios GRATIS:** Válvula, flotador, multiconector, tapa rosca, capuchón y venteo incluidos.",
-        "✅ **100% Polietileno Virgen:** Grado alimenticio certificado."
+        "🛡️ **Garantía de Fábrica:** 5 Años de garantía por defectos de fabricación.",
+        "🎁 **Accesorios GRATIS:** Válvula, flotador, multiconector, tapa rosca, capuchón y venteo incluidos en cada compra.",
+        "✅ **100% Polietileno Virgen:** Grado alimenticio certificado sin plásticos reciclados."
       ],
       ctaText: "Hablar con un asesor de ventas",
       whatsappMessage: "¡Hola Cytimaz! Quisiera conocer más sobre las garantías de sus productos."
