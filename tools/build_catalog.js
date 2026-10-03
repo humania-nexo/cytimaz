@@ -587,10 +587,12 @@ const products = [
     warranty: "Garantía de Fábrica",
     tagline: "Retiene sedimentos, arena y partículas protegiendo tuberías, llaves y electrodomésticos.",
     image: "assets/img/productos/Accesorios/filtro1.png",
-    colors: [
-      { name: "Ensamblado", hex: "#1E293B", img: "assets/img/productos/Accesorios/filtro1.png" },
-      { name: "Con Cartucho / Despiece", hex: "#64748B", img: "assets/img/productos/Accesorios/filtro2.png" }
+    hoverImage: "assets/img/productos/Accesorios/filtro2.png",
+    gallery: [
+      { name: "Filtro Ensamblado", img: "assets/img/productos/Accesorios/filtro1.png" },
+      { name: "Despiece / Cartucho Lavable", img: "assets/img/productos/Accesorios/filtro2.png" }
     ],
+    colors: [],
     peopleRecommended: "Todos los tinacos y cisternas",
     specs: {
       "Función": "Retención de sedimentos, lodo, arena y partículas en suspensión",

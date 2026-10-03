@@ -226,3 +226,47 @@
   border-radius: var(--radius-md);
   filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
 }
+
+/* Selector de Vistas Alternativas en Modal (ej. Despiece de Filtro) */
+.modal-gallery-selector {
+  margin-top: 12px;
+}
+
+.modal-gallery-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-gallery-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--color-bg-alt);
+  border: 1.5px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.modal-gallery-tab-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.modal-gallery-tab-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.modal-gallery-tab-btn.active {
+  background: #F0F9FF;
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+

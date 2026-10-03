@@ -91,8 +91,76 @@
   transition: transform var(--transition-normal);
 }
 
-.product-card:hover .card-product-img {
+.product-card:hover .card-product-img:not(.hover-img):not(.primary-img) {
   transform: scale(1.06);
+}
+
+/* Efecto hover para productos con doble vista (ej. Filtro y despiece) */
+.card-header-visual.has-hover-image {
+  cursor: pointer;
+}
+
+.card-header-visual.has-hover-image .card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header-visual.has-hover-image .card-product-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 180px;
+  width: auto;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.card-header-visual.has-hover-image .card-product-img.primary-img {
+  opacity: 1;
+}
+
+.card-header-visual.has-hover-image .card-product-img.hover-img {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.product-card:hover .card-header-visual.has-hover-image .card-product-img.primary-img,
+.card-header-visual.has-hover-image.touch-active .card-product-img.primary-img {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.product-card:hover .card-header-visual.has-hover-image .card-product-img.hover-img,
+.card-header-visual.has-hover-image.touch-active .card-product-img.hover-img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.card-hover-hint {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  background: rgba(2, 132, 199, 0.12);
+  color: #0369A1;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(4px);
+}
+
+.product-card:hover .card-hover-hint,
+.card-header-visual.has-hover-image.touch-active .card-hover-hint {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 .card-badge-top {

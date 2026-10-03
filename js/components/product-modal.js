@@ -101,6 +101,27 @@ function initProductModal() {
       `;
     }
 
+    // Selector de galería de vistas en el modal si aplica
+    let modalGallerySelectorHtml = "";
+    if (product.gallery && product.gallery.length > 1) {
+      modalGallerySelectorHtml = `
+        <div class="modal-gallery-selector">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); display: block; margin-bottom: 8px;">Vistas disponibles:</span>
+          <div class="modal-gallery-tabs">
+            ${product.gallery.map((g, i) => `
+              <button type="button" 
+                class="modal-gallery-tab-btn ${i === 0 ? 'active' : ''}" 
+                data-img="${g.img}"
+                title="${g.name}">
+                <img src="${g.img}" alt="${g.name}">
+                <span>${g.name}</span>
+              </button>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
+
     // Construir desglose de capas
     let layersHtml = "";
     if (product.layers && product.layers.length > 0) {
@@ -159,6 +180,7 @@ function initProductModal() {
             <img src="${currentImg}" alt="${product.name}" id="modal-main-product-img">
           </div>
           ${modalColorSelectorHtml}
+          ${modalGallerySelectorHtml}
         </div>
         <div>
           <table class="specs-table">
@@ -202,6 +224,28 @@ function initProductModal() {
           if (modalImg && imgSrc) modalImg.src = imgSrc;
           if (modalColorText) modalColorText.textContent = colName;
           if (modalWaLink) modalWaLink.href = getWaLink(colName);
+        });
+      });
+    }
+
+    // Asignar interactividad a las pestañas de galería de vistas si aplica
+    if (product.gallery && product.gallery.length > 1) {
+      const modalGalleryBtns = modalContentContainer.querySelectorAll(".modal-gallery-tab-btn");
+      const modalImg = modalContentContainer.querySelector("#modal-main-product-img");
+
+      modalGalleryBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          modalGalleryBtns.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const imgSrc = btn.getAttribute("data-img");
+          if (modalImg && imgSrc) {
+            modalImg.style.opacity = "0.4";
+            setTimeout(() => {
+              modalImg.src = imgSrc;
+              modalImg.style.opacity = "1";
+            }, 120);
+          }
         });
       });
     }

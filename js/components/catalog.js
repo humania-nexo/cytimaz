@@ -98,12 +98,32 @@ function initCatalog() {
         ? `<div style="display: flex; align-items: center; gap: 6px; font-size: 0.76rem; font-weight: 800; color: #059669; background: #ECFDF5; padding: 4px 10px; border-radius: 9999px; margin-bottom: 10px; border: 1px solid #A7F3D0; width: fit-content;">🎁 ¡Incluye Kit de Accesorios GRATIS!</div>`
         : "";
 
+      // Header visual de la tarjeta (con soporte para imagen hover)
+      let headerVisualHtml = "";
+      if (product.hoverImage) {
+        headerVisualHtml = `
+          <div class="card-header-visual has-hover-image" title="Pasa el cursor o toca para ver el despiece">
+            <span class="badge ${badgeClass} card-badge-top">${product.badge}</span>
+            <span class="card-warranty-pill">🛡️ ${product.warranty}</span>
+            <div class="card-img-wrapper">
+              <img src="${product.image}" alt="${product.name}" class="card-product-img primary-img" loading="lazy">
+              <img src="${product.hoverImage}" alt="${product.name} (Despiece)" class="card-product-img hover-img" loading="lazy">
+            </div>
+            <span class="card-hover-hint">🔄 Pasa el cursor para ver interior</span>
+          </div>
+        `;
+      } else {
+        headerVisualHtml = `
+          <div class="card-header-visual">
+            <span class="badge ${badgeClass} card-badge-top">${product.badge}</span>
+            <span class="card-warranty-pill">🛡️ ${product.warranty}</span>
+            <img src="${product.image}" alt="${product.name}" class="card-product-img" loading="lazy">
+          </div>
+        `;
+      }
+
       card.innerHTML = `
-        <div class="card-header-visual">
-          <span class="badge ${badgeClass} card-badge-top">${product.badge}</span>
-          <span class="card-warranty-pill">🛡️ ${product.warranty}</span>
-          <img src="${product.image}" alt="${product.name}" class="card-product-img" loading="lazy">
-        </div>
+        ${headerVisualHtml}
         <div class="card-body">
           <span class="card-category-label">${product.categoryLabel}</span>
           <h3 class="card-title">${product.name}</h3>
@@ -133,6 +153,16 @@ function initCatalog() {
           </div>
         </div>
       `;
+
+      // Evento de toque para móviles en productos con hoverImage
+      if (product.hoverImage) {
+        const visualBox = card.querySelector(".card-header-visual.has-hover-image");
+        if (visualBox) {
+          visualBox.addEventListener("click", () => {
+            visualBox.classList.toggle("touch-active");
+          });
+        }
+      }
 
       // Eventos interactivos de cambio de color
       if (product.colors && product.colors.length > 1) {
