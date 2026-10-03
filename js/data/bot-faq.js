@@ -248,6 +248,19 @@ const CYTIMAZ_BOT_DATA = {
     },
 
     {
+      id: "filtro_sedimentos",
+      keywords: ["filtro", "filtros", "sedimentos", "filtracion", "cartucho", "purificador", "filtrar agua", "filtro de tinaco", "filtro para tinaco", "arena en el agua", "lodo en el agua"],
+      text: "Contamos con **Filtro de Sedimentos Estándar para Tinaco y Cisterna** con cartucho lavable de alta precisión:",
+      bullets: [
+        "🛡️ **Protección Total:** Retiene sedimentos, arena, tierra y partículas evitando que entren a tu tinaco.",
+        "🧼 **Cartucho Lavable y Reutilizable:** No necesitas comprar repuestos desechables continuos.",
+        "🚰 **Cuida tus Instalaciones:** Alarga la vida de regaderas, calentadores, lavadoras y grifos."
+      ],
+      ctaText: "Cotizar Filtro de Sedimentos",
+      whatsappMessage: "¡Hola Cytimaz! Me interesa cotizar el Filtro de Sedimentos para Tinaco/Cisterna. ¿Lo tienen disponible?"
+    },
+
+    {
       id: "cisternas_bala",
       keywords: ["cisterna", "cisternas", "bala", "vertical", "subsuelo", "enterrar", "enterrada", "pasillo", "estrecho", "angosto", "delgada", "esbelta"],
       text: "Nuestra **Cisterna Vertical Tipo Bala de 1,100L** es la solución ideal para ahorrar espacio:",

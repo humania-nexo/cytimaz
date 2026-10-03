@@ -6,7 +6,7 @@
  * Incluye variantes de color interactivas y señalización de datos pendientes.
  */
 
-window.CYTIMAZ_PRODUCTS = [
+const CYTIMAZ_PRODUCTS = [
   {
     "id": "t-450",
     "name": "Tinaco Cytimaz 450L",
@@ -715,6 +715,44 @@ window.CYTIMAZ_PRODUCTS = [
     ]
   },
   {
+    "id": "acc-filtro",
+    "name": "Filtro de Sedimentos para Tinaco y Cisterna",
+    "shortName": "Filtro de Sedimentos",
+    "category": "accesorios",
+    "categoryLabel": "Accesorios y Filtración",
+    "capacity": 0,
+    "badge": "Agua Limpia & Pura",
+    "warranty": "Garantía de Fábrica",
+    "tagline": "Retiene sedimentos, arena y partículas protegiendo tuberías, llaves y electrodomésticos.",
+    "image": "assets/img/productos/Accesorios/filtro1.png",
+    "colors": [
+      {
+        "name": "Ensamblado",
+        "hex": "#1E293B",
+        "img": "assets/img/productos/Accesorios/filtro1.png"
+      },
+      {
+        "name": "Con Cartucho / Despiece",
+        "hex": "#64748B",
+        "img": "assets/img/productos/Accesorios/filtro2.png"
+      }
+    ],
+    "peopleRecommended": "Todos los tinacos y cisternas",
+    "specs": {
+      "Función": "Retención de sedimentos, lodo, arena y partículas en suspensión",
+      "Tipo de Cartucho": "Cartucho filtrante lavable de malla de alta precisión",
+      "Compatibilidad": "Entrada y salida con rosca estándar para instalación en línea",
+      "Material": "Cuerpo de polímero de alta resistencia y grado alimenticio",
+      "Mantenimiento": "Cartucho lavable y reutilizable sin herramientas especiales"
+    },
+    "benefits": [
+      "Evita que la arena, lodo y partículas del suministro entren al tinaco o cisterna.",
+      "Cartucho interior desmontable, fácil de lavar y 100% reutilizable.",
+      "Protege regaderas, llaves, calentadores y lavadoras contra obstrucciones y sarro.",
+      "Cuerpo de alta resistencia Hecho en México con roscas estándar de fácil conexión."
+    ]
+  },
+  {
     "id": "acc-valvula",
     "name": "Válvula con Flotador de Alta Presión",
     "shortName": "Válvula y Flotador",
@@ -865,3 +903,10 @@ window.CYTIMAZ_PRODUCTS = [
     ]
   }
 ];
+
+if (typeof window !== "undefined") {
+  window.CYTIMAZ_PRODUCTS = CYTIMAZ_PRODUCTS;
+}
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = CYTIMAZ_PRODUCTS;
+}
