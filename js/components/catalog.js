@@ -102,14 +102,14 @@ function initCatalog() {
       let headerVisualHtml = "";
       if (product.hoverImage) {
         headerVisualHtml = `
-          <div class="card-header-visual has-hover-image" title="Pasa el cursor o toca para ver el despiece">
+          <div class="card-header-visual has-hover-image" title="Toca o pasa el cursor para ver el despiece">
             <span class="badge ${badgeClass} card-badge-top">${product.badge}</span>
             <span class="card-warranty-pill">🛡️ ${product.warranty}</span>
             <div class="card-img-wrapper">
               <img src="${product.image}" alt="${product.name}" class="card-product-img primary-img" loading="lazy">
               <img src="${product.hoverImage}" alt="${product.name} (Despiece)" class="card-product-img hover-img" loading="lazy">
             </div>
-            <span class="card-hover-hint">🔄 Pasa el cursor para ver interior</span>
+            <span class="card-hover-hint">🔄 Toca para ver interior</span>
           </div>
         `;
       } else {
