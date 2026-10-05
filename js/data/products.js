@@ -329,8 +329,8 @@ const CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "4 a 5 personas",
     "specs": {
       "Capacidad": "1,100 Litros",
-      "Diámetro": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Altura": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
+      "Diámetro": "110 cm (1.10 m)",
+      "Altura": "140 cm (1.40 m)",
       "Garantía": "Por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno de Alta Resistencia para Entierro",
@@ -339,6 +339,7 @@ const CYTIMAZ_PRODUCTS = [
     "benefits": [
       "🎁 Incluye kit completo de accesorios GRATIS.",
       "Disponible en Azul, Negro y Neutro.",
+      "Medidas oficiales: 110 cm de diámetro x 140 cm de altura.",
       "Paredes extra gruesas para soportar la presión del terreno húmedo.",
       "Totalmente libre de filtraciones y salitre."
     ]
@@ -369,8 +370,8 @@ const CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "5 a 6 personas",
     "specs": {
       "Capacidad": "1,300 Litros",
-      "Diámetro": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Altura": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
+      "Diámetro": "110 cm (1.10 m)",
+      "Altura": "152 cm (1.52 m)",
       "Garantía": "Por Defectos de Fábrica",
       "Kit de Accesorios": "🎁 ¡GRATIS Incluido con tu compra!",
       "Material": "Polietileno Virgen Reforzado",
@@ -379,6 +380,7 @@ const CYTIMAZ_PRODUCTS = [
     "benefits": [
       "🎁 Incluye kit completo de accesorios GRATIS.",
       "Disponible en Negro y Neutro.",
+      "Medidas oficiales: 110 cm de diámetro x 152 cm de altura.",
       "Cinturones de refuerzo geométrico para enterrar sin fisuras.",
       "Fácil interconexión a bombas centrífugas o sumergibles."
     ]
@@ -671,13 +673,14 @@ const CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "Industria / Químicos / Logística",
     "specs": {
       "Capacidad": "1,000 Litros",
-      "Largo": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Ancho": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Altura": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
+      "Largo": "1.00 m (100 cm)",
+      "Ancho": "1.20 m (120 cm)",
+      "Altura": "1.07 m (107 cm)",
       "Estructura": "Jaula de tubos de acero galvanizado con tarima integrada",
       "Válvula de Salida": "Válvula de mariposa de descarga inferior integrada"
     },
     "benefits": [
+      "Medidas oficiales: 1.00 m Largo x 1.20 m Ancho x 1.07 m Altura.",
       "Apto para apilamiento en bodegas y transporte logístico.",
       "Válvula de descarga rápida de 2 pulgadas.",
       "Protección total contra golpes durante maniobras."
@@ -704,11 +707,13 @@ const CYTIMAZ_PRODUCTS = [
     "peopleRecommended": "Uso Doméstico e Industrial",
     "specs": {
       "Capacidad": "20 Litros",
-      "Dimensiones": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
+      "Altura": "38 cm",
+      "Ancho": "25 cm",
       "Material": "Polietileno de Alta Densidad Grado Alimenticio",
       "Asa": "Asa ergonómica de sujeción moldeada"
     },
     "benefits": [
+      "Medidas: 25 cm Ancho x 38 cm Altura.",
       "Tapa con sello hermético antiderrames.",
       "Apto para agua purificada, químicos y lubricantes.",
       "Resistente a caídas e impactos."
@@ -832,11 +837,13 @@ const CYTIMAZ_PRODUCTS = [
     ],
     "peopleRecommended": "Tinacos 450L a 1300L",
     "specs": {
-      "Diámetro": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
-      "Tipo de Cierre": "Rosca estándar",
+      "Diámetro Completo": "53.5 cm (Exterior)",
+      "Diámetro de Boquilla / Rosca": "45 cm (Rosca interior)",
+      "Tipo de Cierre": "Rosca estándar para tinaco",
       "Material": "Polietileno virgen con protección UV"
     },
     "benefits": [
+      "Medidas oficiales: 53.5 cm diámetro total exterior / 45 cm boquilla de rosca.",
       "No se vuela con el viento de la azotea.",
       "Protege el interior del polvo, hojas y suciedad ambiental.",
       "Fácil de abrir y cerrar a mano para mantenimiento y lavado."
@@ -862,11 +869,13 @@ const CYTIMAZ_PRODUCTS = [
     ],
     "peopleRecommended": "Instalaciones Hidráulicas",
     "specs": {
-      "Material": "Polímero rígido",
-      "Medidas": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
+      "Largo / Altura": "1.40 m (140 cm)",
+      "Diámetro del Tubo": "1/2 pulgada (1/2\")",
+      "Material": "Polímero rígido resistente a la intemperie",
       "Función": "Liberación de aire y compensación barométrica"
     },
     "benefits": [
+      "Medidas: 1.40 m de largo con tubo de 1/2 pulgada.",
       "Mejora la presión constante en regaderas y grifos.",
       "Evita el golpe de ariete.",
       "Fácil inserción en el multiconector Cytimaz."
@@ -892,11 +901,13 @@ const CYTIMAZ_PRODUCTS = [
     ],
     "peopleRecommended": "Instalaciones Hidráulicas",
     "specs": {
+      "Medida / Conexión": "1/2 pulgada (1/2\")",
+      "Compatibilidad": "Tubo de venteo / jarro de aire de 1/2\"",
       "Material": "Polímero de alta durabilidad UV",
-      "Medidas": "<span style=\"color: #EF4444; font-weight: 800;\">❌❌ [Dato por confirmar]</span>",
       "Función": "Protección de boca de venteo / jarro de aire"
     },
     "benefits": [
+      "Medida estándar de 1/2 pulgada.",
       "Evita que el agua de lluvia o suciedad ambiental ingrese al respiradero.",
       "Impide la entrada de insectos voladores al sistema de agua.",
       "Ajuste hermético y seguro."
