@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio en Mantenimiento | Sapiensia Clan</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Sitio web temporalmente fuera de servicio por mantenimiento y regularización de infraestructura digital. Desarrollado y administrado por Sapiensia Clan.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sitio en Mantenimiento | Sapiensia Clan">
+  <meta property="og:description" content="Plataforma temporalmente fuera de servicio por labores técnicas y gestión digital.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0a0e17;
+      --bg-card: rgba(16, 23, 41, 0.75);
+      --border-card: rgba(255, 255, 255, 0.08);
+      --accent-cyan: #06b6d4;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Background Ambient Glows */
+    .ambient-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.25;
+    }
+    .glow-1 {
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(circle, var(--accent-cyan), var(--accent-blue));
+    }
+    .glow-2 {
+      bottom: -150px;
+      right: 10%;
+      background: radial-gradient(circle, #8b5cf6, transparent);
+    }
+
+    /* Main Container */
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 44px 36px;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    @media (max-width: 540px) {
+      .card {
+        padding: 32px 20px;
+        border-radius: 20px;
+      }
+    }
+
+    /* Status Pill */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fbbf24;
+      margin-bottom: 28px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: var(--accent-amber);
+      box-shadow: 0 0 10px var(--accent-amber);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Agency Tag */
+    .agency-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    .notice-box {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px dashed rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      padding: 22px 20px;
+      margin-bottom: 34px;
+      text-align: left;
+    }
+
+    .notice-box-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notice-box p {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+    }
+
+    /* Agency Signature & CTA */
+    .agency-card {
+      border-top: 1px solid var(--border-card);
+      padding-top: 30px;
+      margin-top: 10px;
+    }
+
+    .agency-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .agency-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+
+    .agency-subtitle {
+      font-size: 0.88rem;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+
+    .btn-agency {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4);
+    }
+
+    .btn-agency:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(2, 132, 199, 0.6);
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <div class="container">
+    <div class="card">
+      
+      <!-- Status Badge -->
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Servicio Temporalmente Suspendido
+      </div>
+
+      <!-- Agency Pill -->
+      <div class="agency-tag">
+        ⚡ Sapiensia Clan · Infraestructura Digital
+      </div>
+
+      <!-- Main Headline -->
+      <h1>Sitio Web en Proceso de Mantenimiento Técnico</h1>
+
+      <!-- Explanation -->
+      <p class="description">
+        El acceso público a esta plataforma ha sido deshabilitado temporalmente debido a procesos de actualización técnica, auditoría de sistemas y regularización de servicios de desarrollo y gestión web.
+      </p>
+
+      <!-- Technical Notice Box -->
+      <div class="notice-box">
+        <div class="notice-box-title">
+          <span>🛠️</span> Aviso de Administración Técnica
+        </div>
+        <p>
+          Las funcionalidades de catálogo comercial, cotizaciones en línea y asistencia automatizada permanecen inactivas. Si eres el titular o responsable de este proyecto comercial y requieres la reactivación, entrega técnica o traspaso de la infraestructura digital, comunícate directamente con la agencia administradora.
+        </p>
+      </div>
+
+      <!-- Agency Signature -->
+      <div class="agency-card">
+        <div class="agency-title">Diseño, Desarrollo y Gestión Digital a cargo de:</div>
+        <div class="agency-name">SAPIENSIA CLAN</div>
+        <p class="agency-subtitle">
+          Agencia de desarrollo web de alto rendimiento, automatización digital y soluciones tecnológicas integrales.
+        </p>
+        <a href="https://www.sapiensiaclan.com" target="_blank" rel="noopener noreferrer" class="btn-agency">
+          Visitar Sapiensia Clan ↗
+        </a>
+      </div>
+
+    </div>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Sapiensia Clan. Todos los derechos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>
